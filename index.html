@@ -16,6 +16,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <main>
       <!-- Lekhiv Oleh -->
@@ -60,6 +61,13 @@
       ></section>
       <!-- End Vasyl Plaksiy -->
 
+      <!-- Oleh Pidhaietskiy -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.wines-cards.partial.html"
+      ></section>
+      <!-- End Oleh Pidhaietskiy -->
       <!-- Lilia Pinchuk -->
        <section
        data-hx-trigger="load"
@@ -82,7 +90,7 @@
         const ageDiv = document.createElement("div");
         ageDiv.id = "age-check";
         ageDiv.setAttribute("data-hx-trigger", "load");
-        ageDiv.setAttribute("data-hx-get", "global.age-gate.partial.html");
+        ageDiv.setAttribute("data-hx-get", "index.age-gate.partial.html");
         ageDiv.setAttribute("data-hx-swap", "beforeend");
         document.body.appendChild(ageDiv);
       }
