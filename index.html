@@ -4,6 +4,217 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Wines</title>
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Rubik', sans-serif;
+        background-color: #241c1a;
+        color: #fff;
+      }
+
+      .awards-header {
+        text-align: center;
+        padding: 60px 20px 20px;
+      }
+
+      .awards-header__label {
+        font-family: 'Great Vibes', cursive;
+        color: #C2693A;
+        font-size: 21px;
+        margin-bottom: 10px;
+        display: inline-block;
+      }
+
+      .awards-header__title {
+        font-family: 'Prata', serif;
+        font-size: 65px;
+        color: #ffffff;
+        margin: 0;
+        letter-spacing: 1.2px;
+        font-weight: 400;
+        font-stretch: 90%; 
+      }
+
+      .awards-header__decor {
+        margin: 20px auto;
+        height: 32px;
+        display: block;
+      }
+
+      .awards-header__description {
+        font-size: 16px;
+        color: #cccccc;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      .gallery-wrapper {
+        padding: 60px 6cm;
+        margin-left: 5cm; 
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+      }
+
+      .gallery-wrapper__list {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .gallery-wrapper__item {
+        display: flex;
+        align-items: center;
+        gap: 1px;
+        margin-left: 2cm;
+        margin-right: 2cm;
+      }
+
+      .gallery-wrapper__item-left {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        width: 500px;
+        flex-shrink: 0;
+      }
+
+      .gallery-wrapper__logo {
+        width: 160px;
+        height: 100px;
+        object-fit: contain;
+      }
+
+      .gallery-wrapper__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .gallery-wrapper__title-wrap {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        text-align: left;
+      }
+
+      .w-text {
+        font-family: 'Rubik', sans-serif;
+        font-size: 18px;
+        color: #ffffff;
+        line-height: 2;
+        max-width: 180px;
+        min-height: 48px;
+        word-break: break-word;
+      }
+
+      .gallery-wrapper__year {
+        font-size: 20px;
+        font-weight: bold;
+        color: #ffffff;
+        white-space: nowrap;
+      }
+
+      .gallery-wrapper__description {
+        flex: 1;
+        font-size: 16px;
+        color: #898082;
+        line-height: 1.4;
+        max-width: 520px;
+        min-height: 100px;
+        margin-right: 2cm;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="awards-header">
+      <p class="awards-header__label">Awards</p>
+      <h1 class="awards-header__title">Our Wines Are Our Pride</h1>
+      <img class="awards-header__decor" src="img/Loza.svg" alt="Decorative grapevine" />
+      <p class="awards-header__description">
+        The excellence of our wines has been proved by the following awards.
+      </p>
+    </section>
+
+    <section class="gallery-wrapper">
+      <ul class="gallery-wrapper__list">
+
+        <li class="gallery-wrapper__item">
+          <div class="gallery-wrapper__item-left">
+            <img src="img/finewines.svg" alt="Fine Wines Logo" class="gallery-wrapper__logo" />
+            <div class="gallery-wrapper__info">
+              <div class="gallery-wrapper__title-wrap">
+                <span class="w-text" role="generic">The Best Craft Wine in California</span>
+                <span class="gallery-wrapper__year">1956</span>
+              </div>
+            </div>
+          </div>
+          <p class="gallery-wrapper__description" role="generic">
+            Our Sauvignon Blanc wine was entered for the first time in a competition and immediately received this award. Experts noted the amazing aroma and luxurious taste of our wine. This award has become an important impetus for the development of our company.
+          </p>
+        </li>
+
+        <li class="gallery-wrapper__item">
+          <div class="gallery-wrapper__item-left">
+            <img src="img/orange-wine-fund.svg" alt="Orange Wine Fund Logo" class="gallery-wrapper__logo" />
+            <div class="gallery-wrapper__info">
+              <div class="gallery-wrapper__title-wrap">
+                <span class="w-text" role="generic">The Most Intense Red Wine</span>
+                <span class="gallery-wrapper__year">1992</span>
+              </div>
+            </div>
+          </div>
+          <p class="gallery-wrapper__description" role="generic">
+            In 1992, in conditions of very tough competition from winemakers in our state, our wine managed to take first place. It was preferred by most critics of Orange Wine Fund. They noted the bright and rich taste of our Pinot Noir, its ruby color, and intense aroma.
+          </p>
+        </li>
+
+        <li class="gallery-wrapper__item">
+          <div class="gallery-wrapper__item-left">
+            <img src="img/wine-corporation.svg" alt="Wine Corporation Logo" class="gallery-wrapper__logo" />
+            <div class="gallery-wrapper__info">
+              <div class="gallery-wrapper__title-wrap">
+                <span class="w-text" role="generic">Year's Best Chardonnay</span>
+                <span class="gallery-wrapper__year">2016</span>
+              </div>
+            </div>
+          </div>
+          <p class="gallery-wrapper__description" role="generic">
+            Our Chardonnay got a gold medal at the Wine Corporation Annual Contest. Our wine scored the highest number of points – 99 out of 100 possible, and was rated by experts and critics as “amazing”. By the way, a few bottles of Chardonnay produced in 2016 are still on sale.
+          </p>
+        </li>
+
+        <li class="gallery-wrapper__item">
+          <div class="gallery-wrapper__item-left">
+            <img src="img/wine-finds.svg" alt="Wine Finds Logo" class="gallery-wrapper__logo" />
+            <div class="gallery-wrapper__info">
+              <div class="gallery-wrapper__title-wrap">
+                <span class="w-text" role="generic">The Best American Riesling</span>
+                <span class="gallery-wrapper__year">2022</span>
+              </div>
+            </div>
+          </div>
+          <p class="gallery-wrapper__description" role="generic">
+            In 2022, our wine was presented in this competition among all US wine producers for the first time. And right off the bat, it was able to get the highest award. Experts rated our Riesling wine at 97 points out of 100 possible, noting its excellent taste.
+          </p>
+        </li>
+
+      </ul>
+    </section>
     <title>Document</title>
     <link
       rel="shortcut icon"
@@ -52,6 +263,22 @@
         data-hx-get="index.craft-wines.partial.html"
       ></section>
       <!-- End Lekhiv Oleh -->
+
+      <!-- Adam Ogorodnik -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.discovery-section.partial.html"
+      ></section>
+      <!-- Adam Ogorodnik -->
+
+      <!-- Bohdan Pustovar -->
+       <section class="history-wine-video"
+         data-hx-trigger="load"
+         data-hx-swap="outerHTML"
+         data-hx-get="index.history-wine-video.partial.html"
+       ></section>
+      <!-- End Bohdan Pustovar -->
 
       <!-- Vasyl Plaksiy -->
       <section
