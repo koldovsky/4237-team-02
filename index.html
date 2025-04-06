@@ -10,9 +10,23 @@
     type="image/x-icon"
     />
     <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+    <style>
+        html 
+        {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <main>
+        <!-- Pavlo Naichuk -->
+        <nav>
+            <ul>
+                <li><a href="#history">History</a></li>
+            </ul>
+        </nav>
+        <!-- End Pavlo Naichuk -->
+
         <!-- Lekhiv Oleh -->
         <section 
         data-hx-trigger="load" 
@@ -20,6 +34,15 @@
         data-hx-get="index.best-deals.partial.html"
         ></section>
         <!-- End Lekhiv Oleh -->
+        
+        <!-- Pavlo Naichuk -->
+        <section 
+        data-hx-trigger="load" 
+        data-hx-swap="outerHTML" 
+        data-hx-get="index.history.partical.html"
+        ></section>
+        <!-- End Pavlo Naichuk -->
+
         <!-- Lekhiv Oleh -->
         <section 
         data-hx-trigger="load" 
