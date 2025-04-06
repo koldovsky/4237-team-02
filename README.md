@@ -35,4 +35,9 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Maksym Mizernyi
 - Inna Panchenko
 - Pavlo Naichuk
+<<<<<<< HEAD
 - Vita Maksymchenko
+=======
+- Oleh Pidhaietskyi
+- Vasyl Plaksiy
+>>>>>>> d1392b5ea9659b032833254c20e569d0e29a292e
