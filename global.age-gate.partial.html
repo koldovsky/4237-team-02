@@ -2,9 +2,14 @@
 <div class="overlay">
   <div class="modal">
     <h1>Confirm Your Age</h1>
-    <img src="./img/index/title-divider.svg" alt="Decorative divider" class="decor-divider" />
+    <img
+      src="./img/index/title-divider.svg"
+      alt="Decorative divider"
+      class="decor-divider"
+    />
     <p>
-      We don't sell alcohol to minors. Please confirm that you are over 21 years old to enter this site.
+      We don't sell alcohol to minors. Please confirm that you are over 21 years
+      old to enter this site.
     </p>
     <div class="buttons">
       <button class="yes" onclick="verifyAge()">Yes, I'm 21+</button>
@@ -31,7 +36,7 @@
     max-width: 800px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
   }
 
   .modal h1 {
@@ -49,7 +54,7 @@
   .modal p {
     color: #eee;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-bottom: 30px;
     text-align: center;
     white-space: nowrap;
@@ -86,12 +91,12 @@
 
 <script>
   function verifyAge() {
-    localStorage.setItem('ageVerified', 'true');
-    document.querySelector('.overlay')?.remove();
+    localStorage.setItem("ageVerified", "true");
+    document.querySelector(".overlay")?.remove();
   }
 
   function underage() {
-    window.location.href = 'global.underage.partial.html';
+    window.location.href = "global.underage.partial.html";
   }
 </script>
 <!-- End Pavlo Naichuk -->
