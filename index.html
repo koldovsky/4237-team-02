@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
     <title>Our Wines</title>
     <link
       rel="shortcut icon"
@@ -215,5 +216,107 @@
 
       </ul>
     </section>
+=======
+    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="./img/global/favicon.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <main>
+      <!-- Lekhiv Oleh -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.best-deals.partial.html"
+      ></section>
+      <!-- End Lekhiv Oleh -->
+
+      <!-- Pavlo Naichuk -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.history.partical.html"
+      ></section>
+      <!-- End Pavlo Naichuk -->
+
+
+      <!-- Vita Maksymchenko -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.timeless-classic.partial.html">
+      </section>
+      <!-- End Vita Maksymchenko -->
+
+
+      <!-- Lekhiv Oleh -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.craft-wines.partial.html"
+      ></section>
+      <!-- End Lekhiv Oleh -->
+
+      <!-- Bohdan Pustovar -->
+       <section class="history-wine-video"
+         data-hx-trigger="load"
+         data-hx-swap="outerHTML"
+         data-hx-get="index.history-wine-video.partial.html"
+       ></section>
+      <!-- End Bohdan Pustovar -->
+
+      <!-- Vasyl Plaksiy -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.testimonials.partial.html"
+      ></section>
+      <!-- End Vasyl Plaksiy -->
+
+      <!-- Oleh Pidhaietskiy -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.wines-cards.partial.html"
+      ></section>
+      <!-- End Oleh Pidhaietskiy -->
+      <!-- Lilia Pinchuk -->
+       <section
+       data-hx-trigger="load"
+       data-hx-swap="outerHTML"
+       data-hx-get="index.shopping cart.partial.html"
+     ></section>
+     <!-- End Lilia Pinchuk -->
+
+    </main>
+    <!-- Pavlo Naichuk -->
+    <div
+      id="age-check"
+      data-hx-trigger="load"
+      data-hx-get="index.age-gate.partial.html"
+      data-hx-swap="beforeend"
+    ></div>
+
+    <script>
+      if (localStorage.getItem("ageVerified") !== "true") {
+        const ageDiv = document.createElement("div");
+        ageDiv.id = "age-check";
+        ageDiv.setAttribute("data-hx-trigger", "load");
+        ageDiv.setAttribute("data-hx-get", "index.age-gate.partial.html");
+        ageDiv.setAttribute("data-hx-swap", "beforeend");
+        document.body.appendChild(ageDiv);
+      }
+    </script>
+    <!-- End Pavlo Naichuk -->
+>>>>>>> 62a08fb93a7dd21ee6070f315fc93d5542f7ffb3
   </body>
 </html>
