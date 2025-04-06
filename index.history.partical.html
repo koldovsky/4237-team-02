@@ -1,10 +1,102 @@
 <!-- Pavlo Naichuk -->
 <section class="history" id="history">
-  <h2>Our History</h2>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat.
-  </p>
+  <img src="img/index/alcohol_history.png" alt="Wine Bottles" />
+
+  <div class="timeline">
+    <div class="timeline-block">
+      <small>1796</small>
+      <h3>The Beginning</h3>
+      <p>
+        Our family has been engaged in winemaking since the 18th century when
+        the first grape bushes were planted in the Napa Valley by our ancestors.
+      </p>
+    </div>
+    <div class="timeline-block">
+      <small>1912</small>
+      <h3>Selling Wines</h3>
+      <p>
+        Our home-based winery in California became a small, family-owned
+        business, that supplied wine for connoisseurs of this amazing drink.
+      </p>
+    </div>
+    <div class="timeline-block">
+      <small>1946</small>
+      <h3>Restart of Production</h3>
+      <p>
+        After the Second World War, we adopted the experience of European
+        winemakers and began to use new technologies in our wine-making
+        processes.
+      </p>
+    </div>
+    <div class="timeline-block">
+      <small>2010</small>
+      <h3>Worldwide Shipping</h3>
+      <p>
+        We used to sell our wines only in California. But since 2010, we have
+        been shipping our bottles to other American states and even other
+        countries.
+      </p>
+    </div>
+  </div>
 </section>
+
+<style>
+  .history 
+  {
+    padding: 50px 40px;
+    background-color: #1d1512;
+    color: #eee;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .history img 
+  {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border: 10px solid #231916;
+  }
+
+  .timeline 
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 50px;
+  }
+
+  .timeline-block 
+  {
+    flex: 1 1 200px;
+    max-width: 300px;
+  }
+
+  .timeline-block small 
+  {
+    color: #f48c28;
+    font-style: italic;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .timeline-block h3 
+  {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    margin: 10px 0;
+    border-bottom: 2px solid #f48c28;
+    display: inline-block;
+    padding-bottom: 4px;
+  }
+
+  .timeline-block p 
+  {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #bdbdbd;
+  }
+</style>
+
+<!-- End Pavlo Naichuk -->
