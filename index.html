@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="shortcut icon"
-    href="./img/global/favicon.png" 
-    type="image/x-icon"
+    <link
+      rel="shortcut icon"
+      href="./img/global/favicon.png"
+      type="image/x-icon"
     />
-    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
-    <style>
-        html 
-        {
-            scroll-behavior: smooth;
-        }
-    </style>
-</head>
-<body>
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <main>
-        <!-- Lekhiv Oleh -->
-        <section 
-        data-hx-trigger="load" 
-        data-hx-swap="outerHTML" 
+      <!-- Lekhiv Oleh -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
         data-hx-get="index.best-deals.partial.html"
-        ></section>
-        <!-- End Lekhiv Oleh -->
-        
-        <!-- Pavlo Naichuk -->
-        <section 
-        data-hx-trigger="load" 
-        data-hx-swap="outerHTML" 
-        data-hx-get="index.history.partical.html"
-        ></section>
-        <!-- End Pavlo Naichuk -->
+      ></section>
+      <!-- End Lekhiv Oleh -->
 
-        <!-- Lekhiv Oleh -->
-        <section 
-        data-hx-trigger="load" 
-        data-hx-swap="outerHTML" 
+      <!-- Pavlo Naichuk -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.history.partical.html"
+      ></section>
+      <!-- End Pavlo Naichuk -->
+
+      <!-- Lekhiv Oleh -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
         data-hx-get="index.craft-wines.partial.html"
-        ></section>
-        <!-- End Lekhiv Oleh -->
+      ></section>
+      <!-- End Lekhiv Oleh -->
     </main>
-</body>
+  </body>
 </html>
