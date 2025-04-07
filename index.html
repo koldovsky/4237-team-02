@@ -6,8 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
+    rel="shortcut icon"
+    href="img/global/favicon.png"
+    type="image/x-icon"/>
+    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+</head>
+<body>
+</body>
+    <link
       rel="shortcut icon"
-      href="./img/global/favicon.png"
+      href="img/global/favicon.png"
       type="image/x-icon"
     />
     <script
@@ -18,7 +26,46 @@
   </head>
 
   <body>
+    <!-- Oksana Jevlentjev -->
+    <header 
+      style="
+        background: url('img/global/background-image.jpeg') no-repeat center
+          center/cover;
+          height: 100vh;
+          width: 100%;
+">
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
+    </header>
+    <!-- End Oksana Jevlentjev -->
+
     <main>
+      <!-- Serhii Starykov -->
+      <section
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="index.boutique-wines.partial.html"
+    ></section>
+
+      <!-- Valeriia Remyha -->
+      <div
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="index.wine-peculiarities.partial.html"
+    ></div>
+      <!--End Valeriia Remyha -->
+      
+      <!-- Inna Panchenko -->
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.wine-benefits.partial.html"
+      ></div>
+      <!-- End Inna Panchenko -->
+       
       <!-- Lekhiv Oleh -->
       <section
         data-hx-trigger="load"
@@ -31,19 +78,17 @@
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.history.partical.html"
+        data-hx-get="index.history.partial.html"
       ></section>
       <!-- End Pavlo Naichuk -->
-
 
       <!-- Vita Maksymchenko -->
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.timeless-classic.partial.html">
-      </section>
+        data-hx-get="index.timeless-classic.partial.html"
+      ></section>
       <!-- End Vita Maksymchenko -->
-
 
       <!-- Lekhiv Oleh -->
       <section
@@ -97,7 +142,7 @@
        <section
        data-hx-trigger="load"
        data-hx-swap="outerHTML"
-       data-hx-get="index.shopping cart.partial.html"
+       data-hx-get="index.shopping-cart.partial.html"
      ></section>
      <!-- End Lilia Pinchuk -->
 
