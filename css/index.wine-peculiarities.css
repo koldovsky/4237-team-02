@@ -1,0 +1,18 @@
+/* Remyha Valeriia */
+.benefits
+{
+    background-color: var(--background-color);
+}
+.benefits__title
+{
+    color: var(--white-color-title);
+}
+.benefits__text
+{
+    color: var(--grey-color-text);
+}
+.benefits__link
+{
+    color: var(--white-color-title);
+}
+/* Remyha Valeriia */
