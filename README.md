@@ -49,3 +49,4 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Remyha Valeriia
 - Starykov Serhii
 - Milosh Skotsyk
+- Inna Nosyk
