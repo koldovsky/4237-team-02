@@ -2,22 +2,29 @@
   class="navbar"
   style="
     width: 100%;
+    height: 100px;
     background-color: rgba(0, 0, 0, 0.6); /* черний з 60% прозорості */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
     position: relative;
     z-index: 10;
+    overflow: hidden;
   "
 >
   <!-- Логотип зліва -->
   <a href="index.html">
-    <img src="img/global/logo-white.svg" alt="" style="width: 200px" />
+    <img
+      src="img/global/logo-white.svg"
+      alt=""
+      style="width: 200px; padding-left: 40px"
+    />
   </a>
 
   <!-- Меню та іконки справа -->
-  <div style="display: flex; align-items: center; gap: 45px">
+  <div
+    style="display: flex; align-items: center; gap: 45px; padding-right: 20px"
+  >
     <!-- Меню -->
     <ul
       class="nav-menu"
