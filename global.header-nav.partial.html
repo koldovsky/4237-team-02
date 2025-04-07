@@ -2,48 +2,56 @@
   class="navbar"
   style="
     width: 100%;
+    height: 100px;
     background-color: rgba(0, 0, 0, 0.6); /* черний з 60% прозорості */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
     position: relative;
     z-index: 10;
+    overflow: hidden;
   "
 >
   <!-- Логотип зліва -->
-  <a href="#">
-    <img src="img/global/logo-white.svg" alt="" style="width: 200px" />
+  <a href="index.html">
+    <img
+      src="img/global/logo-white.svg"
+      alt=""
+      style="width: 200px; padding-left: 40px"
+    />
   </a>
 
   <!-- Меню та іконки справа -->
-  <div style="display: flex; align-items: center; gap: 45px">
+  <div
+    style="display: flex; align-items: center; gap: 45px; padding-right: 20px"
+  >
     <!-- Меню -->
     <ul
       class="nav-menu"
       style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0"
     >
       <li>
-        <a href="#home" style="color: white; text-decoration: none">Home</a>
+        <a href="#best-deals" style="color: white; text-decoration: none"
+          >Best deals</a
+        >
       </li>
       <li>
-        <a href="#about" style="color: white; text-decoration: none"
+        <a href="#history" style="color: white; text-decoration: none"
+          >History</a
+        >
+      </li>
+
+      <li>
+        <a href="#about-us" style="color: white; text-decoration: none"
           >About Us</a
         >
       </li>
       <li>
-        <a href="#products" style="color: white; text-decoration: none"
-          >Our Wines</a
-        >
+        <a href="#shop" style="color: white; text-decoration: none">Shop</a>
       </li>
       <li>
-        <a href="#gallery" style="color: white; text-decoration: none"
-          >Gallery</a
-        >
-      </li>
-      <li>
-        <a href="#contact" style="color: white; text-decoration: none"
-          >Contact</a
+        <a href="#contact-us" style="color: white; text-decoration: none"
+          >Contact Us</a
         >
       </li>
     </ul>
