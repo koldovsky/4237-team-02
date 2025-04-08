@@ -1,8 +1,10 @@
 /* Remyha Valeriia */
 @import url('https://fonts.googleapis.com/css2?family=Prata&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     --background-color:#261E1C;
     scroll-behavior: smooth;
     --white-color-title:#FFFFFF;
     --grey-color-text:#898082;/* Remyha Valeriia */
+    --brown-color-text:#c8693a;/* Vita Maksymchenko */
 }
