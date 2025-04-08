@@ -44,7 +44,9 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Oleh Pidhaietskyi
 - Vasyl Plaksiy
 - Lilia Pinchuk
-- Oksana Jevlentjev 
+- Oksana Jevlentjev
 - Ogorodnik Adam
 - Remyha Valeriia
 - Starykov Serhii
+- Milosh Skotsyk
+- Inna Nosyk
