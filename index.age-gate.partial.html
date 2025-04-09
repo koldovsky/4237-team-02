@@ -1,19 +1,19 @@
 <!-- Pavlo Naichuk -->
-<div class="overlay">
-  <div class="modal">
-    <h1>Confirm Your Age</h1>
+<div class="age-gate">
+  <div class="age-gate__modal">
+    <h1 class="age-gate__title">Confirm Your Age</h1>
     <img
       src="./img/index/title-divider.svg"
       alt="Decorative divider"
-      class="decor-divider"
+      class="age-gate__divider"
     />
-    <p>
+    <p class="age-gate__text">
       We don't sell alcohol to minors. Please confirm that you are over 21 years
       old to enter this site.
     </p>
-    <div class="buttons">
-      <button class="yes" onclick="verifyAge()">Yes, I'm 21+</button>
-      <button class="no" onclick="underage()">No, I'm under 21</button>
+    <div class="age-gate__buttons">
+      <button class="age-gate__btn age-gate__btn--yes" onclick="verifyAge()">Yes, I'm 21+</button>
+      <button class="age-gate__btn age-gate__btn--no" onclick="underage()">No, I'm under 21</button>
     </div>
   </div>
 </div>
@@ -23,7 +23,7 @@
 <script>
   function verifyAge() {
     localStorage.setItem("ageVerified", "true");
-    document.querySelector(".overlay")?.remove();
+    document.querySelector(".age-gate")?.remove();
   }
 
   function underage() {
