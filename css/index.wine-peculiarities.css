@@ -1,22 +1,18 @@
 /* Remyha Valeriia */
-.benefits
-{
+.benefits{
     background-color: var(--background-color);
 }
-.benefits__title
-{
+.benefits__title{
     font-family: "Prata", serif;
     color: var(--white-color-title);
     size: 22px;
 }
-.benefits__text
-{
+.benefits__text{
     color: var(--grey-color-text);
     font-family: "Rubik", sans-serif;
     size: 16px;
 }
-.benefits__link
-{
+.benefits__link{
     color: var(--white-color-title);
     font-family: "Rubik", sans-serif;
     size: 15px;
