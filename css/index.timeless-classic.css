@@ -1,4 +1,61 @@
-.timeless-classic__subtitle{
+.timeless-classic__subtitle {
+    font-family: var(--font-calligraphy);
+    font-size: 14px;
+    font-style: normal;
     color: var(--brown-color-text);
-    text-align: left;
+    /* або прямо rgb(200, 105, 58) */
+}
+
+.timeless-classic__title {
+    color: var(--white-color-title);
+    font-family: var(--font-header);
+    font-size: 34px;
+}
+
+
+.timeless-classic__background {
+
+    background: url("../img/index/timeless-classic-bg.jpg") no-repeat center center / cover;
+    background-color: var(--background-color);
+    
+}
+.timeless-classic__description{
+    color: var(--white-color-title);
+    font-family: var(--font-regular);
+    font-size: 18px;
+}
+.timeless-classic__category-title{
+    color: var(--white-color-title);
+    font-family: var(--font-header);
+    font-size: 22px;
+}
+
+.timeless-classic__right__column{
+    flex-basis: 100%;
+    flex-direction: column;
+    
+}
+.timeless-classic__item {
+    color: var(--grey-color-text); /* Твій колір тексту */
+    position: relative; 
+    font-size: 16px;    /* ДУЖЕ ВАЖЛИВО */
+    padding-left: 25px;     /* Простір для тире */
+    margin-bottom: 12px;    /* Відступ знизу */
+    /* Можливо інші твої стилі */
+}
+
+/* Псевдо-елемент для тире */
+.timeless-classic__item::before {
+    content: "-";           /* ДУЖЕ ВАЖЛИВО */
+    position: absolute;     /* ДУЖЕ ВАЖЛИВО */
+    left: 0;                /* Позиція зліва */
+    top: 0;                 /* Позиція зверху (можна коригувати) */
+    color: red;
+    font-size: 16px; /* ТИМЧАСОВО червоний для перевірки - ЗАМІНИ ПОТІМ */
+.timeless-classic__list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+   
+    
 }
