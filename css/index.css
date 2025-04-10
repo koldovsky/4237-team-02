@@ -1,3 +1,5 @@
 @import "./global.css"; /* Remyha Valeriia */
 @import "./index.wine-peculiarities.css"; /* Remyha Valeriia */
 @import "./index.timeless-classic.css"; /* Vita Maksymchenko */
+@import "./index.craft-wines.partial.css";
+@import "./components.css";
