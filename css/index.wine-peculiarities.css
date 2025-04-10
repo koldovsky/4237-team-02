@@ -47,7 +47,7 @@
   }
 
   .benefits__wine__and__cheese {
-    background: url("../img/index/wine-and-cheese.jpg");
+    background-image: url("../img/index/wine-and-cheese.jpg");
     width: 370px;
     height: 477.38px;
     position: relative;
@@ -77,7 +77,7 @@
   }
 
   .benefits__glasses {
-    background: url("../img/index/glasses.jpg");
+    background-image: url("../img/index/glasses.jpg");
     width: 370px;
     height: 477.38px;
     position: relative;
@@ -107,7 +107,7 @@
   }
 
   .benefits__wine__and__grape {
-    background: url("../img/index/wine-and-grape.jpg");
+    background-image: url("../img/index/wine-and-grape.jpg");
     width: 370px;
     height: 477.38px;
     position: relative;
