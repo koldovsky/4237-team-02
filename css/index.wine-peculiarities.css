@@ -48,14 +48,13 @@
 
   .benefits__wine__and__cheese {
     background-image: url("../img/index/wine-and-cheese.jpg");
-    width: 370px;
-    height: 477.38px;
+    max-width: 370px;
+    min-height: 477.38px;
     position: relative;
     display: flex;
     background-size: cover;
     flex-direction: column;
     justify-content: center;
-    color: white;
     padding-top: 5em;
     padding: 0 15px;
     background-position: center;
@@ -69,23 +68,22 @@
       min-width: 302px;
       min-height: 390px;
     }
-
     @media (min-width: 600px) and (max-width: 1023px) {
       grid-column: 1;
       grid-row: 1;
+      margin-bottom: 25px;
     }
   }
 
   .benefits__glasses {
     background-image: url("../img/index/glasses.jpg");
-    width: 370px;
-    height: 477.38px;
+    max-width: 370px;
+    min-height: 477.38px;
     position: relative;
     display: flex;
     flex-direction: column;
     background-size: cover;
     justify-content: center;
-    color: white;
     padding-top: 5em;
     padding: 0 32px;
     background-position: center;
@@ -103,19 +101,19 @@
     @media (min-width: 600px) and (max-width: 1023px) {
       grid-column: 2;
       grid-row: 1;
+      margin-bottom: 25px;
     }
   }
 
   .benefits__wine__and__grape {
     background-image: url("../img/index/wine-and-grape.jpg");
-    width: 370px;
-    height: 477.38px;
+    max-width: 370px;
+    min-height: 477.38px;
     position: relative;
     display: flex;
     flex-direction: column;
     background-size: cover;
     justify-content: center;
-    color: white;
     padding-top: 5em;
     padding: 0 32px;
     background-position: center;
@@ -135,12 +133,14 @@
       justify-self: center;
     }
   }
+
   hr {
     width: 50px;
     justify-content: left;
     position: relative;
     top: 120px;
   }
+
   @media (max-width: 600px) {
     flex-direction: column;
     align-items: center;
