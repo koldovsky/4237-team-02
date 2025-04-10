@@ -8,7 +8,7 @@
 }
 .benefits__wine__and__cheese__title {
   font-family: "Prata", serif;
-  color: var(--white-color-title);
+  color: var(--title-color);
   size: 22px;
 }
 .benefits__wine__and__cheese {
@@ -21,18 +21,20 @@
   justify-content: center;
   color: white;
   padding-top: 5em;
-  padding: 0 32px;
+  padding: 0 15px;
   background-position: center;
   background-color: var(--background-color);
+  margin-right: 20px; 
 }
 
 .benefits__wine__and__cheese__text {
-  color: var(--grey-color-text);
+  color: var(--subtext-color);
   font-family: "Rubik", sans-serif;
   size: 16px;
+  border: 20px; 
 }
 .benefits__wine__and__cheese__link {
-  color: var(--white-color-title);
+  color: var(--title-color);
   font-family: "Rubik", sans-serif;
   size: 15px;
   padding: 0px 32px;
@@ -41,7 +43,7 @@
 
 .benefits__glasses__title {
   font-family: "Prata", serif;
-  color: var(--white-color-title);
+  color: var(--title-color);
   size: 22px;
 }
 .benefits__glasses {
@@ -57,14 +59,15 @@
   padding: 0 32px;
   background-position: center;
   background-color: var(--background-color);
+  margin-right: 20px; 
 }
 .benefits__glasses__text {
-  color: var(--grey-color-text);
+  color: var(--subtext-color);
   font-family: "Rubik", sans-serif;
   size: 16px;
 }
 .benefits__glasses__link {
-  color: var(--white-color-title);
+  color: var(--title-color);
   font-family: "Rubik", sans-serif;
   size: 15px;
   padding: 0px 32px;
@@ -72,7 +75,7 @@
 }
 .benefits__wine__and__grape__title {
   font-family: "Prata", serif;
-  color: var(--white-color-title);
+  color: var(--title-color);
   size: 22px;
 }
 .benefits__wine__and__grape {
@@ -88,14 +91,15 @@
   padding: 0 32px;
   background-position: center;
   background-color: var(--background-color);
+  margin-right: 20px; 
 }
 .benefits__wine__and__grape__text {
-  color: var(--grey-color-text);
+  color: var(--subtext-color);
   font-family: "Rubik", sans-serif;
   size: 16px;
 }
 .benefits__wine__and__grape__link {
-  color: var(--white-color-title);
+  color: var(--title-color);
   font-family: "Rubik", sans-serif;
   size: 15px;
   padding: 0px 32px;
@@ -105,4 +109,5 @@ hr{
    width: 15px;
    justify-content: left;
 }
+
 /* Remyha Valeriia */

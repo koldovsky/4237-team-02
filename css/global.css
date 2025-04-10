@@ -11,8 +11,8 @@
 :root {
     --background-color:#261E1C;
     scroll-behavior: smooth;
-    --white-color-title:#FFFFFF;
-    --grey-color-text:#898082;/* Remyha Valeriia */
+    --title-color:#FFFFFF;
+    --subtext-color:#898082;/* Remyha Valeriia */
     --brown-color-text:#c8693a;/* Vita Maksymchenko */
 
     --font-regular:"Rubik", sans-serif;
