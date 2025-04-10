@@ -48,6 +48,10 @@
         grid-template-columns: 1fr;
         gap: 50px;
 
+        @media (min-width: 480px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
         .craft-wines-container__item {
             display: flex;
             flex-direction: column;
