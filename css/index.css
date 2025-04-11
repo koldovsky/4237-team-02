@@ -6,8 +6,6 @@
 @import "./index.craft-wines.partial.css";
 @import "./components.css";
 @import "./components.css";
-<<<<<<< HEAD
-@import "./blog.css"; /* Inna Nosyk */
-=======
 @import "./index.history-wine-video.partial.css"; /*Bohdan Pustovar*/
->>>>>>> 1a9603011265090fb3a5946cd46d237e16c9657f
+@import "./index.discovery-section.css"; /*Ogorodnik Adam*/
+@import "./blog.css"; /* Inna Nosyk */
