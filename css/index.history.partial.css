@@ -10,9 +10,6 @@
   max-width: 100%;
   display: block;
   margin: 0 auto;
-  border: 10px solid var(--color-accent-primary);
-  box-shadow: 0 0 0 8px #000000;
-  outline: 2px solid #000;
 }
 
 .history__timeline {
@@ -29,7 +26,7 @@
 }
 
 .history__year {
-  color: var(--color-accent-primary);
+  color: var(--ui-brand-color);
   font-style: italic;
   font-size: 16px;
   display: block;
@@ -39,6 +36,7 @@
 .history__title {
   font-family: var(--font-display);
   font-size: 22px;
+  color: var(--title-color);
   margin: 10px 0;
   display: inline-block;
   padding-bottom: 4px;
@@ -49,13 +47,13 @@
   display: block;
   width: 40px;
   height: 2px;
-  background-color: var(--color-accent-primary);
+  background-color: var(--ui-brand-color);
   margin-top: 8px;
 }
 
 .history__description {
   font-size: 15px;
   line-height: 1.6;
-  color: var(--color-text-muted);
+  color: var(--color-text-light);
 }
 /*Pavlo Naichuk */
