@@ -1,4 +1,5 @@
 @import "./global.css"; /* Remyha Valeriia */
+@import "index.age-gate.partial.css"; /* Pavlo Naichuk */
 @import "./index.wine-peculiarities.css"; /* Remyha Valeriia */
 @import "./index.wine-benefits.css"; /* Inna Panchenko */
 @import "./index.timeless-classic.css"; /* Vita Maksymchenko */
@@ -7,5 +8,7 @@
 @import "./components.css";
 @import "./components.css";
 @import "./index.history-wine-video.partial.css"; /*Bohdan Pustovar*/
+@import "index.history.partial.css"; /* Pavlo Naichuk */
 @import "./index.discovery-section.css"; /*Ogorodnik Adam*/
 @import "./blog.css"; /* Inna Nosyk */
+@import "underage.css"; /* Pavlo Naichuk */
