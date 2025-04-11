@@ -1,4 +1,4 @@
-
+/*Pavlo Naichuk */
 .age-gate {
   position: fixed;
   inset: 0;
@@ -10,7 +10,7 @@
 }
 
 .age-gate__modal {
-  background-color: #231916;
+  background-color: var(--background-color);
   padding: 40px 30px;
   width: 95%;
   max-width: 800px;
@@ -21,7 +21,7 @@
 
 .age-gate__title {
   font-size: 42px;
-  color: white;
+  color: var(--title-color);
   margin-bottom: 10px;
 }
 
@@ -32,9 +32,9 @@
 }
 
 .age-gate__text {
-  color: #eee;
+  color: var(--subtext-color);
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-regular);
   margin-bottom: 30px;
   text-align: center;
   white-space: nowrap;
@@ -58,12 +58,13 @@
 }
 
 .age-gate__btn--yes {
-  background-color: #d57136;
-  color: white;
+  background-color: var(--button-orange);
+  color: var(--title-color);
 }
 
 .age-gate__btn--no {
   background-color: transparent;
-  border: 2px solid white;
-  color: white;
+  border: 2px solid var(--title-color);
+  color: var(--title-color);
 }
+/*Pavlo Naichuk */

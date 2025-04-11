@@ -18,4 +18,13 @@
     --font-regular:"Rubik", sans-serif;
     --font-calligraphy:"Great Vibes", cursive; /* каліграфічний шрифт Vita Maksymchenko */
     --font-header:"Prata", serif;
+
+    /*Pavlo Naichuk */
+    --accent-orange: #f48c28;
+    --section-bg: #1d1512;
+    --text-light: #aaa;
+    --text-muted: #bdbdbd;
+    --button-orange: #d57136;
+    --font-display: "Playfair Display", serif;
+    /*Pavlo Naichuk */
 }
