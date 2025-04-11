@@ -148,9 +148,3 @@
     transition: all 0.3s ease-in;
   }
 }
-
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 24px;
-}
