@@ -59,6 +59,7 @@
       display: grid;
       grid-template-columns: 1fr;
       gap: 50px;
+      padding: 0 20px;
       #best-deals__slide-2,
       #best-deals__slide-3 {
         display: none;
