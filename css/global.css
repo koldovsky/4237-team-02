@@ -20,11 +20,10 @@
     --font-header:"Prata", serif;
 
     /*Pavlo Naichuk */
-    --accent-orange: #f48c28;
-    --section-bg: #1d1512;
-    --text-light: #aaa;
-    --text-muted: #bdbdbd;
-    --button-orange: #d57136;
-    --font-display: "Playfair Display", serif;
+    --color-accent-primary: #f48c28;
+    --color-button-primary: #d57136;
+    --color-surface-dark: #1d1512;
+    --color-text-light: #aaa;
+    --color-text-muted: #bdbdbd;
     /*Pavlo Naichuk */
 }

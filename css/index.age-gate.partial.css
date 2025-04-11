@@ -58,7 +58,7 @@
 }
 
 .age-gate__btn--yes {
-  background-color: var(--button-orange);
+  background-color: var(--color-button-primary);
   color: var(--title-color);
 }
 

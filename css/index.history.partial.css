@@ -1,7 +1,7 @@
 /*Pavlo Naichuk */
 .history {
   padding: 50px 40px;
-  background-color: var(--section-bg);
+  background-color: var(--color-surface-dark);
   color: var(--subtext-color);
   font-family: var(--font-regular);
 }
@@ -10,7 +10,7 @@
   max-width: 100%;
   display: block;
   margin: 0 auto;
-  border: 10px solid var(--accent-orange);
+  border: 10px solid var(--color-accent-primary);
   box-shadow: 0 0 0 8px #000000;
   outline: 2px solid #000;
 }
@@ -29,7 +29,7 @@
 }
 
 .history__year {
-  color: var(--accent-orange);
+  color: var(--color-accent-primary);
   font-style: italic;
   font-size: 16px;
   display: block;
@@ -49,13 +49,13 @@
   display: block;
   width: 40px;
   height: 2px;
-  background-color: var(--accent-orange);
+  background-color: var(--color-accent-primary);
   margin-top: 8px;
 }
 
 .history__description {
   font-size: 15px;
   line-height: 1.6;
-  color: var(--text-muted);
+  color: var(--color-text-muted);
 }
 /*Pavlo Naichuk */

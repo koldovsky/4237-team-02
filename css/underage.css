@@ -1,6 +1,6 @@
 /*Pavlo Naichuk */
 body {
-  background: var(--section-bg);
+  background: var(--color-surface-dark);
   color: var(--title-color);
   text-align: center;
   font-family: var(--font-display);
@@ -22,7 +22,7 @@ h1 {
 
 p {
   font-family: var(--font-regular);
-  color: var(--text-light);
+  color: var(--color-text-light);
   font-size: 16px;
   max-width: 600px;
   margin: 0 auto;
