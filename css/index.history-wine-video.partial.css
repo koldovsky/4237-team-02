@@ -1,0 +1,68 @@
+.history-wine-video {
+    display: flex;
+    background-image: url(../img/index/grey-glass.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 840px;
+    flex-direction: column;
+    justify-content: center;
+
+    .history-wine-video__title {
+        font-family: var(--font-calligraphy);
+        font-size: 14px;
+        color: var(--brown-color-text);
+    }
+
+    .history-wine-video__dictum {
+        font-family: var(--font-header), serif;
+        font-size: 58px;
+        color: var(--title-color);
+    }
+
+    .history-wine-video__divider {
+
+    }
+
+    .history-wine-video__description {
+        font-family: var(--font-regular), sans-serif;
+        color: #f2efe9;
+    }
+
+    .history-wine-video__watch-youtube {
+        color: var(--title-color);    
+        font-size: 15px;
+        font-family: var(--font-regular), sans-serif;
+
+        .history-wine-video__link-youtube {
+            text-decoration: none;
+            color: var(--title-color);
+            font-size: 15px;
+            font-family: var(--font-regular), sans-serif;
+        }
+
+        .history-wine-video__arrow {
+            width: 24px;
+        }
+    }
+
+    .video {
+
+        .video__player
+        {
+            width: 300px;
+        }
+
+        .video__button-play{
+            width: 50px;
+            color: var(--brown-color-text);
+            fill: var(--brown-color-text);
+        }
+
+        .video__text{
+            color: var(--title-color);
+            font-family: var(--font-regular);
+            font-size: 14px;
+        }
+    }
+}
