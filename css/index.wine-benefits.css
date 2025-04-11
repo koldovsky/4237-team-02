@@ -1,0 +1,94 @@
+#wine-benefits {
+    background-color: #1d1512;
+    padding: 80px 20px;
+    color: #a8a29e;
+    text-align: center;
+    font-family: 'Georgia', serif;
+  }
+  
+  .wine-benefits__label {
+    font-size: 21px;
+    letter-spacing: normal;
+    color: #C8693A;
+    margin-bottom: 0px;
+    font-family: "Great Vibes", undefined;
+    justify-content: center;
+  }
+  
+  .wine-benefits__title {
+    font-size: 41px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 0px;
+    font-family: Prata, serif;
+    text-align: center;
+    box-sizing: border-box;
+    line-height:53.3px;
+  }
+  
+  .wine-benefits__icon {
+    margin: 0 auto 25px;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 32px;
+  }
+  
+  .wine-benefits__description {
+    font-size: 18px;
+    margin-bottom: 0px;
+    color: #ffffff;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    font-family: Rubik, sans-serif;
+  }
+  
+  .wine-benefits__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .wine-benefits__image {
+    max-width: 300px;
+    height: auto;
+  }
+  
+  .wine-benefits__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .wine-benefits__item {
+    text-align: left;
+  }
+  
+  .wine-benefits__item-title {
+    color: #ffffff;
+    font-size: 22px;
+    position: relative;
+    font-family: Prata, serif;
+  }
+  
+  .wine-benefits__item-title::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #d9743f;
+    margin-top: 8px;
+  }
+  
+  .wine-benefits__item-text {
+    font-size: 16px;
+    color: #898082;
+    font-family: Rubik, sans-serif;
+  }
