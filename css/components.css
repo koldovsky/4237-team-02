@@ -6,6 +6,13 @@
   color: var(--title-color);
   border: none;
   font-weight: bold;
+  border-radius: 2px;
+
+  &:hover {
+    background-color: var(--color-button-pressed);
+    cursor: pointer;
+  }
+  transition: all 0.3s ease-in-out;
 }
 
 .container {
