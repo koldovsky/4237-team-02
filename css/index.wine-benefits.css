@@ -1,5 +1,5 @@
 #wine-benefits {
-    background-color: #1e1614;
+    background-color: #1d1512;
     padding: 80px 20px;
     color: #a8a29e;
     text-align: center;
@@ -7,32 +7,42 @@
   }
   
   .wine-benefits__label {
-    font-size: 14px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #e2c5a0;
-    margin-bottom: 12px;
+    font-size: 21px;
+    letter-spacing: normal;
+    color: #C8693A;
+    margin-bottom: 0px;
+    font-family: "Great Vibes", undefined;
+    justify-content: center;
   }
   
   .wine-benefits__title {
-    font-size: 36px;
-    font-weight: 500;
+    font-size: 41px;
+    font-weight: 400;
     color: #ffffff;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    font-family: Prata, serif;
+    text-align: center;
+    box-sizing: border-box;
+    line-height:53.3px;
   }
   
   .wine-benefits__icon {
-    margin: 0 auto 20px;
+    margin: 0 auto 25px;
     display: block;
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 32px;
   }
   
   .wine-benefits__description {
     font-size: 18px;
-    margin-bottom: 40px;
-    color: #a8a29e;
-    max-width: 500px;
+    margin-bottom: 0px;
+    color: #ffffff;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
+    display:block;
+    font-family: Rubik, sans-serif;
   }
   
   .wine-benefits__content {
@@ -63,9 +73,9 @@
   
   .wine-benefits__item-title {
     color: #ffffff;
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 22px;
     position: relative;
+    font-family: Prata, serif;
   }
   
   .wine-benefits__item-title::after {
@@ -79,5 +89,6 @@
   
   .wine-benefits__item-text {
     font-size: 16px;
-    color: #a8a29e;
+    color: #898082;
+    font-family: Rubik, sans-serif;
   }
