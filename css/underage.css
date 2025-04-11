@@ -1,5 +1,5 @@
 /*Pavlo Naichuk */
-body {
+.underage-page {
   background: var(--color-surface-dark);
   color: var(--title-color);
   text-align: center;
@@ -9,18 +9,18 @@ body {
   margin: 0 auto;
 }
 
-h1 {
+.underage-page h1 {
   font-size: 64px;
   margin-bottom: 20px;
 }
 
-.decor-divider {
+.underage-page .decor-divider {
   margin: 30px auto;
   display: block;
   width: 120px;
 }
 
-p {
+.underage-page p {
   font-family: var(--font-regular);
   color: var(--color-text-light);
   font-size: 16px;
