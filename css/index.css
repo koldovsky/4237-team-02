@@ -1,8 +1,9 @@
 @import "./global.css"; /* Remyha Valeriia */
-@import "index.age-gate.partial.css"; /* Pavlo Naichuk */
 @import "./components.css";
+@import "index.age-gate.partial.css"; /* Pavlo Naichuk */
 @import "./index.wine-peculiarities.css"; /* Remyha Valeriia */
 @import "./index.wine-benefits.css"; /* Inna Panchenko */
+@import "./index.best-deals.partial.css";
 @import "./index.timeless-classic.css"; /* Vita Maksymchenko */
 @import "./index.shopping-cart.css"; /* Lilia.Pinchuk  */
 @import "./index.craft-wines.partial.css";
