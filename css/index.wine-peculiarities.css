@@ -10,9 +10,7 @@
   background-size: cover;
   background-position: center;
 
-  .benefits__wine__and__cheese__title,
-  .benefits__glasses__title,
-  .benefits__wine__and__grape__title {
+  .benefits__title{
     font-family: "Prata", serif;
     color: var(--title-color);
     size: 22px;
@@ -20,9 +18,7 @@
     top: 110px;
   }
 
-  .benefits__wine__and__cheese__text,
-  .benefits__glasses__text,
-  .benefits__wine__and__grape__text {
+  .benefits__text{
     color: var(--subtext-color);
     font-family: "Rubik", sans-serif;
     size: 16px;
@@ -31,9 +27,7 @@
     top: 130px;
   }
 
-  .benefits__wine__and__cheese__link,
-  .benefits__glasses__link,
-  .benefits__wine__and__grape__link {
+  .benefits__link{
     color: var(--title-color);
     font-family: "Rubik", sans-serif;
     size: 15px;
@@ -46,7 +40,7 @@
     }
   }
 
-  .benefits__wine__and__cheese {
+  .benefits__item--wine-cheese{
     background-image: url("../img/index/wine-and-cheese.jpg");
     max-width: 370px;
     min-height: 477.38px;
@@ -75,7 +69,7 @@
     }
   }
 
-  .benefits__glasses {
+  .benefits__item--glasses {
     background-image: url("../img/index/glasses.jpg");
     max-width: 370px;
     min-height: 477.38px;
@@ -105,7 +99,7 @@
     }
   }
 
-  .benefits__wine__and__grape {
+  .benefits__item--wine-grape {
     background-image: url("../img/index/wine-and-grape.jpg");
     max-width: 370px;
     min-height: 477.38px;
