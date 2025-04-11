@@ -1,0 +1,21 @@
+/* Remyha Valeriia */
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+   margin: 0;
+}
+:root {
+    --background-color:#261E1C;
+    scroll-behavior: smooth;
+    --title-color:#FFFFFF;
+    --subtext-color:#898082;/* Remyha Valeriia */
+    --brown-color-text:#c8693a;/* Vita Maksymchenko */
+
+    --font-regular:"Rubik", sans-serif;
+    --font-calligraphy:"Great Vibes", cursive; /* каліграфічний шрифт Vita Maksymchenko */
+    --font-header:"Prata", serif;
+}

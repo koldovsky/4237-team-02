@@ -1,0 +1,159 @@
+/* Remyha Valeriia */
+.benefits {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 657.38px;
+  padding: 60px;
+  background-size: cover;
+  background-position: center;
+
+  .benefits__title {
+    font-family: "Prata", serif;
+    color: var(--title-color);
+    size: 22px;
+    position: relative;
+    top: 110px;
+  }
+
+  .benefits__text {
+    color: var(--subtext-color);
+    font-family: "Rubik", sans-serif;
+    size: 16px;
+    border: 20px;
+    position: relative;
+    top: 130px;
+  }
+
+  .benefits__link {
+    color: var(--title-color);
+    font-family: "Rubik", sans-serif;
+    size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    position: relative;
+    top: 150px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .benefits__item--wine-cheese {
+    background-image: url("../img/index/wine-and-cheese.jpg");
+    max-width: 370px;
+    min-height: 477.38px;
+    position: relative;
+    display: flex;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5em;
+    padding: 0 15px;
+    background-position: center;
+    background-color: var(--background-color);
+    margin-right: 25px;
+    @media (max-width: 600px) {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      background-size: cover;
+      min-width: 302px;
+      min-height: 390px;
+    }
+    @media (min-width: 600px) and (max-width: 1023px) {
+      grid-column: 1;
+      grid-row: 1;
+      margin-bottom: 25px;
+    }
+  }
+
+  .benefits__item--glasses {
+    background-image: url("../img/index/glasses.jpg");
+    max-width: 370px;
+    min-height: 477.38px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    justify-content: center;
+    padding-top: 5em;
+    padding: 0 32px;
+    background-position: center;
+    background-color: var(--background-color);
+    margin-right: 25px;
+    @media (max-width: 600px) {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      background-size: cover;
+      min-width: 302px;
+      min-height: 393px;
+      margin-top: 25px;
+    }
+    @media (min-width: 600px) and (max-width: 1023px) {
+      grid-column: 2;
+      grid-row: 1;
+      margin-bottom: 25px;
+    }
+  }
+
+  .benefits__item--wine-grape {
+    background-image: url("../img/index/wine-and-grape.jpg");
+    max-width: 370px;
+    min-height: 477.38px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    justify-content: center;
+    padding-top: 5em;
+    padding: 0 32px;
+    background-position: center;
+    background-color: var(--background-color);
+    @media (max-width: 600px) {
+      width: 95%;
+      height: 100%;
+      margin: 0 auto;
+      background-size: cover;
+      min-width: 302px;
+      min-height: 393px;
+      margin-top: 25px;
+    }
+    @media (min-width: 600px) and (max-width: 1023px) {
+      grid-column: 1 / span 2;
+      grid-row: 2;
+      justify-self: center;
+    }
+  }
+
+  hr {
+    width: 50px;
+    justify-content: left;
+    position: relative;
+    top: 120px;
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 30px;
+    height: auto;
+    width: auto;
+    min-height: 393px;
+    display: block;
+  }
+
+  @media (min-width: 600px) and (max-width: 1023px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    min: width 320px;
+  }
+}
+/* Remyha Valeriia */

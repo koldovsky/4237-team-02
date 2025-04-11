@@ -1,0 +1,60 @@
+
+.history {
+  padding: 50px 40px;
+  background-color: #1d1512;
+  color: #eee;
+  font-family: "Roboto", sans-serif;
+}
+
+.history__image {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border: 10px solid #f48c28;
+  box-shadow: 0 0 0 8px #000000;
+  outline: 2px solid #000;
+}
+
+.history__timeline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.history__timeline-block {
+  flex: 1 1 200px;
+  max-width: 300px;
+}
+
+.history__year {
+  color: #f48c28;
+  font-style: italic;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.history__title {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  margin: 10px 0;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.history__title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #f48c28;
+  margin-top: 8px;
+}
+
+.history__description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #bdbdbd;
+}

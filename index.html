@@ -4,15 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
+    <title>Wine Store Website</title><!-- Valeriia Remyha -->
+    <link
+    rel="shortcut icon"
+    href="img/global/favicon.png"
+    type="image/x-icon"/>
     <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="css/index.css">  <!-- Valeriia Remyha -->
+  </head>
 <body>
 </body>
     <link
       rel="shortcut icon"
-      href="./img/global/favicon.png"
+      href="img/global/favicon.png"
       type="image/x-icon"
     />
     <script
@@ -75,7 +79,7 @@
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.history.partical.html"
+        data-hx-get="index.history.partial.html"
       ></section>
       <!-- End Pavlo Naichuk -->
 
@@ -111,6 +115,19 @@
        ></section>
       <!-- End Bohdan Pustovar -->
 
+       <!-- Oleh Pidhaietskiy -->
+       <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.wines-cards.partial.html"
+     ></section>
+     <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.discount.partial.html"
+     ></section>
+     <!-- End Oleh Pidhaietskiy -->
+
       <!-- Artem Nykyforuk -->
        <section
         data-hx-trigger="load"
@@ -134,20 +151,20 @@
         data-hx-get="index.blog-articles.partial.html"
       ></section>
       <!-- End Inna Nosyk -->
-
-      <!-- Oleh Pidhaietskiy -->
-      <section
+        
+      <!-- Maksym Mizerniy -->
+       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.wines-cards.partial.html"
-      ></section>
-      <!-- End Oleh Pidhaietskiy -->
+        data-hx-get="index.faq-and-benefits.partial.html"
+       ></section>
+      <!-- End Maksym Mizerniy-->
        
       <!-- Lilia Pinchuk -->
        <section
        data-hx-trigger="load"
        data-hx-swap="outerHTML"
-       data-hx-get="index.shopping cart.partial.html"
+       data-hx-get="index.shopping-cart.partial.html"
      ></section>
      <!-- End Lilia Pinchuk -->
 

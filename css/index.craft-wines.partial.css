@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.craft-wines {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    padding: 90px 0;
+
+    .craft-wines__text-section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding-bottom: 50px;
+
+        .craft-wines__subtitle {
+            font-family: var(--font-calligraphy);
+            color: var(--brown-color-text);
+            font-size: 14px;
+        }
+
+        .craft-wines__title {
+            font-family: var(--font-header);
+            color: var(--title-color);
+            font-size: 34px;
+        }
+
+        .craft-wines__divider {
+            width: 70%;
+            height: auto;
+            margin: auto;
+        }
+        
+        .craft-wines__description {
+            font-family: var(--font-regular);
+            color: var(--title-color);
+            font-size: 18px;
+            line-height: 35px;
+        }
+    }
+
+    .craft-wines-container {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+
+        @media (min-width: 480px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .craft-wines-container__item {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            
+            .craft-wines-container__wines-link {
+                text-decoration: none;
+                color: var(--title-color);
+
+                .craft-wines-container__image {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .craft-wines-container__name {
+                    margin: 8px 0 0 0;
+                    font-size: 18px;
+                    font-family: var(--font-regular);
+                }
+            }
+
+            .craft-wines-container__price {
+                margin: 16px 0 0 0;
+                color: var(--title-color);
+                font-size: 20px;
+                font-family: var(--font-regular);
+                font-weight: bold;
+            }
+
+            .craft-wines-container__button {
+                margin: 24px auto 0;
+            }
+        }
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 24px;
+}
