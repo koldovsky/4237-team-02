@@ -1,30 +1,34 @@
 /* Remyha Valeriia */
-@import url('https://fonts.googleapis.com/css2?family=Prata&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Prata&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
 *,
 *::after,
 *::before {
-   box-sizing: border-box;
-   margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 :root {
-    --background-color:#261E1C;
-    scroll-behavior: smooth;
-    --title-color:#FFFFFF;
-    --subtext-color:#898082;/* Remyha Valeriia */
-    --brown-color-text:#c8693a;/* Vita Maksymchenko */
+  --background-color: #261e1c;
+  scroll-behavior: smooth;
+  --title-color: #ffffff;
+  --subtext-color: #898082; /* Remyha Valeriia */
+  --brown-color-text: #c8693a; /* Vita Maksymchenko */
 
-    --font-regular:"Rubik", sans-serif;
-    --font-calligraphy:"Great Vibes", cursive; /* каліграфічний шрифт Vita Maksymchenko */
-    --font-header:"Prata", serif;
+  --font-regular: "Rubik", sans-serif;
+  --font-calligraphy: "Great Vibes", cursive; /* каліграфічний шрифт Vita Maksymchenko */
+  --font-header: "Prata", serif;
 
-    /*Pavlo Naichuk */
-    --accent-orange: #f48c28;
-    --section-bg: #1d1512;
-    --text-light: #aaa;
-    --text-muted: #bdbdbd;
-    --button-orange: #d57136;
-    --font-display: "Playfair Display", serif;
-    /*Pavlo Naichuk */
+  /*Pavlo Naichuk */
+  --color-button-primary: #d57136;
+  --color-surface-dark: #1d1512;
+  --color-text-light: #aaa;
+  --font-display: "Playfair Display", serif;
+  /*Pavlo Naichuk */
+
+  /*Ogorodnik Adam */
+  --ui-brand-color: #c8693a;
+  --ui-brand-color-hover: #a05630;
+  --title-color-hover: #e9e9e9;
+  /*Ogorodnik Adam */
 }
