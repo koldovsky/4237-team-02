@@ -1,17 +1,23 @@
-/*Pavlo Naichuk */
+/* Pavlo Naichuk */
 .underage-page {
+  min-height: 100vh;
   background: var(--color-surface-dark);
-  color: var(--title-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   font-family: var(--font-display);
-  padding: 100px 20px;
-  max-width: 800px;
-  margin: 0 auto;
+  padding: 40px 20px;
 }
 
 .underage-page h1 {
-  font-size: 64px;
+  font-size: 72px;
+  color: var(--title-color);
+  font-family: var(--font-display);
+  font-weight: 500;
   margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 .underage-page .decor-divider {
@@ -25,6 +31,7 @@
   color: var(--color-text-light);
   font-size: 16px;
   max-width: 600px;
+  line-height: 1.6;
   margin: 0 auto;
 }
-/*Pavlo Naichuk */
+/* Pavlo Naichuk */
