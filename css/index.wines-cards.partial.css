@@ -77,7 +77,7 @@
 }
 .wine-cards__button{
     display: block;
-    background-color: var(--accent-orange);
+    background-color: var(--color-button-primary);
     position: absolute;
     padding: 15px;
     top: 70%;
