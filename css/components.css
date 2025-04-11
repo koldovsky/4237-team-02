@@ -1,9 +1,14 @@
-*.orange_button {
-    padding: 15px 25px;
-    background-color: var(--brown-color-text);
-    font-size: 15px;
-    font-family: var(--regular-font);
-    color: var(--title-color);
-    border: none;
-    font-weight: bold;
+.orange_button {
+  padding: 15px 25px;
+  background-color: var(--brown-color-text);
+  font-size: 15px;
+  font-family: var(--regular-font);
+  color: var(--title-color);
+  border: none;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
 }

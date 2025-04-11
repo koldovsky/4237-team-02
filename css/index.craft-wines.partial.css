@@ -48,9 +48,6 @@
       color: var(--title-color);
       font-size: 18px;
       line-height: 35px;
-
-      @media (min-width: 767px) {
-      }
     }
   }
 
@@ -110,10 +107,4 @@
       }
     }
   }
-}
-
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 24px;
 }
