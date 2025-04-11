@@ -10,7 +10,7 @@
   background-size: cover;
   background-position: center;
 
-  .benefits__title{
+  .benefits__title {
     font-family: "Prata", serif;
     color: var(--title-color);
     size: 22px;
@@ -18,7 +18,7 @@
     top: 110px;
   }
 
-  .benefits__text{
+  .benefits__text {
     color: var(--subtext-color);
     font-family: "Rubik", sans-serif;
     size: 16px;
@@ -27,7 +27,7 @@
     top: 130px;
   }
 
-  .benefits__link{
+  .benefits__link {
     color: var(--title-color);
     font-family: "Rubik", sans-serif;
     size: 15px;
@@ -40,7 +40,7 @@
     }
   }
 
-  .benefits__item--wine-cheese{
+  .benefits__item--wine-cheese {
     background-image: url("../img/index/wine-and-cheese.jpg");
     max-width: 370px;
     min-height: 477.38px;
