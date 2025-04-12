@@ -25,6 +25,8 @@
   --color-surface-dark: #1d1512;
   --color-text-light: #aaa;
   --font-display: "Playfair Display", serif;
+  --overlay-dark: rgba(0, 0, 0, 0.7);
+  --box-shadow-dark: 0 0 20px rgba(0, 0, 0, 0.6);
   /*Pavlo Naichuk */
 
   /*Ogorodnik Adam */
