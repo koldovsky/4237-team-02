@@ -2,7 +2,7 @@
 .age-gate {
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--overlay-dark);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +16,7 @@
   max-width: 800px;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  box-shadow: var(--box-shadow-dark);
 }
 
 .age-gate__title {
