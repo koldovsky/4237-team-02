@@ -67,4 +67,59 @@
   border: 2px solid var(--title-color);
   color: var(--title-color);
 }
+
+@media screen and (max-width: 600px) {
+  .age-gate {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background-color: var(--overlay-dark);
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+
+  .age-gate__modal {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0 0 15px;
+    background-color: var(--background-color);
+    padding: 24px 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: var(--box-shadow-dark);
+  }
+
+  .age-gate__title {
+    font-size: 26px;
+    margin-bottom: 16px;
+  }
+
+  .age-gate__divider {
+    width: 80px;
+    margin: 0 auto 20px;
+  }
+
+  .age-gate__text {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+  }
+
+  .age-gate__buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .age-gate__btn {
+    width: 100%;
+    font-size: 15px;
+    padding: 12px;
+  }
+}
 /*Pavlo Naichuk */
