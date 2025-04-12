@@ -1,4 +1,4 @@
-/*Pavlo Naichuk */
+/*Pavlo Naichuk*/
 .age-gate {
   position: fixed;
   inset: 0;
@@ -78,11 +78,10 @@
     overflow-y: auto;
     box-sizing: border-box;
   }
-
+  
   .age-gate__modal {
-    width: 100%;
-    max-width: 400px;
-    margin: 20px 0 0 15px;
+    width: clamp(300px, 90vw, 400px);
+    margin: 20px 0 0 clamp(10px, 5vw, 30px);
     background-color: var(--background-color);
     padding: 24px 20px;
     border-radius: 10px;
@@ -90,17 +89,17 @@
     box-sizing: border-box;
     box-shadow: var(--box-shadow-dark);
   }
-
+  
   .age-gate__title {
     font-size: 26px;
     margin-bottom: 16px;
   }
-
+  
   .age-gate__divider {
-    width: 80px;
+    width: clamp(60px, 15vw, 80px);
     margin: 0 auto 20px;
   }
-
+  
   .age-gate__text {
     font-size: 14px;
     line-height: 1.5;
@@ -110,16 +109,71 @@
     overflow: visible;
     text-overflow: unset;
   }
-
+  
   .age-gate__buttons {
     flex-direction: column;
     gap: 10px;
   }
-
+  
   .age-gate__btn {
     width: 100%;
     font-size: 15px;
     padding: 12px;
   }
 }
-/*Pavlo Naichuk */
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .age-gate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    background-color: var(--overlay-dark);
+    overflow-y: auto;
+    z-index: 9999;
+  }
+  
+  .age-gate__modal {
+    width: clamp(400px, 70vw, 700px);
+    margin: 20px 20px 0 20px;
+    background-color: var(--background-color);
+    padding: 32px;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: var(--box-shadow-dark);
+  }
+  
+  .age-gate__title {
+    font-size: 26px;
+    margin-bottom: 16px;
+  }
+  
+  .age-gate__divider {
+    width: clamp(60px, 15vw, 80px);
+    margin: 0 auto 20px;
+  }
+  
+  .age-gate__text {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+  }
+  
+  .age-gate__buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .age-gate__btn {
+    width: 100%;
+    font-size: 15px;
+    padding: 12px;
+  }
+}
+/* Pavlo Naichuk */
