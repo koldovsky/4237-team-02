@@ -13,7 +13,7 @@
 
     .best-deals__subtitle {
       font-family: var(--font-calligraphy);
-      color: var(--brown-color-text);
+      color: var(--calligraphy-color-text);
       font-size: 14px;
 
       @media (min-width: 767px) {
