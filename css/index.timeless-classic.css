@@ -66,30 +66,30 @@
     font-family: var(--font-calligraphy);
     font-size: 28px;
     font-style: normal;
-    color: var(--brown-color-text);
+    color: var(--calligraphy-color-text);
 
 }
 
 .timeless-classic__title {
-    color: var(--white-color-title);
+    color: var(--title-color);
     font-family: var(--font-header);
     font-size: 34px;
 }
 
 .timeless-classic__description {
-    color: var(--white-color-title);
+    color: var(--title-color);
     font-family: var(--font-regular);
     font-size: 18px;
 }
 
 .timeless-classic__category-title {
-    color: var(--white-color-title);
+    color: var(--title-color);
     font-family: var(--font-header);
     font-size: 22px;
 }
 
 .timeless-classic__item {
-    color: var(--grey-color-text);
+    color: var(--subtext-color);
     position: relative;
     font-size: 16px;
     padding-left: 25px;
@@ -102,7 +102,7 @@
 .timeless-classic__item::before {
     /* Псевдо-елемент для тире */
     content: "\2014";
-    color: var(--brown-color-text);
+    color: var(--calligraphy-color-text);
     font-size: 16px;
 }
 
