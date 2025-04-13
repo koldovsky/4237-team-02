@@ -68,6 +68,32 @@
   color: var(--title-color);
 }
 
+@media screen and (max-width: 1100px) {
+  .age-gate__modal {
+    width: clamp(320px, 80vw, 600px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .age-gate__modal {
+    width: clamp(300px, 85vw, 500px);
+    padding: 28px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .age-gate__buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .age-gate__btn {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .age-gate {
     display: block;
@@ -78,7 +104,7 @@
     overflow-y: auto;
     box-sizing: border-box;
   }
-  
+
   .age-gate__modal {
     width: clamp(300px, 90vw, 400px);
     margin: 20px 0 0 clamp(10px, 5vw, 30px);
@@ -89,17 +115,17 @@
     box-sizing: border-box;
     box-shadow: var(--box-shadow-dark);
   }
-  
+
   .age-gate__title {
     font-size: 26px;
     margin-bottom: 16px;
   }
-  
+
   .age-gate__divider {
     width: clamp(60px, 15vw, 80px);
     margin: 0 auto 20px;
   }
-  
+
   .age-gate__text {
     font-size: 14px;
     line-height: 1.5;
@@ -109,12 +135,12 @@
     overflow: visible;
     text-overflow: unset;
   }
-  
+
   .age-gate__buttons {
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .age-gate__btn {
     width: 100%;
     font-size: 15px;
@@ -122,58 +148,5 @@
   }
 }
 
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  .age-gate {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    inset: 0;
-    background-color: var(--overlay-dark);
-    overflow-y: auto;
-    z-index: 9999;
-  }
-  
-  .age-gate__modal {
-    width: clamp(400px, 70vw, 700px);
-    margin: 20px 20px 0 20px;
-    background-color: var(--background-color);
-    padding: 32px;
-    border-radius: 10px;
-    text-align: center;
-    box-sizing: border-box;
-    box-shadow: var(--box-shadow-dark);
-  }
-  
-  .age-gate__title {
-    font-size: 26px;
-    margin-bottom: 16px;
-  }
-  
-  .age-gate__divider {
-    width: clamp(60px, 15vw, 80px);
-    margin: 0 auto 20px;
-  }
-  
-  .age-gate__text {
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    text-align: center;
-    white-space: normal;
-    overflow: visible;
-    text-overflow: unset;
-  }
-  
-  .age-gate__buttons {
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .age-gate__btn {
-    width: 100%;
-    font-size: 15px;
-    padding: 12px;
-  }
-}
+
 /* Pavlo Naichuk */
