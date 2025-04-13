@@ -1,3 +1,4 @@
-cart__header {
-    display: inline-block;
+.cart__header {
+    display: flex;
+    justify-content: space-between;
 }
