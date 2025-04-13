@@ -1,48 +1,56 @@
-.timeless-classic {
+.timeless {
     display: block;
-    min-width: 320px;
-    flex-basis: 100%;
     position: relative;
     box-sizing: border-box;
+}
+
+.timeless__section {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
     background: url("../img/index/timeless-classic-bg.jpg") no-repeat center center / cover;
     background-color: var(--background-color);
     background-size: cover;
-    background-position: left;
-    min-height: 900px;
-    padding-top: var(--w-section-vertical-offset);
-    padding-bottom: var(--w-section-vertical-offset);
+    background-attachment: scroll, scroll;
+    background-clip: border-box, border-box;
+    background-origin: padding-box, padding-box;
+    background-repeat: no-repeat, repeat;
 }
-
-.timeless-classic__background {
+    
+.timeless__text__section {
     display: block;
-    margin: auto;
-    max-width: 1200px;
-}
-.timeless-classic__text__section {
-    display: flex;
     flex-basis: 100%;
     min-width: 320px;
     position: relative;
     box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
 }
 
+.timeless__text__block1 {
+    display: block;
+    max-width: 1200px;
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 1200px;
+}
 
-.timeless-classic__left__side {
+.timeless__text__block3 {
     display: flex;
-    flex-basis: 50%;
-    padding-left: 15px;
-    padding-right: 15px;
+    justify-content: center;
 }
 
-.timeless-classic__left__column {
-    flex-basis: 100%;
-    flex-direction: column;
+.timeless__text__inner {
+    box-sizing: border-box;
     display: flex;
-    justify-content: flex-start;
-    
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
-.timeless-classic__right__side {
+.timeless__left__side {
     display: flex;
     flex-basis: 50%;
     padding-left: 15px;
@@ -50,66 +58,111 @@
     max-width: 50%;
 }
 
-.timeless-classic__right__column {
+.timeless__left__column {
+    flex-basis: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.timeless__right__side {
+    display: flex;
+    flex-basis: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 50%;
+}
+
+.timeless__right__column {
     flex-basis: 100%;
     flex-direction: column;
     display: flex;
     justify-content: flex-start;
     flex-basis: 100%;
     max-width: 100%;
-    flex-grow: 1;
-
 }
 
-
-.timeless-classic__subtitle {
+.timeless__subtitle {
     font-family: var(--font-calligraphy);
     font-size: 28px;
     font-style: normal;
     color: var(--calligraphy-color-text);
+}
+
+.timeless__divider {
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 25px;
+    overflow: hidden;
 
 }
 
-.timeless-classic__title {
+.timeless__picture {
+    max-width: 100%;
+    min-height: 32px ;
+    line-height: 25.6px;
+}
+
+.timeless__title {
     color: var(--title-color);
     font-family: var(--font-header);
     font-size: 34px;
 }
 
-.timeless-classic__description {
+.timeless__description {
     color: var(--title-color);
     font-family: var(--font-regular);
     font-size: 18px;
 }
 
-.timeless-classic__category-title {
+.timeless__category {
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    justify-content: flex-start;
+    margin-top: 25px;
+    max-width: 100%;
     color: var(--title-color);
     font-family: var(--font-header);
     font-size: 22px;
 }
 
-.timeless-classic__item {
-    color: var(--subtext-color);
+.timeless__category__block {
+    line-height: 33px;
+    text-align: left;
+}
+
+.timeless__category-text {
+    color: var(--title-color);
+    font-family: var(--font-header);
+    font-size: 22px;
+}
+
+.timeless__list {
     position: relative;
-    font-size: 16px;
-    padding-left: 25px;
-    margin-bottom: 12px;
+    box-sizing: border-box;
     display: block;
-    position: relative;
+    justify-content: flex-start;
+    margin-top: 20px;
+    max-width: 100%;
+
+}
+
+.timeless__list__block {
+    display: block;
+    box-sizing: border-box;
+}
+
+
+.timeless__list__content {
+    color: var(--subtext-color);
+    font-size: 16px;
     font-family: var(--font-regular);
 }
 
-.timeless-classic__item::before {
-    /* Псевдо-елемент для тире */
-    content: "\2014";
+.timeless__list__pin{
     color: var(--calligraphy-color-text);
     font-size: 16px;
-}
-
-.timeless-classic__list {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 0;
-    font-family: var(--font-regular);
-    font-weight: 400;
 }
