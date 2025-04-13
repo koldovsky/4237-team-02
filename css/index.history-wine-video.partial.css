@@ -22,6 +22,11 @@
             width: 700px;
         }
 
+        @media (min-width: 1024px)
+        {
+            width: 1024px;
+        }
+
         @media (min-width: 1440px){
             padding: 0px;
             width: 1200px;
@@ -121,15 +126,37 @@
             }
 
             .video {
+                position: relative;
+                margin-top: 50px;
+
+                @media (min-width: 768px)
+                {
+                    top: 100px;
+                }
+
+                @media (min-width: 1024px)
+                {
+                    top: 50px;
+                }
 
                 .video__player
                 {
-                    width: 100%;
-                    margin-top: 50px;;
-                    /* visibility: hidden; потрібно розкоментувати коли на конпку прикріплю js */ 
+                    width: 270px;
+                    /*visibility: hidden; /*потрібно розкоментувати коли на конпку прикріплю js  */
+                    position: relative;
+                    z-index: 1;                    
+
+                    @media (min-width: 768px)
+                    {
+                        width: 100%;                        
+                    }
                 }
 
                 .video__button-play {
+                    position: absolute;
+                    top: 30%;
+                    left: 10px;
+                    z-index: 2;
 
                     .video__button-play-icon{
                         width: 50px;

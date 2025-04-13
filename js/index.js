@@ -1,4 +1,5 @@
 // Jevlentjev Oksana
+
 function init() {
   import("./global.header-burger.js");
 }
@@ -12,4 +13,5 @@ document.body.addEventListener("htmx:afterOnLoad", () => {
   loadedPartialsCount++;
   if (loadedPartialsCount === totalPartials) init();
 });
+
 // Jevlentjev Oksana
