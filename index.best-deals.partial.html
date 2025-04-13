@@ -1,66 +1,88 @@
 <!-- Lekhiv Oleh -->
 <section class="best-deals" id="best-deals">
-    <p class="best-deals__subtitle">Best deals</p>
-    <h2 class="best-deals__title">Wines to Every Table</h2>
-    <img class="best-deals__divider" src="./img/index/title-divider.svg" alt="elegant divider">
-    <p class="best-deals__description">
-        Shop our best-selling wines. Click on the product images to see the details.
-    </p>
-
-    <div class="best-deals-carousel">
-        <div class="best-deals-carousel__track-container">
-            <ul class="best-deals-carousel__track">
-                <li class="best-deals-carousel__slide">
-                    <a class="best-deals-carousel__link" href="#">
-                        <img class="best-deals-carousel__image" src="./img/index/wine-bootle-green.jpg"
-                            alt="Cabernet wine bottle">
-                        <h4 class="best-deals-carousel__name">Cabernet</h4>
-                    </a>
-                    <p class="best-deals-carousel__price">17,00 USD</p>
-                    <button class="best-deals-carousel__add-to-cart">Add to cart</button>
-                </li>
-
-                <li class="best-deals-carousel__slide">
-                    <a class="best-deals-carousel__link" href="#">
-                        <img class="best-deals-carousel__image" src="./img/index/wine-bootle-white.jpg"
-                            alt="Sauvignon Blanc wine bottle">
-                        <h4 class="best-deals-carousel__name">Sauvignon Blanc</h4>
-                    </a>
-                    <p class="best-deals-carousel__price">17,00 USD</p>
-                    <button class="best-deals-carousel__add-to-cart">Add to cart</button>
-                </li>
-
-                <li class="best-deals-carousel__slide">
-                    <a class="best-deals-carousel__link" href="#">
-                        <img class="best-deals-carousel__image" src="./img/index/wine-bootle-green.jpg"
-                            alt="Syrah wine bottle">
-                        <h4 class="best-deals-carousel__name">Syrah</h4>
-                    </a>
-                    <p class="best-deals-carousel__price">17,00 USD</p>
-                    <button class="best-deals-carousel__add-to-cart">Add to cart</button>
-                </li>
-
-                <li class="best-deals-carousel__slide">
-                    <a class="best-deals-carousel__link" href="#">
-                        <img class="best-deals-carousel__image" src="./img/index/wine-bootle-white.jpg"
-                            alt="Pinot Grigio wine bottle">
-                        <h4 class="best-deals-carousel__name">Pinot Grigio</h4>
-                    </a>
-                    <p class="best-deals-carousel__price">17,00 USD</p>
-                    <button class="best-deals-carousel__add-to-cart">Add to cart</button>
-                </li>
-            </ul>
-        </div>
-
-        <button class="best-deals-carousel__button best-deals-carousel__button--left" type="button">←</button>
-        <button class="best-deals-carousel__button best-deals-carousel__button--right" type="button">→</button>
-
-        <div class="best-deals-carousel__nav">
-            <button class="best-deals-carousel__indicator best-deals-carousel__indicator--active" type="button"
-                data-slide-to="0"></button>
-            <button class="best-deals-carousel__indicator" type="button" data-slide-to="1"></button>
-            <button class="best-deals-carousel__indicator" type="button" data-slide-to="2"></button>
-            <button class="best-deals-carousel__indicator" type="button" data-slide-to="3"></button>
-        </div>
+  <div class="container">
+    <div class="best-deals__text-section">
+      <p class="best-deals__subtitle">Best deals</p>
+      <h2 class="best-deals__title">Wines to Every Table</h2>
+      <img
+        class="best-deals__divider"
+        src="./img/index/title-divider.svg"
+        alt="elegant divider"
+      />
+      <p class="best-deals__description">
+        Shop our best-selling wines. Click on the product images to see the
+        details.
+      </p>
     </div>
+    <div class="best-deals-carousel">
+      <!-- <button
+        class="best-deals-carousel__button best-deals-carousel__button--left"
+        type="button"
+      >
+        ←
+      </button> -->
+
+      <ul class="best-deals-carousel__track">
+        <li class="best-deals-carousel__slide" id="best-deals__slide-1">
+          <a class="best-deals-carousel__link" href="#">
+            <img
+              class="best-deals-carousel__image"
+              src="./img/index/wine-bootle-green.jpg"
+              alt="Cabernet wine bottle"
+            />
+            <h4 class="best-deals-carousel__name">Cabernet</h4>
+          </a>
+          <p class="best-deals-carousel__price">17,00 USD</p>
+          <button class="best-deals-carousel__add-to-cart orange_button">
+            Add to cart
+          </button>
+        </li>
+
+        <li class="best-deals-carousel__slide" id="best-deals__slide-2">
+          <a class="best-deals-carousel__link" href="#">
+            <img
+              class="best-deals-carousel__image"
+              src="./img/index/wine-bootle-white.jpg"
+              alt="Sauvignon Blanc wine bottle"
+            />
+            <h4 class="best-deals-carousel__name">Sauvignon Blanc</h4>
+          </a>
+          <p class="best-deals-carousel__price">17,00 USD</p>
+          <button class="best-deals-carousel__add-to-cart orange_button">
+            Add to cart
+          </button>
+        </li>
+
+        <li class="best-deals-carousel__slide" id="best-deals__slide-3">
+          <a class="best-deals-carousel__link" href="#">
+            <img
+              class="best-deals-carousel__image"
+              src="./img/index/wine-bootle-green.jpg"
+              alt="Syrah wine bottle"
+            />
+            <h4 class="best-deals-carousel__name">Syrah</h4>
+          </a>
+          <p class="best-deals-carousel__price">17,00 USD</p>
+          <button class="best-deals-carousel__add-to-cart orange_button">
+            Add to cart
+          </button>
+        </li>
+      </ul>
+
+      <!-- <button
+        class="best-deals-carousel__button best-deals-carousel__button--right"
+        type="button"
+      >
+        →
+      </button> -->
+    </div>
+    <div class="best-deals-carousel__nav">
+      <button
+        class="best-deals-carousel__indicator best-deals-carousel__indicator--active"
+      ></button>
+      <button class="best-deals-carousel__indicator"></button>
+      <button class="best-deals-carousel__indicator"></button>
+      <button class="best-deals-carousel__indicator"></button>
+    </div>
+  </div>
 </section>

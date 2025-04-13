@@ -1,41 +1,35 @@
 /* Remyha Valeriia */
 .benefits {
   background-color: var(--background-color);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 657.38px;
-  padding: 60px;
-  background-size: cover;
   background-position: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  min-width: 320px;
 
-  .benefits__wine__and__cheese__title,
-  .benefits__glasses__title,
-  .benefits__wine__and__grape__title {
-    font-family: "Prata", serif;
+  .benefits__title {
+    font-family: var(--font-header);
     color: var(--title-color);
     size: 22px;
     position: relative;
     top: 110px;
   }
 
-  .benefits__wine__and__cheese__text,
-  .benefits__glasses__text,
-  .benefits__wine__and__grape__text {
+  .benefits__text {
     color: var(--subtext-color);
-    font-family: "Rubik", sans-serif;
+    font-family: var(--font-regular);
     size: 16px;
     border: 20px;
     position: relative;
     top: 130px;
   }
 
-  .benefits__wine__and__cheese__link,
-  .benefits__glasses__link,
-  .benefits__wine__and__grape__link {
+  .benefits__link {
     color: var(--title-color);
-    font-family: "Rubik", sans-serif;
+    font-family: var(--font-regular);
     size: 15px;
     font-weight: 700;
     text-decoration: none;
@@ -46,7 +40,7 @@
     }
   }
 
-  .benefits__wine__and__cheese {
+  .benefits__item--wine-cheese {
     background-image: url("../img/index/wine-and-cheese.jpg");
     max-width: 370px;
     min-height: 477.38px;
@@ -60,6 +54,9 @@
     background-position: center;
     background-color: var(--background-color);
     margin-right: 25px;
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 25px;
     @media (max-width: 600px) {
       width: 100%;
       height: 100%;
@@ -68,14 +65,9 @@
       min-width: 302px;
       min-height: 390px;
     }
-    @media (min-width: 600px) and (max-width: 1023px) {
-      grid-column: 1;
-      grid-row: 1;
-      margin-bottom: 25px;
-    }
   }
 
-  .benefits__glasses {
+  .benefits__item--glasses {
     background-image: url("../img/index/glasses.jpg");
     max-width: 370px;
     min-height: 477.38px;
@@ -89,6 +81,9 @@
     background-position: center;
     background-color: var(--background-color);
     margin-right: 25px;
+    grid-column: 2;
+    grid-row: 1;
+    margin-bottom: 25px;
     @media (max-width: 600px) {
       width: 100%;
       height: 100%;
@@ -98,14 +93,9 @@
       min-height: 393px;
       margin-top: 25px;
     }
-    @media (min-width: 600px) and (max-width: 1023px) {
-      grid-column: 2;
-      grid-row: 1;
-      margin-bottom: 25px;
-    }
   }
 
-  .benefits__wine__and__grape {
+  .benefits__item--wine-grape {
     background-image: url("../img/index/wine-and-grape.jpg");
     max-width: 370px;
     min-height: 477.38px;
@@ -118,6 +108,9 @@
     padding: 0 32px;
     background-position: center;
     background-color: var(--background-color);
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    justify-self: center;
     @media (max-width: 600px) {
       width: 95%;
       height: 100%;
@@ -126,11 +119,6 @@
       min-width: 302px;
       min-height: 393px;
       margin-top: 25px;
-    }
-    @media (min-width: 600px) and (max-width: 1023px) {
-      grid-column: 1 / span 2;
-      grid-row: 2;
-      justify-self: center;
     }
   }
 
@@ -152,14 +140,14 @@
     display: block;
   }
 
-  @media (min-width: 600px) and (max-width: 1023px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
+  @media (min-width: 1023px) {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    height: auto;
-    width: auto;
-    min: width 320px;
+    align-items: center;
+    height: 657.38px;
+    padding: 60px;
+    background-size: cover;
   }
 }
 /* Remyha Valeriia */

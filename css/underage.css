@@ -1,28 +1,56 @@
-body {
-        background: #1d1512;
-        color: white;
-        text-align: center;
-        font-family: "Playfair Display", serif;
-        padding: 100px 20px;
-        max-width: 800px;
-        margin: 0 auto;
-      }
+/* Pavlo Naichuk */
+.underage-page {
+  min-height: 100vh;
+  background: var(--color-surface-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: var(--font-display);
+  padding: 40px 20px;
+}
 
-      h1 {
-        font-size: 64px;
-        margin-bottom: 20px;
-      }
+.underage-page h1 {
+  font-size: 72px;
+  color: var(--title-color);
+  font-family: var(--font-display);
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
 
-      .decor-divider {
-        margin: 30px auto;
-        display: block;
-        width: 120px;
-      }
+.underage-page .decor-divider {
+  margin: 30px auto;
+  display: block;
+  width: 120px;
+}
 
-      p {
-        font-family: "Roboto", sans-serif;
-        color: #aaa;
-        font-size: 16px;
-        max-width: 600px;
-        margin: 0 auto;
-      }
+.underage-page p {
+  font-family: var(--font-regular);
+  color: var(--color-text-light);
+  font-size: 16px;
+  max-width: 600px;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+  .underage-page {
+    padding: 30px 16px;
+  }
+
+  .underage-page h1 {
+    font-size: 40px;
+    line-height: 1.3;
+  }
+
+  .underage-page .decor-divider {
+    margin: 20px auto;
+    width: 90px;
+  }
+
+  .underage-page p {
+    font-size: 14px;
+  }
+}
+/* Pavlo Naichuk */
