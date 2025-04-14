@@ -26,12 +26,19 @@
 
   <body>
     <!-- Oksana Jevlentjev -->
-    <header>
-      <nav
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="global.header-nav.partial.html"
-      ></nav>
+    <header class="header-background">
+      <div class="container">
+        <!-- 1440px -->
+        <div class="navbar-container">
+          <!-- 1200px -->
+          <nav
+            class="navbar"
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="global.header-nav.partial.html"
+          ></nav>
+        </div>
+      </div>
     </header>
     <!-- End Oksana Jevlentjev -->
 
