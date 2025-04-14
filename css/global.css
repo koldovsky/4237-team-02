@@ -57,9 +57,9 @@
   --menu-font-weight: 500; /* Товщина шрифту меню */
   --menu-color: #ffffff; /* Колір пунктів меню */
 
-  --link-color: #ffffff; /* Колір текстових посилань */
+  --link-color: #ffffff;; /* Колір текстових посилань */
   --icon-size: 26px; /* Розмір SVG-іконок */
-  --icon-default-color: #ffffff; /* Базовий колір іконок */
+  --icon-default-color: #221f1f; /* Базовий колір іконок */
   /*--ui-brand-color-hover: #a05630;*/
 
   --container-max-width: 1440px; /* максимальна ширина сайту */
