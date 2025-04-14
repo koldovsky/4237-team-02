@@ -66,6 +66,10 @@
   font-size: var(--navbar-font-size); /* Розмір шрифту, наприклад, 14px */
 }
 
+.navbar__item a:hover {
+  color: var(--ui-brand-color-hover);
+}
+
 .navbar__icons {
   display: flex;
   gap: var(--navbar-icons-gap);
