@@ -5,9 +5,9 @@
 *,
 *::after,
 *::before {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 :root {
   --background-color: #261e1c;
@@ -36,4 +36,36 @@
   /*Ogorodnik Adam */
 
   --color-button-pressed: #b0542c;
+
+  /*Jevlentjev Oksana*/
+  --header-height: 100px; /* Висота хедера */
+  --black-transparent: rgba(0, 0, 0, 0.6); /* Чорний колір з прозорістю 60% */
+
+  --navbar-padding-y: 30px; /* Внутрішній відступ зверху та знизу */
+  --navbar-padding-x: 40px; /* Внутрішній відступ зліва та справа */
+
+  --logo-width: 176px; /* Ширина логотипа */
+  --logo-height: auto; /* Висота логотипа — автоматична */
+  --logo-padding-left: 20px;
+
+  --navbar-gap: 45px; /* Відстань між меню та іконками */
+  --navbar-padding-right: 20px; /* Відступ справа в блоці з іконками */
+  --navbar-icons-gap: 15px; /* Відстань між іконками соцмереж */
+
+  --navbar-menu-gap: 20px; /* Відстань між пунктами меню */
+  --navbar-font-size: 14px; /* Розмір шрифту в меню */
+  --menu-font-weight: 500; /* Товщина шрифту меню */
+  --menu-color: #ffffff; /* Колір пунктів меню */
+
+  --link-color: #ffffff; /* Колір текстових посилань */
+  --icon-size: 26px; /* Розмір SVG-іконок */
+  --icon-default-color: #ffffff; /* Базовий колір іконок */
+  /*--ui-brand-color-hover: #a05630;*/
+
+  --container-max-width: 1440px; /* максимальна ширина сайту */
+  --container-padding: 0 40px; /* Внутрішні відступи зліва/справа */
+
+  --navbar-inner-width: 1200px; /* Максимальна ширина navbar */
+
+  /*--font-regular: "Rubik", sans-serif;*/
 }
