@@ -89,10 +89,30 @@
   color: var(--ui-brand-color-hover); /* або orange, або інший */
 }
 
-/* Example SVG size override, if needed later */
-/*
-  .navbar__icon--insta .navbar__icon-svg {
-    width: var(--icon-size);
-    height: var(--icon-size);
-  }
-  */
+/* === SVG ICON STYLES === */
+
+/* === Base styles (для всіх іконок) === */
+.svg-bg {
+  fill: var(--svg-bg-color);
+  transition: fill 0.3s ease;
+}
+
+.svg-border {
+  fill: var(--svg-border-color);
+  transition: fill 0.3s ease;
+}
+
+.svg-logo {
+  fill: var(--svg-logo-color);
+  transition: fill 0.3s ease;
+}
+
+/* === Hover (загальні стилі для іконок у ховері) === */
+.navbar__icon:hover .svg-bg,
+.navbar__icon:hover .svg-border {
+  fill: var(--svg-hover-bg-color); /* Оранжевий фон при наведенні */
+}
+
+.navbar__icon:hover .svg-logo {
+  fill: var(--svg-hover-logo-color); /* Темний логотип при наведенні */
+}

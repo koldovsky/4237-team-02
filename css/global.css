@@ -37,34 +37,34 @@
 
   --color-button-pressed: #b0542c;
 
-  /*Jevlentjev Oksana*/
+  /* Jevlentjev Oksana */
   /* Загальні параметри */
-  --header-height: 100px; /* Висота хедера */
-  --black-transparent: rgba(0, 0, 0, 0.6); /* Чорний з 60% прозорості */
+  --header-height: 100px;
+  --black-transparent: rgba(0, 0, 0, 0.6);
 
   /* Контейнер */
-  --container-max-width: 1440px; /* Максимальна ширина головного контейнера */
-  --container-padding: 0 40px; /* Внутрішні відступи зліва/справа */
-  --navbar-padding-x: 40px; /* Внутрішній відступ зліва/справа */
-  --navbar-padding-y: 30px; /* Внутрішній відступ зверху і знизу */
+  --container-max-width: 1440px;
+  --container-padding: 0 40px;
+  --navbar-padding-x: 40px;
+  --navbar-padding-y: 30px;
 
   /* Логотип */
-  --logo-width: 176px; /* Ширина логотипа */
-  --logo-height: auto; /* Автоматична висота логотипа */
-  --logo-padding-left: 20px; /* Відступ логотипа зліва */
+  --logo-width: 176px;
+  --logo-height: auto;
+  --logo-padding-left: 20px;
 
   /* Меню */
-  --navbar-font-size: 14px; /* Розмір шрифту пунктів меню */
-  --menu-font-weight: 500; /* Товщина шрифту меню */
-  --link-color: #ffffff; /* Колір тексту меню */
-  --menu-color: #ffffff; /* Колір пунктів меню */
-  --ui-brand-color-hover: #c8693a; /* Колір іконок при наведенні */
-  --navbar-menu-gap: 20px; /* Відстань між пунктами меню */
-  /*--font-regular: "Rubik", sans-serif; /* Основний шрифт меню */
+  --navbar-font-size: 14px;
+  --menu-font-weight: 500;
+  --link-color: #ffffff;
+  --menu-color: #ffffff;
+  --ui-brand-color-hover: #c8693a;
+  --navbar-menu-gap: 20px;
+  /* --font-regular: "Rubik", sans-serif; */
 
   /* Блок меню + іконки */
-  --navbar-gap: 45px; /* Відстань між меню та іконками */
-  --navbar-padding-right: 20px; /* Відступ справа в блоці з іконками */
+  --navbar-gap: 45px;
+  --navbar-padding-right: 20px;
 
   /* Іконки соцмереж */
   --navbar-icons-gap: 15px; /* Відстань між іконками */
@@ -72,6 +72,15 @@
   --icon-default-color: #ffffff; /* Стандартний колір іконки */
   --ui-brand-color-hover: #c8693a; /* Колір іконок при наведенні */
 
+  /* SVG Іконки (нормальний стан) */
+  --svg-bg-color: #261e1c; /* Темний фон */
+  --svg-border-color: #c8693a; /* Оранжевий кант */
+  --svg-logo-color: #c8693a; /* Оранжевий логотип */
+
+  /* SVG Іконки (hover) */
+  --svg-hover-bg-color: #c8693a; /* оранжеве тло при ховері */
+  --svg-hover-logo-color: #261e1c; /* темний логотип при ховері */
+
   /* Ширина всередині navbar */
-  --navbar-inner-width: 1200px; /* Внутрішня максимальна ширина хедера */
+  --navbar-inner-width: 1200px;
 }
