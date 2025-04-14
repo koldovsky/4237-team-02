@@ -3,19 +3,34 @@
   background-color: var(--background-color);
   background-position: center;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0px;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: 2, 1fr;
   grid-template-rows: auto auto;
   justify-content: center;
   height: auto;
   width: auto;
   min-width: 320px;
-
+  min-height: 657.38px;
+  padding: 60px;
+  top: 200px;
+  left: 30px;
   .benefits__title {
     font-family: var(--font-header);
     color: var(--title-color);
-    size: 22px;
-    position: relative;
-    top: 110px;
+    size: 18px;
+    position: absolute;
+    top: 230px;
+    left: 30px;
+    @media (max-width: 600px) {
+      top: 200px;
+      left: 30px;
+    }
+    @media (min-width: 1023px) {
+      top: 250px;
+      left: 30px;
+    }
   }
 
   .benefits__text {
@@ -23,8 +38,18 @@
     font-family: var(--font-regular);
     size: 16px;
     border: 20px;
-    position: relative;
-    top: 130px;
+    position: absolute;
+    top: 300px;
+    left: 30px;
+    right: 10px;
+    @media (max-width: 600px) {
+      top: 250px;
+      left: 30px;
+    }
+    @media (min-width: 1023px) {
+      top: 320px;
+      left: 30px;
+    }
   }
 
   .benefits__link {
@@ -33,30 +58,38 @@
     size: 15px;
     font-weight: 700;
     text-decoration: none;
-    position: relative;
-    top: 150px;
+    position: absolute;
+    top: 390px;
+    left: 30px;
     &:hover {
       text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      top: 350px;
+      left: 30px;
+    }
+    @media (min-width: 1023px) {
+      top: 390px;
+      left: 30px;
     }
   }
 
   .benefits__item--wine-cheese {
     background-image: url("../img/index/wine-and-cheese.jpg");
     max-width: 370px;
+    min-width: 280px;
+    width: 100%;
     min-height: 477.38px;
     position: relative;
-    display: flex;
     background-size: cover;
-    flex-direction: column;
     justify-content: center;
     padding-top: 5em;
     padding: 0 15px;
     background-position: center;
     background-color: var(--background-color);
-    margin-right: 25px;
     grid-column: 1;
     grid-row: 1;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     @media (max-width: 600px) {
       width: 100%;
       height: 100%;
@@ -65,25 +98,31 @@
       min-width: 302px;
       min-height: 390px;
     }
+    @media (min-width: 1440px) {
+      margin-left: 260px;
+    }
+    @media (min-width: 1023px) {
+      margin-left: 0px;
+    }
   }
 
   .benefits__item--glasses {
     background-image: url("../img/index/glasses.jpg");
     max-width: 370px;
+    min-width: 302px;
+    width: 100%;
     min-height: 477.38px;
     position: relative;
-    display: flex;
-    flex-direction: column;
     background-size: cover;
     justify-content: center;
     padding-top: 5em;
     padding: 0 32px;
     background-position: center;
     background-color: var(--background-color);
-    margin-right: 25px;
     grid-column: 2;
     grid-row: 1;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+    margin-left: 20px;
     @media (max-width: 600px) {
       width: 100%;
       height: 100%;
@@ -93,15 +132,18 @@
       min-height: 393px;
       margin-top: 25px;
     }
+    @media (min-width: 1023px) {
+      margin-left: 10px;
+    }
   }
 
   .benefits__item--wine-grape {
     background-image: url("../img/index/wine-and-grape.jpg");
     max-width: 370px;
+    min-width: 302px;
+    width: 100%;
     min-height: 477.38px;
     position: relative;
-    display: flex;
-    flex-direction: column;
     background-size: cover;
     justify-content: center;
     padding-top: 5em;
@@ -115,22 +157,47 @@
       width: 95%;
       height: 100%;
       margin: 0 auto;
+      position: relative;
       background-size: cover;
       min-width: 302px;
       min-height: 393px;
       margin-top: 25px;
     }
+    @media (min-width: 1023px) {
+      grid-column: 3;
+      grid-row: 1;
+      justify-self: auto;
+      margin-left: 20px;
+    }
   }
 
-  hr {
+  .benefits__divider {
+    position: absolute;
+    color: #f75c0f;
+    size: initial;
+    z-index: 10;
     width: 50px;
-    justify-content: left;
-    position: relative;
-    top: 120px;
+    height: 2px;
+    background-color: #fa5604;
+    border: none;
+    margin: 1rem 0;
+    top: 280px;
+    left: 30px;
+    @media (max-width: 600px) {
+      top: 270px;
+      left: 30px;
+    }
+    @media (min-width: 1023px) {
+      top: 300px;
+      left: 30px;
+    }
+    @media (min-width: 1440px) {
+      top: 280px;
+      left: 30px;
+    }
   }
-
   @media (max-width: 600px) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     align-items: center;
     padding: 15px;
     gap: 30px;
@@ -139,15 +206,11 @@
     min-height: 393px;
     display: block;
   }
-
   @media (min-width: 1023px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 657.38px;
-    padding: 60px;
-    background-size: cover;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-auto-flow: row;
+    grid-template-rows: 80% 20%;
   }
 }
 /* Remyha Valeriia */
