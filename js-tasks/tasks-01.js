@@ -29,5 +29,9 @@ function greet(name, owner) {
     return "Hello guest";
   }
 }
+//https://www.codewars.com/kata/grasshopper-messi-goals-function/train/javascript
 
+function goals(laLigaGoals = 0, copaDelReyGoals = 0, championsLeagueGoals = 0) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
 
