@@ -145,6 +145,7 @@
    return (flower1 + flower2) % 2 === 1;
  }
 
+ //Artem Nykyforuk
 //https://www.codewars.com/kata/grasshopper-messi-goals-function/train/javascript
 function goals(laLigaGoals = 0, copaDelReyGoals = 0, championsLeagueGoals = 0) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
