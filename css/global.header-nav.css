@@ -1,22 +1,3 @@
-/* Контейнер як на Weblium */
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Додай якщо треба центрувати внутрішній блок */
-  max-width: var(--container-max-width); /* 1440px */
-  padding: var(--navbar-padding-y) var(--container-padding-x); /* 30px 40px */
-  margin: 0 auto;
-  background-color: var(--black-transparent); /* Прозорий чорний фон */
-
-  height: var(--header-height); /* Встановлюємо висоту контейнера */
-}
-
-.navbar-container {
-  max-width: var(--navbar-inner-width); /* 1200px */
-  margin: 0 auto;
-  width: 100%;
-}
-
 /* Фон з паралаксом */
 .header-background {
   background: url("../img/global/background-image.jpeg") no-repeat center
@@ -25,13 +6,29 @@
   width: 100%;
   background-attachment: fixed;
 }
+/* Контейнер як на Weblium */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Додай якщо треба центрувати внутрішній блок */
+  max-width: var(--container-max-width); /* 1440px */
+  padding: var(--navbar-padding-y) var(--container-padding-x); /* 30px 40px */
+  margin: 0 auto;
+  background-color: var(--black-transparent); /* Прозорий чорний фон */
+  height: var(--header-height); /* Встановлюємо висоту контейнера */
+}
+/*.navbar-container {
+  max-width: var(--navbar-inner-width); /* 1200px 
+  margin: 0 auto;
+  width: 100%;
+}*/
 
 .navbar {
-  max-width: 1200px;
+  max-width: var(--navbar-inner-width); /* 1200px */
   margin: 0 auto;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Лого зліва, меню справа */
   align-items: center;
   height: 100%; /* Займає всю висоту контейнера */
   /* background-color: var(--black-transparent); 🔥 Видаляємо */
@@ -91,21 +88,35 @@
 
 /* === SVG ICON STYLES === */
 
-/* === Base styles (для всіх іконок) === */
+/*=== Base styles (для всіх іконок) ===*/
 .svg-bg {
   fill: var(--svg-bg-color);
   transition: fill 0.3s ease;
 }
 
 .svg-border {
-  fill: var(--svg-border-color);
-  transition: fill 0.3s ease;
+  stroke: var(--svg-border-color);
+  stroke-width: 2;
 }
 
 .svg-logo {
   fill: var(--svg-logo-color);
   transition: fill 0.3s ease;
+}*/
+
+/* цей вставила YouTube SVG styling 
+.youtube-icon .svg-bg {
+  fill: var(--svg-bg-color);
 }
+
+.youtube-icon .svg-border {
+  stroke: var(--svg-border-color);
+  stroke-width: 2;
+}
+
+.youtube-icon .svg-logo {
+  fill: var(--svg-logo-color);
+}*/
 
 /* === Hover (загальні стилі для іконок у ховері) === */
 .navbar__icon:hover .svg-bg,
