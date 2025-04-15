@@ -34,4 +34,23 @@
   line-height: 1.6;
   margin: 0 auto;
 }
+@media screen and (max-width: 600px) {
+  .underage-page {
+    padding: 30px 16px;
+  }
+
+  .underage-page h1 {
+    font-size: 40px;
+    line-height: 1.3;
+  }
+
+  .underage-page .decor-divider {
+    margin: 20px auto;
+    width: 90px;
+  }
+
+  .underage-page p {
+    font-size: 14px;
+  }
+}
 /* Pavlo Naichuk */

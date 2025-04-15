@@ -13,8 +13,8 @@
 
     .craft-wines__subtitle {
       font-family: var(--font-calligraphy);
-      color: var(--brown-color-text);
-      font-size: 14px;
+      color: var(--calligraphy-color-text);
+      font-size: 14px; 
 
       @media (min-width: 767px) {
         font-size: 21px;

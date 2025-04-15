@@ -5,16 +5,16 @@
 *,
 *::after,
 *::before {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 :root {
   --background-color: #261e1c;
   scroll-behavior: smooth;
   --title-color: #ffffff;
   --subtext-color: #898082; /* Remyha Valeriia */
-  --brown-color-text: #c8693a; /* Vita Maksymchenko */
+  --calligraphy-color-text: #c8693a; /* Vita Maksymchenko */
 
   --font-regular: "Rubik", sans-serif;
   --font-calligraphy: "Great Vibes", cursive; /* каліграфічний шрифт Vita Maksymchenko */
@@ -25,6 +25,8 @@
   --color-surface-dark: #1d1512;
   --color-text-light: #aaa;
   --font-display: "Playfair Display", serif;
+  --overlay-dark: rgba(0, 0, 0, 0.7);
+  --box-shadow-dark: 0 0 20px rgba(0, 0, 0, 0.6);
   /*Pavlo Naichuk */
 
   /*Ogorodnik Adam */
@@ -34,4 +36,51 @@
   /*Ogorodnik Adam */
 
   --color-button-pressed: #b0542c;
+
+  /* Jevlentjev Oksana */
+  /* Загальні параметри */
+  --header-height: 100px;
+  --black-transparent: rgba(0, 0, 0, 0.6);
+
+  /* Контейнер */
+  --container-max-width: 1440px;
+  --container-padding: 0 40px;
+  --navbar-padding-x: 40px;
+  --navbar-padding-y: 30px;
+
+  /* Логотип */
+  --logo-width: 176px;
+  --logo-height: auto;
+  --logo-padding-left: 20px;
+
+  /* Меню */
+  --navbar-font-size: 14px;
+  --menu-font-weight: 500;
+  --link-color: #ffffff;
+  --menu-color: #ffffff;
+  --ui-brand-color-hover: #c8693a;
+  --navbar-menu-gap: 20px;
+  /* --font-regular: "Rubik", sans-serif; */
+
+  /* Блок меню + іконки */
+  --navbar-gap: 45px;
+  --navbar-padding-right: 20px;
+
+  /* Іконки соцмереж */
+  --navbar-icons-gap: 15px; /* Відстань між іконками */
+  --icon-size: 26px; /* Розмір SVG-іконок */
+  --icon-default-color: #ffffff; /* Стандартний колір іконки */
+  --ui-brand-color-hover: #c8693a; /* Колір іконок при наведенні */
+
+  /* SVG Іконки (нормальний стан) */
+  --svg-bg-color: #261e1c; /* Темний фон */
+  --svg-border-color: #c8693a; /* Оранжевий кант */
+  --svg-logo-color: #c8693a; /* Оранжевий логотип */
+
+  /* SVG Іконки (hover) */
+  --svg-hover-bg-color: #c8693a; /* оранжеве тло при ховері */
+  --svg-hover-logo-color: #261e1c; /* темний логотип при ховері */
+
+  /* Ширина всередині navbar */
+  --navbar-inner-width: 1200px;
 }

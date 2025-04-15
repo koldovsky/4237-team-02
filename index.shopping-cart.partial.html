@@ -1,76 +1,103 @@
-<section class="cart">
-  <header class="cart__header">
-    <h2 class="cart__title">Shopping cart</h2>
-    <button class="cart__close-btn" aria-label="Close cart">×</button>
-  </header>
+<div
+  class="modal fade"
+  id="shopping-cart"
+  tabindex="-1"
+  aria-labelledby="shopping-cartLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="shopping-cartLabel">Shopping cart</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <!-- ВСТАВЛЯЄМО СЮДИ ТВОЮ СЕКЦІЮ -->
+        <section class="cart">
+          <h3 class="cart__subtitle">Products</h3>
 
-  <h3 class="cart__subtitle">Products</h3>
+          <ul class="cart__items" id="cart-items"></ul>
 
-  <ul class="cart__items" id="cart-items"></ul>
+          <div class="cart__promo">
+            <label class="cart__promo-label" for="promo-code">Promo code</label>
+            <input
+              class="cart__promo-input"
+              type="text"
+              id="promo-code"
+              placeholder="Enter promo code"
+            />
+            <button class="cart__promo-btn">OK</button>
+          </div>
 
-  <div class="cart__promo">
-    <label class="cart__promo-label" for="promo-code">Promo code</label>
-    <input
-      class="cart__promo-input"
-      type="text"
-      id="promo-code"
-      placeholder="Enter promo code"
-    />
-    <button class="cart__promo-btn">OK</button>
+          <p class="cart__total">
+            Total:: <strong id="cart-total">0.00USD</strong>
+          </p>
+
+          <h3 class="cart__subtitle">Place an order</h3>
+
+          <form class="cart__form" action="#" method="POST">
+            <div class="cart__form-group">
+              <label class="cart__form-label" for="name"
+                >Name <span>*</span></label
+              >
+              <input
+                class="cart__form-input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+
+            <div class="cart__form-group">
+              <label class="cart__form-label" for="email"
+                >Email <span>*</span></label
+              >
+              <input
+                class="cart__form-input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email address"
+                required
+              />
+            </div>
+
+            <div class="cart__form-group">
+              <label class="cart__form-label" for="phone"
+                >Phone <span>*</span></label
+              >
+              <input
+                class="cart__form-input"
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Your phone"
+                required
+              />
+            </div>
+
+            <div class="cart__form-group">
+              <label class="cart__form-label" for="comment">Comment</label>
+              <textarea
+                class="cart__form-input"
+                id="comment"
+                name="comment"
+                placeholder="Your comment"
+                rows="3"
+              ></textarea>
+            </div>
+
+            <button class="cart__order-btn" type="submit">Order</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </div>
-
-  <p class="cart__total">Total:: <strong id="cart-total">0.00USD</strong></p>
-
-  <h3 class="cart__subtitle">Place an order</h3>
-
-  <form class="cart__form" action="#" method="POST">
-    <div class="cart__form-group">
-      <label class="cart__form-label" for="name">Name <span>*</span></label>
-      <input
-        class="cart__form-input"
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Your name"
-        required
-      />
-    </div>
-
-    <div class="cart__form-group">
-      <label class="cart__form-label" for="email">Email <span>*</span></label>
-      <input
-        class="cart__form-input"
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Your email address"
-        required
-      />
-    </div>
-
-    <div class="cart__form-group">
-      <label class="cart__form-label" for="phone">Phone <span>*</span></label>
-      <input
-        class="cart__form-input"
-        type="tel"
-        id="phone"
-        name="phone"
-        placeholder="Your phone"
-        required
-      />
-    </div>
-
-    <div class="cart__form-group">
-      <label class="cart__form-label" for="comment">Comment</label>
-      <textarea
-        class="cart__form-input"
-        id="comment"
-        name="comment"
-        placeholder="Your comment"
-        rows="3"
-      ></textarea>
-    </div>
-
-    <button class="cart__order-btn" type="submit">Order</button>
-  </form>
-</section>
+</div>

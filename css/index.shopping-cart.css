@@ -1,3 +1,26 @@
-cart__header {
-    display: inline-block;
+.modal-dialog {
+    max-width: 400px;
+    margin: 2rem auto;
+    font-family: "Rubik", sans-serif;
+}
+    .modal-content {
+        border: none;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+        background-color: #fff;
+}
+.modal-header{     
+    text-color: var (--background-color);
+    padding: 16px;
+}
+    .modal-title {
+        font-size: 18px;  
+    }
+    .btn-close {
+        opacity: 0.6
+        text-color: var (--background-color); 
+    }
+.cart-subtitle {
+    font-size: 12px;
+    margin: 0px 0px 16px;
 }
