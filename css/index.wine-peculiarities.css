@@ -3,7 +3,6 @@
   background-color: var(--background-color);
   background-position: center;
   display: grid;
-  column-gap: 0px;
   justify-content: center;
   justify-items: center;
   grid-template-columns: 2, 1fr;
@@ -72,6 +71,7 @@
       top: 390px;
       left: 30px;
     }
+
   }
 
   .benefits__item--wine-cheese {
@@ -97,13 +97,14 @@
       background-size: cover;
       min-width: 302px;
       min-height: 390px;
-    }
-    @media (min-width: 1440px) {
-      margin-left: 260px;
-    }
-    @media (min-width: 1023px) {
       margin-left: 0px;
     }
+    @media (min-width: 1024px) {
+      margin-left:0px;
+    } 
+    @media (min-width: 1440px) {
+      margin-left: 150px;
+    } 
   }
 
   .benefits__item--glasses {
@@ -131,10 +132,15 @@
       min-width: 302px;
       min-height: 393px;
       margin-top: 25px;
+      margin-left: 0px;
     }
-    @media (min-width: 1023px) {
-      margin-left: 10px;
-    }
+    @media (min-width: 1024px) {
+      margin-left:10px;
+    } 
+    @media (min-width: 1440px) {
+      margin-left:50px;
+    } 
+    
   }
 
   .benefits__item--wine-grape {
@@ -153,6 +159,7 @@
     grid-column: 1 / span 2;
     grid-row: 2;
     justify-self: center;
+    
     @media (max-width: 600px) {
       width: 95%;
       height: 100%;
@@ -162,13 +169,20 @@
       min-width: 302px;
       min-height: 393px;
       margin-top: 25px;
+      margin-left: 0px;
     }
-    @media (min-width: 1023px) {
+    @media (min-width: 1024px) {
       grid-column: 3;
       grid-row: 1;
       justify-self: auto;
-      margin-left: 20px;
+      margin-left:20px;
     }
+    @media (min-width: 1440px) {
+      grid-column: 3;
+      grid-row: 1;
+      justify-self: auto;
+      margin-left:-50px;
+    } 
   }
 
   .benefits__divider {
@@ -184,7 +198,7 @@
     top: 280px;
     left: 30px;
     @media (max-width: 600px) {
-      top: 270px;
+      top: 210px;
       left: 30px;
     }
     @media (min-width: 1023px) {
@@ -192,10 +206,11 @@
       left: 30px;
     }
     @media (min-width: 1440px) {
-      top: 280px;
+      top:280px;
       left: 30px;
     }
   }
+
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
     align-items: center;
@@ -208,7 +223,6 @@
   }
   @media (min-width: 1023px) {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto auto;
     grid-auto-flow: row;
     grid-template-rows: 80% 20%;
   }
