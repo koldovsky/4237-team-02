@@ -1,10 +1,19 @@
 @import "./global.css"; /* Remyha Valeriia */
+@import "./components.css";
+@import "./index.age-gate.partial.css"; /* Pavlo Naichuk */
+@import "./global.header-nav.css"; /* Jevlentjev Oksana */
 @import "./index.wine-peculiarities.css"; /* Remyha Valeriia */
 @import "./index.wine-benefits.css"; /* Inna Panchenko */
-@import "./index.timeless-classic.css"; /* Vita Maksymchenko */
+@import "./index.best-deals.partial.css";
 @import "./index.shopping-cart.css"; /* Lilia.Pinchuk  */
 @import "./index.craft-wines.partial.css";
-@import "./components.css";
-@import "./components.css";
 @import "./index.history-wine-video.partial.css"; /*Bohdan Pustovar*/
+@import "./index.wines-cards.partial.css"; /* Oleh Pidhaietskiy */
+@import "./index.discount.partial.css"; /* Oleh Pidhaietskiy */
+@import "./index.history.partial.css"; /* Pavlo Naichuk */
+@import "./index.discovery-section.css"; /*Ogorodnik Adam*/
 @import "./blog.css"; /* Inna Nosyk */
+@import "./index.timeless-classic.css"; /* Vita Maksymchenko */
+@import "./global.footer.css"; /* Jevlentjev Oksana */
+@import "./underage.css"; /* Pavlo Naichuk */
+@import "./index.faq-and-benefits.css" /* Maksym Mizerniy*/

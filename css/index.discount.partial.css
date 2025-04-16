@@ -1,0 +1,67 @@
+.discount {
+  color: #ffffff;
+  width: 100%;
+  background-color: var(--background-color);
+  padding-bottom: 50px;
+  font-family: var(--font-regular);
+  padding: 0 20px;
+}
+
+.discount__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 50px 20px;
+  background-color: #c4602b;
+  background-image: url("../img/index/wine-discount.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
+.discount__title {
+  font-size: 48px;
+  font-family: var(--font-header);
+  margin-bottom: 2%;
+  line-height: 52px;
+}
+
+.discount__text {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 2%;
+}
+
+.discount__button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 2px;
+}
+.discount__button:hover {
+  background-color: #ffffff;
+  color: #c4602b;
+}
+@media (max-width: 768px) {
+  .discount__title {
+    font-size: 34px;
+    line-height: 38px;
+  }
+
+  .discount__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .discount__button {
+    text-align: center;
+    width: 40%;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

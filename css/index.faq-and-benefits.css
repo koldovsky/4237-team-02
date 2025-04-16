@@ -1,0 +1,129 @@
+.faq-benefits {
+    background-color: var(--background-color);
+    padding: 40px;
+    color: var(--title-color);
+}
+
+.faq-benefits__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faq-benefits__faq {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.faq-benefits__label {
+    color: var(--calligraphy-color-text);
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    font-family: var(--font-calligraphy);
+    display: block;
+}
+
+.faq-benefits__title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: var(--font-header);
+    display: block;
+}
+
+.faq-benefits__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.faq-benefits__item {
+    border-bottom: 1px solid #555;
+    margin-bottom: 15px;
+}
+
+.faq-benefits__item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.faq-benefits__details {
+    padding-bottom: 15px;
+}
+
+.faq-benefits__question {
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-header);
+}
+
+.faq-benefits__question::after {
+    content: '+';
+    font-size: 1.5em;
+    color: var(--title-color);
+}
+
+.faq-benefits__details[open] .faq-benefits__question::after {
+    content: '-';
+}
+
+.faq-benefits__answer {
+    padding-top: 10px;
+    line-height: 1.6;
+    font-family: var(--font-regular);
+    color: var(--subtext-color);
+}
+
+.faq-benefits__image-block {
+    flex-shrink: 0;
+}
+
+.faq-benefits__image {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .faq-benefits {
+        padding: 20px;
+    }
+
+    .faq-benefits__container {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .faq-benefits__faq {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .faq-benefits__label {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+    }
+
+    .faq-benefits__title {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .faq-benefits__image-block {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .faq-benefits__question {
+        font-size: 1em;
+    }
+
+    .faq-benefits__question::after {
+        font-size: 1.2em;
+    }
+}
