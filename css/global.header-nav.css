@@ -17,11 +17,6 @@
   background-color: var(--black-transparent); /* Прозорий чорний фон */
   height: var(--header-height); /* Встановлюємо висоту контейнера */
 }
-/*.navbar-container {
-  max-width: var(--navbar-inner-width); /* 1200px 
-  margin: 0 auto;
-  width: 100%;
-}*/
 
 .navbar {
   max-width: var(--navbar-inner-width); /* 1200px */
@@ -111,4 +106,101 @@
 
 .navbar__icon:hover .svg-logo {
   fill: var(--svg-hover-logo-color); /* Темний логотип при наведенні */
+}
+
+/* === Бургер-кнопка === */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.burger__line {
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Анімація бургер-кнопки */
+.burger.active .burger__line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.burger.active .burger__line:nth-child(2) {
+  opacity: 0;
+}
+.burger.active .burger__line:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* === Мобільна адаптація === */
+@media (max-width: 900px) {
+  .burger {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+
+  .navbar__right {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #1a1a1a;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    z-index: 1000;
+  }
+
+  .navbar__right.is-open {
+    height: calc(100vh - var(--header-height));
+  }
+
+  /* Меню */
+  .navbar__menu {
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .navbar__menu.is-open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .navbar__item {
+    text-align: center;
+  }
+
+  .navbar__item a {
+    display: block;
+    padding: 10px 0;
+    font-size: var(--mobile-menu-font-size);
+  }
+
+  /* Іконки соцмереж */
+  .navbar__icons {
+    flex-direction: row;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .navbar__icons.is-open {
+    opacity: 1;
+    pointer-events: all;
+  }
 }

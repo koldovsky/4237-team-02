@@ -1,28 +1,35 @@
 // Jevlentjev Oksana
-// Get DOM elements
-const burger = document.querySelector(".header__burger");
-const nav = document.querySelector(".header__nav");
-const menuLinks = document.querySelectorAll(".header__menu-link");
+// === global.header-burger.js ===
+// Скрипт керує бургер-меню та блокуванням скролу
 
-// Toggle menu function
-function toggleMenu() {
-  burger.classList.toggle("is-active");
-  nav.classList.toggle("is-open");
-  document.body.classList.toggle("no-scroll");
-}
+console.log("✅ Бургер-файл підключено!");
 
-// Close menu function
-function closeMenu() {
-  burger.classList.remove("is-active");
-  nav.classList.remove("is-open");
-  document.body.classList.remove("no-scroll");
-}
+document.body.addEventListener("htmx:afterOnLoad", () => {
+  const burger = document.querySelector(".burger");
+  const navbarRight = document.querySelector(".navbar__right");
+  const menuLinks = document.querySelectorAll(".navbar__menu a");
 
-// Add click event listener to burger button
-burger.addEventListener("click", toggleMenu);
+  console.log("burger 👉", burger);
+  console.log("navbarRight 👉", navbarRight);
+  console.log("menuLinks 👉", menuLinks);
 
-// Add click event listeners to all menu links
-menuLinks.forEach((link) => {
-  link.addEventListener("click", closeMenu);
+  if (!burger || !navbarRight) {
+    console.warn("❌ Не знайдено .burger або .navbar__right");
+    return;
+  }
+
+  const toggleMenu = () => {
+    burger.classList.toggle("active");
+    navbarRight.classList.toggle("is-open");
+    document.body.classList.toggle("no-scroll");
+  };
+
+  const closeMenu = () => {
+    burger.classList.remove("active");
+    navbarRight.classList.remove("is-open");
+    document.body.classList.remove("no-scroll");
+  };
+
+  burger.addEventListener("click", toggleMenu);
+  menuLinks.forEach((link) => link.addEventListener("click", closeMenu));
 });
-// Jevlentjev Oksana

@@ -9,6 +9,13 @@
   margin: 0;
   padding: 0;
 }
+/*Jevlentjev Oksana*/
+/* Заборона скролу при відкритому бургер-меню */
+body.no-scroll {
+  overflow: hidden;
+}
+/*Jevlentjev Oksana*/
+
 :root {
   --background-color: #261e1c;
   scroll-behavior: smooth;
@@ -83,4 +90,16 @@
 
   /* Ширина всередині navbar */
   --navbar-inner-width: 1200px;
+
+  /* ===== ДОДАНО: бургер-меню і мобільне меню ===== */
+
+  --burger-width: 30px; /* ширина кнопки бургер */
+  --burger-height: 25px; /* висота кнопки бургер */
+  --burger-line-height: 3px; /* висота лінії бургер-меню */
+  --burger-line-color: #ffffff; /* колір ліній бургер-меню */
+
+  --mobile-menu-bg: #1a1a1a; /* фон мобільного меню */
+  --mobile-menu-text-color: #ffffff; /* текст у мобільному меню */
+  --mobile-menu-font-size: 20px; /* розмір тексту */
+  --mobile-menu-gap: 20px; /* відстань між пунктами меню */
 }
