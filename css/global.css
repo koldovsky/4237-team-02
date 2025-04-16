@@ -83,4 +83,10 @@
 
   /* Ширина всередині navbar */
   --navbar-inner-width: 1200px;
-}
+
+  /*Inna Nosyk */
+  --background-color: #261E1C;       /* Темный фон */
+  --primary-color: #c8693a;          /* Заголовки */
+  --text-color: #e0d7d3;             /* Основний світлий текст */
+  --accent-color: #f48c28;           /* Дата або підкреслювання */
+  }
