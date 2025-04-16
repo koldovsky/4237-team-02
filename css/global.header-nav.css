@@ -17,6 +17,11 @@
   background-color: var(--black-transparent); /* Прозорий чорний фон */
   height: var(--header-height); /* Встановлюємо висоту контейнера */
 }
+/*.navbar-container {
+  max-width: var(--navbar-inner-width); /* 1200px 
+  margin: 0 auto;
+  width: 100%;
+}*/
 
 .navbar {
   max-width: var(--navbar-inner-width); /* 1200px */
