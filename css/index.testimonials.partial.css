@@ -1,0 +1,218 @@
+/* Vasyl Plaksiy */
+.testimonials {
+    padding: 50px 25px;
+    /*background-color: #1a1512;*/
+    background: var(--background-color) url("../img/index/grape-bunch.webp") no-repeat center center / contain;
+    font-family: var(--font-regular);
+    text-align: center;
+    color: #fff;
+    border-top: solid 1px rgb(38, 30, 28);
+}
+
+.testimonials__title {
+    font-size: 14px;
+    font-family: var(--font-calligraphy);
+    color: var(--ui-brand-color);
+}
+
+.testimonials__subtitle {
+    font-size: 34px;
+    margin: 20px 0 0 0;
+    font-family: var(--font-header);
+}
+
+.testimonials__sep {
+    margin: 20px 0 0 0;
+}
+
+.testimonials__text {
+    margin: 20px 0 0 0;
+    font-size: 18px;
+}
+
+.testimonials__carousel {
+    margin: 45px 0 0 0;
+    position: relative;
+    padding: 0 30px 35px 30px;
+}
+
+.testimonials__carousel-container {
+    overflow: hidden;
+}
+
+.testimonials__carousel-track {
+    width: 300%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials__carousel-slide {
+    font-size: 16px;
+    width: 100%;
+    color: rgb(137, 128, 130);
+}
+
+.testimonials__carousel-slide p {
+    margin: 0 auto;
+    max-width: 740px;
+}
+
+.testimonials__carousel-button {
+    display: none;
+}
+
+.testimonials__carousel-button--prev {
+
+}
+
+.testimonials__carousel-button--next {
+
+}
+
+.testimonials__carousel-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials__carousel-nav button {
+    width: 25px;
+    height: 25px;
+    display: block;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.testimonials__carousel-nav button:after {
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    display: block;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    content: "";
+    background: var(--ui-brand-color);
+    opacity: .25;
+    transition: opacity 0.3s;
+}
+
+.testimonials__carousel-nav .testimonials__carousel-nav--active {
+    cursor: default;
+}
+
+.testimonials__carousel-nav .testimonials__carousel-nav--active:after {
+    opacity: 0.75;
+}
+
+@media all and (min-width: 768px) {
+    .testimonials {
+        padding: 50px 32px;
+    }
+
+    .testimonials__title {
+        font-size: 21px;
+    }
+
+    .testimonials__subtitle {
+        font-size: 41px;
+    }
+
+    .testimonials__sep {
+        margin: 25px 0 0 0;
+    }
+
+    .testimonials__carousel {
+        padding: 0 40px 35px 40px;
+    }
+
+    .testimonials__carousel-container {
+
+    }
+
+    .testimonials__carousel-track {
+
+    }
+
+    .testimonials__carousel-slide {
+        padding: 0 18%;
+    }
+
+    .testimonials__carousel-button {
+
+    }
+
+    .testimonials__carousel-button--prev {
+
+    }
+
+    .testimonials__carousel-button--next {
+
+    }
+
+    .testimonials__carousel-nav button {
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+@media all and (min-width: 992px) {
+    .testimonials {
+        padding: 50px 40px;
+    }
+
+    .testimonials__title {
+        font-size: 28px;
+    }
+
+    .testimonials__subtitle {
+        font-size: 48px;
+    }
+
+    .testimonials__carousel {
+        margin: 50px 0 0 0;
+        padding: 0 40px 45px 40px;
+    }
+
+    .testimonials__carousel-container {
+
+    }
+
+    .testimonials__carousel-track {
+
+    }
+
+    .testimonials__carousel-slide {
+        padding: 0;
+    }
+
+    .testimonials__carousel-button {
+
+    }
+
+    .testimonials__carousel-button--prev {
+
+    }
+
+    .testimonials__carousel-button--next {
+
+    }
+
+    .testimonials__carousel-nav button {
+        width: 30px;
+        height: 30px;
+    }
+}
+/* Vasyl Plaksiy */
