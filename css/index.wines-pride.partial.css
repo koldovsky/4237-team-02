@@ -1,0 +1,168 @@
+.our-wines-pride {
+  margin: 0;
+  background-color: #241c1a;
+  color: #fff;
+}
+
+.awards-header {
+  text-align: center;
+  padding: 60px 20px 20px;
+}
+
+.awards-header__label {
+  color: #c2693a;
+  font-size: 21px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.awards-header__title {
+  font-size: 65px;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+  font-stretch: 90%;
+}
+
+.awards-header__decor {
+  margin: 20px auto;
+  height: 32px;
+  display: block;
+}
+
+.awards-header__description {
+  font-size: 16px;
+  color: #cccccc;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.gallery-wrapper {
+  padding: 60px 6cm;
+  margin-left: 5cm;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.gallery-wrapper__list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery-wrapper__item {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  margin-left: 2cm;
+  margin-right: 2cm;
+}
+
+.gallery-wrapper__item-left {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 500px;
+  flex-shrink: 0;
+}
+
+.gallery-wrapper__logo {
+  width: 160px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.gallery-wrapper__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-wrapper__title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  text-align: left;
+}
+
+.w-text {
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 2;
+  max-width: 180px;
+  min-height: 48px;
+  word-break: break-word;
+}
+
+.gallery-wrapper__year {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.gallery-wrapper__description {
+  flex: 1;
+  font-size: 16px;
+  color: #898082;
+  line-height: 1.4;
+  max-width: 520px;
+  min-height: 100px;
+  margin-right: 2cm;
+}
+
+@media (max-width: 768px) {
+  .awards-header__title {
+    font-size: 32px;
+  }
+
+  .gallery-wrapper {
+    padding: 30px 20px;
+    margin-left: 0;
+  }
+
+  .gallery-wrapper__item {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .gallery-wrapper__item-left {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .gallery-wrapper__logo {
+    width: 100px;
+    height: auto;
+  }
+
+  .gallery-wrapper__title-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .w-text {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .gallery-wrapper__year {
+    font-size: 16px;
+  }
+
+  .gallery-wrapper__description {
+    font-size: 14px;
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
