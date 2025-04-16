@@ -1,26 +1,48 @@
 .modal-dialog {
-    max-width: 400px;
+    max-width: 90%;
     margin: 2rem auto;
-    font-family: "Rubik", sans-serif;
-}
-    .modal-content {
-        border: none;
-        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
-        padding: 1rem;
-        background-color: #fff;
-}
-.modal-header{     
-    text-color: var (--background-color);
+    font-family: var(--font-regular);
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 4rem);
+  }
+  
+  .modal-content {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    padding: 0rem;
+    background-color: #fff;
+    width: 100%;
+  }
+  
+  .modal-header {
+    color: var(--background-color);
+    background-color: var(--cart-header-background);
     padding: 16px;
-}
-    .modal-title {
-        font-size: 18px;  
-    }
-    .btn-close {
-        opacity: 0.6
-        text-color: var (--background-color); 
-    }
-.cart-subtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modal-title {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .btn{
+    padding-left: 0px;
+    border: none;
+    text-decoration: underline;
+  }
+  .btn-close {
+    opacity: 0.6;
+    color: var(--background-color);
     font-size: 12px;
-    margin: 0px 0px 16px;
-}
+  }
+  
+  .cart__subtitle {
+    color: var(--background-color);
+    font-size: 12px;
+    margin: 0 0 16px;
+  }
+  
