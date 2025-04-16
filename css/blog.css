@@ -1,82 +1,103 @@
 /* === Blog Section Main Styles === */
 .blog {
-    padding: 60px 20px;
-    background-color: var(--bg-color); /* Background color from global variables */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  /* === Container for Blog Content === */
-  .blog__container {
-    max-width: 1200px;
-    margin: 0 auto; /* Centering the container */
-  }
-  
-  /* === Blog Title === */
-  .blog__title {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 10px;
-    color: var(--primary-color); /* Main brand color */
-  }
-  
-  /* === Blog Description (Subtitle) === */
-  .blog__description {
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: 40px;
-    color: var(--text-color); /* Default text color */
-  }
-  
-  /* === Blog Card Grid Layout === */
-  .blog__list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
-    gap: 30px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* === Individual Blog Card === */
-  .blog__item {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Soft shadow */
-    overflow: hidden;
-    transition: transform 0.3s ease; /* Hover animation */
-  }
-  
-  /* === Card Hover Effect === */
-  .blog__item:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-  }
-  
-  /* === Blog Image in Card === */
-  .blog__image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover; /* Ensures image fits nicely */
-  }
-  
-  /* === Blog Post Date === */
-  .blog__date {
-    display: block;
-    font-size: 14px;
-    color: var(--accent-color); /* Accent color (e.g. orange or brown) */
-    margin: 16px;
-  }
-  
-  /* === Blog Card Title === */
-  .blog__item-title {
-    font-size: 20px;
-    margin: 0 16px 10px;
-    color: var(--primary-color);
-  }
-  
-  /* === Blog Card Text / Description === */
-  .blog__item-text {
-    font-size: 16px;
-    color: var(--text-color);
-    margin: 0 16px 20px;
-    line-height: 1.5;
-  }
+  padding: 60px 20px;
+  background-color: var(--bg-color); /* Background color from global variables */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* === Container for Blog Content === */
+.blog__container {
+  max-width: 1200px;
+  margin: 0 auto; /* Centering the container */
+}
+
+/* === Blog Title === */
+.blog__title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--primary-color); /* Main brand color */
+}
+
+/* === Blog Description (Subtitle) === */
+.blog__description {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--text-color); /* Default text color */
+}
+
+/* === Blog Card Grid Layout === */
+.blog__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* === Individual Blog Card === */
+.blog__item {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Soft shadow */
+  overflow: hidden;
+  transition: transform 0.3s ease; /* Hover animation */
+}
+
+/* === Card Hover Effect === */
+.blog__item:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* === Blog Image in Card === */
+.blog__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ensures image fits nicely */
+}
+
+/* === Blog Post Date === */
+.blog__date {
+  display: block;
+  font-size: 14px;
+  color: var(--accent-color); /* Accent color (e.g. orange or brown) */
+  margin: 16px;
+}
+
+/* === Blog Card Title === */
+.blog__item-title {
+  font-size: 20px;
+  margin: 0 16px 10px;
+  color: var(--primary-color);
+}
+
+/* === Blog Card Text / Description === */
+.blog__item-text {
+  font-size: 16px;
+  color: var(--text-color);
+  margin: 0 16px 20px;
+  line-height: 1.5;
+}
+/* === Decorative Branch (SVG or PNG) Near Blog Title === */
+.blog__decorative-branch {
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+  display: inline-block;
+}
+.blog__title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog__decorative-branch {
+  height: 50px; 
+  margin-bottom: 10px;
+}
