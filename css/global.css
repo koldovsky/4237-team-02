@@ -91,14 +91,12 @@ body.no-scroll {
   /* Ширина всередині navbar */
   --navbar-inner-width: 1200px;
 
-<<<<<<< HEAD
   /*Inna Nosyk */
   --background-color: #261E1C;       /* Темный фон */
   --primary-color: #c8693a;          /* Заголовки */
   --text-color: #e0d7d3;             /* Основний світлий текст */
   --accent-color: #f48c28;           /* Дата або підкреслювання */
   }
-=======
   /* ===== ДОДАНО: бургер-меню і мобільне меню ===== */
 
   --burger-width: 30px; /* ширина кнопки бургер */
@@ -111,4 +109,3 @@ body.no-scroll {
   --mobile-menu-font-size: 20px; /* розмір тексту */
   --mobile-menu-gap: 20px; /* відстань між пунктами меню */
 }
->>>>>>> 6ddfd1f481b7cc33ddfad12579fe2a755c328e76
