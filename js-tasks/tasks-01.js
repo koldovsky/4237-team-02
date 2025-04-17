@@ -66,6 +66,7 @@ function lovefunc(flower1, flower2){
 }
 
 // Lekhiv Oleh End
+
 // Pavlo Naichuk
 
 //https://www.codewars.com/kata/grasshopper-messi-goals-function/train/javascript
