@@ -2,6 +2,7 @@
 
 function init() {
   import("./global.header-burger.js");
+  import("./index.best-deals.partial.js");
 }
 
 const totalPartials = document.querySelectorAll(
