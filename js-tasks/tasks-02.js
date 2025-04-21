@@ -79,3 +79,99 @@ function isDivisible(n, x, y) {
 }
 
 // Pavlo Naichuk end
+
+// Bohdan Pustovar start
+
+//https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
+function stringToArray(string) {
+  const words = string.split(" ");
+  return words;
+}
+
+//https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
+function DNAtoRNA(dna) {
+  let rna = "";
+  for (let i = 0; i < dna.length; i++) {
+    if (dna[i] === "T") {
+      rna += "U";
+    } else {
+      rna += dna[i];
+    }
+  }
+  return rna;
+}
+
+// https://www.codewars.com/kata/577a98a6ae28071780000989
+var min = function (list) {
+  list.sort((a, b) => a - b);
+
+  return list[0];
+};
+
+var max1 = function (list) {
+  list.sort((a, b) => b - a);
+  return list[0];
+};
+
+// https://www.codewars.com/kata/544a54fd18b8e06d240005c0
+function min(arr, toReturn) {
+  if (toReturn === "value") {
+    return arr.reduce((min, item) => (item < min ? (min = item) : min));
+  }
+
+  if (toReturn === "index") {
+    const min = arr.reduce((min, item) => (item < min ? (min = item) : min));
+
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === min) {
+        return i;
+      }
+    }
+  }
+
+  return 0;
+}
+
+// https://www.codewars.com/kata/53ee5429ba190077850011d4
+function doubleInteger(i) {
+  // i will be an integer. Double it and return it.
+  return i * 2;
+}
+
+// https://www.codewars.com/kata/5b853229cfde412a470000d0
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  let diff = dadYearsOld - sonYearsOld;
+  return sonYearsOld <= diff ? diff * 2 - dadYearsOld : dadYearsOld - diff * 2;
+}
+
+// https://www.codewars.com/kata/574b3b1599d8f897470018f6
+function getRealFloor(n) {
+  if (n < 13 && n > 0) {
+    return n - 1;
+  }
+
+  if (n > 13 && n > 0) {
+    return n - 2;
+  }
+
+  return n;
+}
+
+// https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a
+function past(h, m, s) {
+  //#Happy Coding! ^_^
+  return (h * 3600 + m * 60 + s) * 1000;
+}
+
+// https://www.codewars.com/kata/5545f109004975ea66000086
+function isDivisible(n, x, y) {
+  return n % x === 0 && n % y === 0;
+}
+
+// https://www.codewars.com/kata/5933a1f8552bc2750a0000ed
+function nthEven(n) {
+  // your code here
+  return (n - 1) * 2;
+}
+
+// Bohdan Pustovar end
