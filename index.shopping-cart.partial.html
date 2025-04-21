@@ -5,10 +5,10 @@
   aria-labelledby="shopping-cartLabel"
   aria-hidden="true"
 >
-  <div class="modal-dialog modal-lg">
+  <div class="modal-dialog modal-md">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title " id="shopping-cartLabel">Shopping cart</h1>
+        <h1 class="modal-title" id="shopping-cartLabel">Shopping cart</h1>
         <button
           type="button"
           class="btn-close"
@@ -20,35 +20,80 @@
         <section class="cart">
           <h3 class="cart__subtitle">Products</h3>
 
-          <ul class="cart__items" id="cart-items"></ul>
+          <ul class="cart__items" id="cart-items">
+            <li class="product-item">
+              <div class="product-item__inner">
+                <div class="product-img">
+                  <img
+                    src="//e-c.storage.googleapis.com/res/60dab2d0-24ee-44a0-a29c-e853c7cc964f/72"
+                  />
+                </div>
+                <div class="product-content">
+                  <div class="product-left">
+                    <a class="product-title" href="#">Product 1</a>
+                  </div>
+                  <div class="product-right">
+                    <p class="product-amount">10,00USD</p>
+                    <div class="input-quantity">
+                      <input
+                        type="number"
+                        id="items-quantity"
+                        value="1"
+                        min="1"
+                        step="1"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="product-remove">
+                  <svg
+                    width="14"
+                    height="18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10 2h3.6c.2 0 .4.2.4.4v1.2c0 .2-.2.4-.4.4H.4C.2 4 0 3.9 0 3.6V2.4c0-.2.2-.4.4-.3h3.7V2L4.9.3c.1-.2.2-.3.4-.3h3.5c.1 0 .3.1.4.2l.8 1.7V2zM1.8 16.1c.1 1 1 1.9 2 1.9h6.3c1.1 0 1.9-.8 2-1.9l1-11.1H1l.8 11.1zM12 6l-.8 10.1c0 .5-.5.9-1 .9H3.8c-.5 0-1-.4-1-.9L2 6h10zM5 8.1h1v6H5v-6zm4 0H8v6h1v-6z"
+                      fill="#9199AB"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </li>
+          </ul>
 
           <div class="cart__promo">
-            
-            <a class="btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <a
+              class="btn"
+              data-bs-toggle="collapse"
+              href="#collapsePromo"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapsePromo"
+            >
               Promo code
             </a>
-            <div class="collapse" id="collapseExample">
+
+            <div class="collapse" id="collapsePromo">
               <div class="card card-body">
                 <input
-                class="cart__promo-input"
-                type="text"
-                id="promo-code"
-                placeholder="Enter promo code"
-              />
-              <button class="cart__promo-btn">OK</button>
+                  class="cart__promo-input"
+                  type="text"
+                  id="promo-code"
+                  placeholder="Enter promo code"
+                />
+                <button type="button" class="cart__promo-btn">OK</button>
               </div>
             </div>
-           
-            
           </div>
-
           <p class="cart__total">
-            Total:: <strong id="cart-total">0.00USD</strong>
+            Total:: <strong id="cart-total">17,00USD</strong>
           </p>
-
           <h3 class="cart__subtitle">Place an order</h3>
 
-          <form class="cart__form" action="#" method="POST">
+          <form class="cart__form" action="javascript:void(0)" method="POST">
             <div class="cart__form-group">
               <label class="cart__form-label" for="name"
                 >Name <span>*</span></label
@@ -59,7 +104,7 @@
                 id="name"
                 name="name"
                 placeholder="Your name"
-                required
+                autocomplete="additional-name"
               />
             </div>
 
@@ -73,7 +118,7 @@
                 id="email"
                 name="email"
                 placeholder="Your email address"
-                required
+                autocomplete="additional-name"
               />
             </div>
 
@@ -87,7 +132,7 @@
                 id="phone"
                 name="phone"
                 placeholder="Your phone"
-                required
+                autocomplete="additional-name"
               />
             </div>
 
@@ -98,7 +143,8 @@
                 id="comment"
                 name="comment"
                 placeholder="Your comment"
-                rows="3"
+                rows="4"
+                autocomplete="additional-name"
               ></textarea>
             </div>
 
@@ -109,3 +155,50 @@
     </div>
   </div>
 </div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    /* Валідація форм */
+    const form = document.querySelector(".cart__form");
+    if (!form) {
+      return;
+    }
+
+    const inputs = form.querySelectorAll("input");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      let isValid = true;
+
+      inputs.forEach((input) => {
+        if (!input.value.trim()) {
+          input.classList.add("error");
+          isValid = false;
+        } else {
+          input.classList.remove("error");
+        }
+      });
+
+      if (isValid) {
+        alert("Типу все ок і полетіло на сервер");
+      }
+    });
+
+    /* Валідація кількості товару */
+    const input = document.getElementById("items-quantity");
+
+    input.addEventListener("keydown", function (e) {
+      // Заборонені клавіші: "-", "e", "+", ".",
+      if (["-", "e", "+", "."].includes(e.key)) {
+        e.preventDefault();
+      }
+    });
+
+    input.addEventListener("input", function () {
+      // Додатково очищаємо значення, якщо вставлено щось нечислове
+      if (input.value < 1) {
+        input.value = 1;
+      }
+    });
+  });
+</script>
