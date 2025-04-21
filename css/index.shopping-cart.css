@@ -1,56 +1,269 @@
-.modal-dialog {
-    max-width: 90%;
-    margin: 2rem auto;
-    font-family: var(--font-regular);
-    display: flex;
-    align-items: center;
-    min-height: calc(100vh - 4rem);
+/* Загальні елементи модального вікна */
+.modal-body {
+  font-family: var(--font-regular);
+  padding: 24px;
+}
+
+.modal-content {
+border-radius: 0px;
+}
+.modal-header {
+  background-color: var(--cart-header-background);
+  padding: 16px;
+  border-bottom: 1px solid var(--cart-border-bottom);
+}
+
+.modal-title {
+  font-family: var(--font-regular); 
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.btn-close {
+  opacity: 0.6;
+  color: var (--background-color);
+  font-size: 12px;
+}
+/* Кошик — загальні елементи */
+.cart__subtitle {
+  font-weight: 800;
+  margin: 0 0 16px;
+  font-size: 12px;
+}
+
+.cart__items {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 8px;
+  border-bottom: 1px solid var(--cart-border-bottom);
+}
+
+.cart__total {
+  text-align: right;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 15px 0 2rem;
+}
+
+/* Товари у кошику */
+.product-item {
+  list-style: none;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--cart-border-bottom-item);
+}
+.product-item__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  position: relative;
+}
+
+.product-img img {
+  width: 72px;
+  height: auto;
+  object-fit: contain;
+}
+
+.product-content {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.product-left {
+  flex-shrink: 1;
+}
+
+.product-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-title {
+  font-family: var(--font-regular);
+  font-weight: 500;
+  margin: 0;
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--font-regular);
+}
+
+a.product-title:hover,
+a.product-title:focus {
+  text-decoration: none;
+  outline: none;
+  color: var(--font-regular);
+}
+
+.product-amount {
+  margin: 0;
+  font-weight: 400;
+}
+
+.input-quantity input {
+  width: 60px;
+}
+
+.input-quantity input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: inner-spin-button;
+  opacity: 1 !important;
+  display: inline !important;
+}
+
+.product-remove {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+/* Адаптивність (мобільна версія) */
+@media (max-width: 425px) {
+  .product-item__inner {
+     flex-wrap: wrap;
+     align-items: flex-start;
   }
-  
-  .modal-content {
-    border: none;
-    border-radius: 0;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
-    padding: 0rem;
-    background-color: #fff;
-    width: 100%;
+
+  .product-img {
+     flex: 0 0 auto;
+     margin-right: 10px;
   }
-  
-  .modal-header {
-    color: var(--background-color);
-    background-color: var(--cart-header-background);
-    padding: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+  .product-content {
+     flex-direction: column;
+     align-items: flex-start;
+     flex-grow: 1;
+     gap: 5px;
   }
-  
-  .modal-title {
-    font-size: 18px;
-    font-weight: 400;
+
+  .product-right {
+     flex-direction: column;
+     align-items: flex-start;
   }
-  .btn{
-    padding-left: 0px;
-    border: none;
-    text-decoration: underline;
+
+  .product-remove {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     right: 0;
   }
-  .btn-close {
-    opacity: 0.6;
-    color: var(--background-color);
-    font-size: 12px;
-  }
-  
-  .cart__subtitle {
-    color: var(--background-color);
-    font-size: 12px;
-    margin: 0 0 16px;
-  }
-  .cart__order-btn {
-    background-color: #c8693a;
-    color: white;
-    padding: 0.75rem 2rem;
-    border: none;
-    font-weight: 300;
-    display: block;
-    margin: 2rem auto 0;
- }
+}
+/* Промокоди */
+.cart__promo {
+  margin-bottom: 1px;
+}
+
+.cart__promo a {
+  color: #000;
+  font-weight: 400;
+  cursor: pointer;
+  text-decoration: underline;
+  padding-left: 0px;
+}
+
+.cart__promo a:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.cart__promo .card {
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.cart__promo .card-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+.cart__promo-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid var(--cart-border-bottom-item) !important;
+  border-radius: 6px;
+  font-size: 14px;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.cart__promo-btn {
+  background-color: var (--title-color);
+  color: var(--cart-promo-btn);
+  border: 1px solid var(--cart-promo-btn) !important;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: var(--font-regular);
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  box-shadow: none !important;
+  outline: none !important;
+  cursor: pointer;
+}
+/* Форма оформлення замовлення */
+.cart__form-group {
+  margin-bottom: 1.5rem;
+}
+
+.cart__form-label {
+  display: block;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.cart__form-label span {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.cart__form-input {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--cart-form-input-backgroud);
+  border: none;
+  border-radius: 2px;
+  font-size: 14px !important;
+  font-family: var(--font-regular);
+  color: var(--cart-form-input-color);
+  margin: 10px 0 24px;
+}
+
+.cart__form-input:focus {
+  outline: none;
+  border: 2px solid var(--cart-outline-color);
+  background-color: var(--cart-form-input-background);
+  border-radius: 5px;
+}
+
+.cart__form-input::placeholder {
+  color: #888;
+  font-size: 14px;
+}
+
+.cart__form-input.error {
+  border: 2px solid red !important;
+  background-color: var(--cart-form-input-background);
+}
+/* Кнопка оформити замовлення */
+.cart__order-btn {
+  background-color: var(--ui-brand-color);
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  font-weight: 400;
+  display: block;
+  margin: 2rem auto 0;
+}
