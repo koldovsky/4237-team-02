@@ -9,6 +9,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title" id="shopping-cartLabel">Shopping cart</h1>
+        <h1 class="modal-title" id="shopping-cartLabel">Shopping cart</h1>
         <button
           type="button"
           class="btn-close"
@@ -93,7 +94,7 @@
           <p class="cart__total" id="cart-total">Total:: 0.00USD</p>
           <h3 class="cart__subtitle">Place an order</h3>
 
-          <form class="cart__form" action="#" method="POST">
+          <form class="cart__form" action="javascript:void(0)" method="POST">
             <div class="cart__form-group">
               <label class="cart__form-label" for="name"
                 >Name <span>*</span></label
@@ -154,3 +155,50 @@
     </div>
   </div>
 </div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    /* Валідація форм */
+    const form = document.querySelector(".cart__form");
+    if (!form) {
+      return;
+    }
+
+    const inputs = form.querySelectorAll("input");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      let isValid = true;
+
+      inputs.forEach((input) => {
+        if (!input.value.trim()) {
+          input.classList.add("error");
+          isValid = false;
+        } else {
+          input.classList.remove("error");
+        }
+      });
+
+      if (isValid) {
+        alert("Типу все ок і полетіло на сервер");
+      }
+    });
+
+    /* Валідація кількості товару */
+    const input = document.getElementById("items-quantity");
+
+    input.addEventListener("keydown", function (e) {
+      // Заборонені клавіші: "-", "e", "+", ".",
+      if (["-", "e", "+", "."].includes(e.key)) {
+        e.preventDefault();
+      }
+    });
+
+    input.addEventListener("input", function () {
+      // Додатково очищаємо значення, якщо вставлено щось нечислове
+      if (input.value < 1) {
+        input.value = 1;
+      }
+    });
+  });
+</script>
