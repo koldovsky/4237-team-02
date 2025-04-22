@@ -195,7 +195,7 @@ var min = function (list) {
   return Math.min(...list);
 };
 
-var max = function (list) {
+var maxSize = function (list) {
   return Math.max(...list);
 };
 
