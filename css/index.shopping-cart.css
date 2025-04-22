@@ -11,6 +11,9 @@ border-radius: 0px;
   background-color: var(--cart-header-background);
   padding: 16px;
   border-bottom: 1px solid var(--cart-border-bottom);
+  box-sizing: border-box;
+   align-items: center;
+   display: flex;
 }
 
 .modal-title {
@@ -20,9 +23,12 @@ border-radius: 0px;
 }
 
 .btn-close {
-  opacity: 0.6;
-  color: var (--background-color);
-  font-size: 12px;
+  opacity: 1;
+   color: var(--font-regular);
+   font-size: 12px;
+   font-weight: 400;
+   display: inline;
+   cursor: pointer;
 }
 /* Кошик — загальні елементи */
 .cart__subtitle {
@@ -59,6 +65,7 @@ border-radius: 0px;
   gap: 10px;
   position: relative;
   flex-direction: row;
+  /*justify-content: space-between;*/
 }
 
 .product-img img {
@@ -75,7 +82,6 @@ border-radius: 0px;
   gap: 2px;
   flex-direction: column
 }
-
 
 .product-title a {
   font-family: var(--font-regular);
@@ -137,7 +143,7 @@ input[type='number']::-webkit-outer-spin-button {
      flex-grow: 1;
      gap: 5px;
      padding-left: 30px;
-     padding-right: 8px;
+     padding-right: 20px;
      justify-content: space-between;
   } 
 
