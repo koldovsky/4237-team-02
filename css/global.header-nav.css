@@ -11,17 +11,11 @@
   display: flex;
   align-items: center;
   justify-content: center; /* Додай якщо треба центрувати внутрішній блок */
-  /*max-width: var(--container-max-width); /* 1440px */
   padding: var(--navbar-padding-y) var(--container-padding-x); /* 30px 40px */
   margin: 0 auto;
   background-color: var(--black-transparent); /* Прозорий чорний фон */
   height: var(--header-height); /* Встановлюємо висоту контейнера */
 }
-/*.navbar-container {
-  max-width: var(--navbar-inner-width); /* 1200px 
-  margin: 0 auto;
-  width: 100%;
-}*/
 
 .navbar {
   max-width: var(--navbar-inner-width); /* 1200px */
@@ -31,7 +25,6 @@
   justify-content: space-between; /* Лого зліва, меню справа */
   align-items: center;
   height: 100%; /* Займає всю висоту контейнера */
-  /* background-color: var(--black-transparent); 🔥 Видаляємо */
 }
 
 .navbar__logo img {

@@ -1,20 +1,19 @@
 // Jevlentjev Oksana
 // === global.header-burger.js ===
-// Скрипт керує бургер-меню та блокуванням скролу
+// Ініціалізація бургер-меню після HTMX або звичайного DOM завантаження
 
-console.log("✅ Бургер-файл підключено!");
-
-document.body.addEventListener("htmx:afterOnLoad", () => {
+function initBurger() {
   const burger = document.querySelector(".burger");
   const navbarRight = document.querySelector(".navbar__right");
   const menuLinks = document.querySelectorAll(".navbar__menu a");
 
-  console.log("burger 👉", burger);
-  console.log("navbarRight 👉", navbarRight);
-  console.log("menuLinks 👉", menuLinks);
-
   if (!burger || !navbarRight) {
     console.warn("❌ Не знайдено .burger або .navbar__right");
+    return;
+  }
+
+  if (burger.dataset.listenerAttached === "true") {
+    console.log("⏭️ Бургер уже ініціалізовано");
     return;
   }
 
@@ -32,4 +31,13 @@ document.body.addEventListener("htmx:afterOnLoad", () => {
 
   burger.addEventListener("click", toggleMenu);
   menuLinks.forEach((link) => link.addEventListener("click", closeMenu));
-});
+
+  burger.dataset.listenerAttached = "true";
+  console.log("✅ Бургер-меню готове");
+}
+
+// Запуск при першому завантаженні
+document.addEventListener("DOMContentLoaded", initBurger);
+
+// Повторний запуск після завантаження partial'а через HTMX
+document.body.addEventListener("htmx:afterOnLoad", initBurger);
