@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: center; /* Додай якщо треба центрувати внутрішній блок */
-  max-width: var(--container-max-width); /* 1440px */
+  /*max-width: var(--container-max-width); /* 1440px */
   padding: var(--navbar-padding-y) var(--container-padding-x); /* 30px 40px */
   margin: 0 auto;
   background-color: var(--black-transparent); /* Прозорий чорний фон */
@@ -157,7 +157,10 @@
     position: fixed;
     top: var(--header-height);
     left: 0;
-    width: 100%;
+    right: 0;
+    width: 100vw;
+    max-width: 100vw;
+    width: auto;
     height: 0;
     background-color: #1a1a1a;
     overflow: hidden;
