@@ -12,12 +12,12 @@
 }
 
 .underage-page h1 {
-  font-size: 72px;
+  font-size: 90px;
   color: var(--title-color);
   font-family: var(--font-display);
   font-weight: 500;
   margin-bottom: 20px;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 .underage-page .decor-divider {
@@ -29,19 +29,20 @@
 .underage-page p {
   font-family: var(--font-regular);
   color: var(--color-text-light);
-  font-size: 16px;
+  font-size: 20px;
   max-width: 600px;
   line-height: 1.6;
   margin: 0 auto;
 }
+
 @media screen and (max-width: 600px) {
   .underage-page {
     padding: 30px 16px;
   }
 
   .underage-page h1 {
-    font-size: 40px;
-    line-height: 1.3;
+    font-size: 54px;
+    line-height: 1.2;
   }
 
   .underage-page .decor-divider {
@@ -50,7 +51,22 @@
   }
 
   .underage-page p {
-    font-size: 14px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .underage-page h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+  .underage-page .decor-divider {
+    width: 70px;
+    margin: 15px auto;
+  }
+  .underage-page p {
+    font-size: 16px;
   }
 }
 /* Pavlo Naichuk */
