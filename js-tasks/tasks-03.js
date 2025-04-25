@@ -1,4 +1,3 @@
-//Pavlo Naichuk start
 //https://www.codewars.com/kata/geometry-basics-circle-circumference-in-2d/train/javascript
 function circleCircumference(circle) {
   return 2 * Math.PI * circle.radius;
@@ -21,7 +20,9 @@ function giveMeFive(obj) {
 
 //https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
 function buildFun(n) {
-  if (n === 0) return [];
+  if (n === 0) {
+    return [];
+  }
   const array = buildFun(n - 1);
   array.push(() => n - 1);
   return array;
@@ -53,4 +54,3 @@ class Dog extends Animal {
     return `Hello ${this.#master}`;
   }
 }
-//Pavlo Naichuk end
