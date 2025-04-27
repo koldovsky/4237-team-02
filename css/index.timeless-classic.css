@@ -1,21 +1,15 @@
 .timeless {
     display: block;
-    position: relative;
-    box-sizing: border-box;
+    position: relative;  
 }
 
 .timeless__section {
-    box-sizing: border-box;
     display: flex;
-    justify-content: flex-end;
-    position: relative;
-    background: url("../img/index/timeless-classic-bg.jpg") no-repeat center center / cover;
-    background-color: var(--background-color);
     background-size: cover;
-    background-attachment: scroll, scroll;
-    background-clip: border-box, border-box;
-    background-origin: padding-box, padding-box;
-    background-repeat: no-repeat, repeat;
+    background-position: 50% 50%;
+    z-index:auto;
+    background-image: url("../img/index/timeless-classic-bg.jpg");
+    background-color: var(--background-color);
 }
     
 .timeless__text__section {
@@ -23,10 +17,9 @@
     flex-basis: 100%;
     min-width: 320px;
     position: relative;
-    box-sizing: border-box;
-    padding-top: 100px;
-    padding-bottom: 100px;
-
+    padding-bottom: 110px;
+    padding-top: 110px;
+    z-index: 1;
 }
 
 .timeless__text__block1 {
@@ -35,6 +28,7 @@
     padding-left: 32px;
     padding-right: 32px;
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 .timeless__text__block3 {
@@ -43,7 +37,6 @@
 }
 
 .timeless__text__inner {
-    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     margin-left: -15px;
@@ -83,10 +76,11 @@
     max-width: 100%;
 }
 
-.timeless__subtitle {
+.timeless__subtitle__text{
     font-family: var(--font-calligraphy);
     font-size: 28px;
-    font-style: normal;
+    font-style: normal; 
+    font-weight: 400;
     color: var(--calligraphy-color-text);
 }
 
@@ -96,25 +90,38 @@
     display: block;
     margin-top: 25px;
     overflow: hidden;
+    justify-content: flex-start;
 
 }
 
 .timeless__picture {
     max-width: 100%;
     min-height: 32px ;
-    line-height: 25.6px;
+    position: relative;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
 }
 
 .timeless__title {
     color: var(--title-color);
     font-family: var(--font-header);
-    font-size: 34px;
+    font-size: 48px;
+    overflow-wrap:break-word;
 }
 
 .timeless__description {
     color: var(--title-color);
     font-family: var(--font-regular);
     font-size: 18px;
+    overflow-wrap:break-word;
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    max-width: 100%;
+    word-wrap: break-word;
+    line-height: 30.6px;
 }
 
 .timeless__category {
@@ -137,7 +144,6 @@
 .timeless__category-text {
     color: var(--title-color);
     font-family: var(--font-header);
-    font-size: 22px;
 }
 
 .timeless__list {
@@ -165,4 +171,31 @@
 .timeless__list__pin{
     color: var(--calligraphy-color-text);
     font-size: 16px;
+}
+
+@media (max-width: 767px) {
+    .timeless__section{
+        background-image:none;
+    }
+    .timeless__subtitle * {
+        font-size: 14px;
+    }
+    .timeless__title * {
+        font-size: 34px;
+        text-align: left;
+    }
+    .timeless__right__side{
+        margin-top: 50px;
+    }       
+    .timeless__right__column {
+        text-align: left;
+    }
+    .timeless__text__inner{
+        width: calc(100% + var(--w-grid-gap));
+        margin-left: calc(var(--w-grid-gap) / -2);
+        margin-right: calc(var(--w-grid-gap) / -2);
+    }
+    .timeless__subtitle__text{
+        letter-spacing: calc(var(-0.02 * 1em));
+    }   
 }

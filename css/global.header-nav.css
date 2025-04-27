@@ -1,27 +1,21 @@
 /* Фон з паралаксом */
 .header-background {
-  background: url("../img/global/background-image.jpeg") no-repeat center
-    center/cover;
+  background: url("../img/global/background-image.jpeg") no-repeat left center;
+  background-size: cover;
+  background-attachment: fixed; /* якщо хочеш паралакс, або видали якщо глючить */
   height: 100vh;
   width: 100%;
-  background-attachment: fixed;
 }
 /* Контейнер як на Weblium */
 .navbar-container {
   display: flex;
   align-items: center;
   justify-content: center; /* Додай якщо треба центрувати внутрішній блок */
-  max-width: var(--container-max-width); /* 1440px */
   padding: var(--navbar-padding-y) var(--container-padding-x); /* 30px 40px */
   margin: 0 auto;
   background-color: var(--black-transparent); /* Прозорий чорний фон */
   height: var(--header-height); /* Встановлюємо висоту контейнера */
 }
-/*.navbar-container {
-  max-width: var(--navbar-inner-width); /* 1200px 
-  margin: 0 auto;
-  width: 100%;
-}*/
 
 .navbar {
   max-width: var(--navbar-inner-width); /* 1200px */
@@ -31,7 +25,12 @@
   justify-content: space-between; /* Лого зліва, меню справа */
   align-items: center;
   height: 100%; /* Займає всю висоту контейнера */
-  /* background-color: var(--black-transparent); 🔥 Видаляємо */
+}
+
+/* Стиль для обгортки логотипа */
+.navbar__logo {
+  position: relative; /* щоб логотип був поверх бургер-меню */
+  z-index: 1100; /* логотип буде завжди видимий над меню */
 }
 
 .navbar__logo img {
@@ -70,7 +69,7 @@
 .navbar__icons {
   display: flex;
   gap: var(--navbar-icons-gap);
-  color: var(--icon-default-color); /* або напряму: #ffffff чи #000 */
+  color: var(--icon-default-color);
   transition: color 0.3s;
   cursor: pointer;
 }
@@ -145,7 +144,7 @@
 }
 
 /* === Мобільна адаптація === */
-@media (max-width: 900px) {
+@media (max-width: 991px) {
   .burger {
     display: flex;
     position: absolute;
@@ -155,22 +154,33 @@
 
   .navbar__right {
     position: fixed;
-    top: var(--header-height);
+    top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
+    width: 100vw;
+    max-width: 100vw;
+
     height: 0;
     background-color: #1a1a1a;
     overflow: hidden;
-    transition: height 0.3s ease;
+    opacity: 0; /* ← додати */
+    pointer-events: none; /* ← додати! */
+    transition: height 0.3s ease, opacity 0.3s ease; /* ← додати перехід */
+
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-top: 100px;
+
     gap: 30px;
     z-index: 1000;
   }
 
   .navbar__right.is-open {
-    height: calc(100vh - var(--header-height));
+    height: 100vh;
+    opacity: 1; /* Показати */
+    pointer-events: all; /* Дати змогу натискати */
   }
 
   /* Меню */
