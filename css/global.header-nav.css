@@ -163,7 +163,9 @@
     height: 0;
     background-color: #1a1a1a;
     overflow: hidden;
-    transition: height 0.3s ease;
+    opacity: 0; /* ← додати */
+    pointer-events: none; /* ← додати! */
+  transition: height 0.3s ease, opacity 0.3s ease; /* ← додати перехід */
 
     display: flex;
     flex-direction: column;
@@ -177,6 +179,8 @@
 
   .navbar__right.is-open {
     height: 100vh;
+    opacity: 1; /* Показати */
+    pointer-events: all; /* Дати змогу натискати */
   }
 
   /* Меню */
