@@ -152,6 +152,10 @@
     right: 30px;
   }
 
+  .navbar-container {
+    background-color: transparent;
+  }
+
   .navbar__right {
     position: fixed;
     top: 0;
