@@ -9,12 +9,11 @@
   margin: 0;
   padding: 0;
 }
-/*Jevlentjev Oksana*/
-/* Заборона скролу при відкритому бургер-меню */
+/* Jevlentjev Oksana */
 body.no-scroll {
-  overflow: hidden;
+  overflow: hidden; /* Заборона скролу при відкритому бургер-меню */
 }
-/*Jevlentjev Oksana*/
+/* Jevlentjev Oksana */
 
 :root {
   --background-color: #261e1c;
@@ -22,20 +21,21 @@ body.no-scroll {
   --title-color: #ffffff;
   --subtext-color: #898082; /* Remyha Valeriia */
   --calligraphy-color-text: #c8693a; /* Vita Maksymchenko */
+  --burger-menu-bg: #1a1512; /* Jevlentjev Oksana */
 
   --font-regular: "Rubik", sans-serif;
   --font-calligraphy: "Great Vibes", cursive; /* каліграфічний шрифт Vita Maksymchenko */
   --font-header: "Prata", serif;
 
   /* Lilia Pinchuk*/
---cart-header-background: #F7F8FA;
---cart-form-input-backgroud: #261E1C1F;
---cart-form-input-color: #333;
---cart-border-bottom: #eee;
---cart-border-bottom-item: #ccc;
---cart-promo-btn: #212736;
---cart-outline-color: #3b99fc;
---cart-form-input-background: #e5e3e3;
+  --cart-header-background: #f7f8fa;
+  --cart-form-input-backgroud: #261e1c1f;
+  --cart-form-input-color: #333;
+  --cart-border-bottom: #eee;
+  --cart-border-bottom-item: #ccc;
+  --cart-promo-btn: #212736;
+  --cart-outline-color: #3b99fc;
+  --cart-form-input-background: #e5e3e3;
   /* Lilia Pinchuk*/
 
   /*Pavlo Naichuk */
@@ -56,7 +56,6 @@ body.no-scroll {
   --color-button-pressed: #b0542c;
 
   /* Jevlentjev Oksana */
-  /* Загальні параметри */
   --header-height: 100px;
   --black-transparent: rgba(0, 0, 0, 0.6);
 
@@ -65,6 +64,8 @@ body.no-scroll {
   --container-padding: 0 40px;
   --navbar-padding-x: 40px;
   --navbar-padding-y: 30px;
+
+  --navbar-inner-width: 1200px; /* Ширина всередині navbar */
 
   /* Логотип */
   --logo-width: 176px;
@@ -78,7 +79,6 @@ body.no-scroll {
   --menu-color: #ffffff;
   --ui-brand-color-hover: #c8693a;
   --navbar-menu-gap: 20px;
-  /* --font-regular: "Rubik", sans-serif; */
 
   /* Блок меню + іконки */
   --navbar-gap: 45px;
@@ -99,15 +99,12 @@ body.no-scroll {
   --svg-hover-bg-color: #c8693a; /* оранжеве тло при ховері */
   --svg-hover-logo-color: #261e1c; /* темний логотип при ховері */
 
-  /* Ширина всередині navbar */
-  --navbar-inner-width: 1200px;
-
   /*Inna Nosyk */
-  --background-color: #261E1C;       /* Темный фон */
-  --primary-color: #c8693a;          /* Заголовки */
-  --text-color: #e0d7d3;             /* Основний світлий текст */
-  --accent-color: #f48c28;           /* Дата або підкреслювання */
-  
+  --background-color: #261e1c; /* Темный фон */
+  --primary-color: #c8693a; /* Заголовки */
+  --text-color: #e0d7d3; /* Основний світлий текст */
+  --accent-color: #f48c28; /* Дата або підкреслювання */
+
   /* ===== ДОДАНО: бургер-меню і мобільне меню ===== */
 
   --burger-width: 30px; /* ширина кнопки бургер */
