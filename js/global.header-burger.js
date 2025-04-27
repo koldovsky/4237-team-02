@@ -12,6 +12,12 @@ if (burger && navbarRight) {
       burger.classList.toggle("active");
       navbarRight.classList.toggle("is-open");
       document.body.classList.toggle("no-scroll");
+
+      const menu = document.querySelector(".navbar__menu");
+      const icons = document.querySelector(".navbar__icons");
+
+      menu.classList.toggle("is-open");
+      icons.classList.toggle("is-open");
     };
 
     const closeMenu = () => {
