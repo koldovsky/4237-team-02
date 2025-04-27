@@ -1,10 +1,10 @@
 /* Фон з паралаксом */
 .header-background {
-  background: url("../img/global/background-image.jpeg") no-repeat center
-    center/cover;
+  background: url("../img/global/background-image.jpeg") no-repeat left center;
+  background-size: cover;
+  background-attachment: fixed; /* якщо хочеш паралакс, або видали якщо глючить */
   height: 100vh;
   width: 100%;
-  background-attachment: fixed;
 }
 /* Контейнер як на Weblium */
 .navbar-container {
@@ -165,7 +165,7 @@
     overflow: hidden;
     opacity: 0; /* ← додати */
     pointer-events: none; /* ← додати! */
-  transition: height 0.3s ease, opacity 0.3s ease; /* ← додати перехід */
+    transition: height 0.3s ease, opacity 0.3s ease; /* ← додати перехід */
 
     display: flex;
     flex-direction: column;
