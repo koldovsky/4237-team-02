@@ -5,10 +5,11 @@
 
 .timeless__section {
     display: flex;
-    position: static;
     background-size: cover;
     background-position: 50% 50%;
     z-index:auto;
+    background-image: url("../img/index/timeless-classic-bg.jpg");
+    background-color: var(--background-color);
 }
     
 .timeless__text__section {
@@ -75,10 +76,11 @@
     max-width: 100%;
 }
 
-.timeless__subtitle {
+.timeless__subtitle__text{
     font-family: var(--font-calligraphy);
     font-size: 28px;
-    font-style: normal;
+    font-style: normal; 
+    font-weight: 400;
     color: var(--calligraphy-color-text);
 }
 
@@ -88,13 +90,18 @@
     display: block;
     margin-top: 25px;
     overflow: hidden;
+    justify-content: flex-start;
 
 }
 
 .timeless__picture {
     max-width: 100%;
     min-height: 32px ;
-    line-height: 25.6px;
+    position: relative;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
 }
 
 .timeless__title {
@@ -109,6 +116,12 @@
     font-family: var(--font-regular);
     font-size: 18px;
     overflow-wrap:break-word;
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    max-width: 100%;
+    word-wrap: break-word;
+    line-height: 30.6px;
 }
 
 .timeless__category {
@@ -161,6 +174,9 @@
 }
 
 @media (max-width: 767px) {
+    .timeless__section{
+        background-image:none;
+    }
     .timeless__subtitle * {
         font-size: 14px;
     }
@@ -179,5 +195,7 @@
         margin-left: calc(var(--w-grid-gap) / -2);
         margin-right: calc(var(--w-grid-gap) / -2);
     }
-       
+    .timeless__subtitle__text{
+        letter-spacing: calc(var(-0.02 * 1em));
+    }   
 }
