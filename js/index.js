@@ -3,6 +3,7 @@
 function init() {
   import("./global.header-burger.js");
   import("./index.best-deals.partial.js");
+  import("./index.slide-on-site.js");
 }
 
 const totalPartials = document.querySelectorAll(
