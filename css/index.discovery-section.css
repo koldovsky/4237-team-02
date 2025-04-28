@@ -71,6 +71,67 @@
     margin: 10px 0px 40px 0px;
 }
 
+.discovery-section_get-personal-recomendation {
+    position: relative;
+    background-color: var(--title-color);
+    padding: 10px 30px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    overflow: hidden; 
+    z-index: 0;
+}
+
+.discovery-section_get-personal-recomendation:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.discovery-section_get-personal-recomendation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 6px;
+    border-radius: 20px;
+    background: linear-gradient(
+      45deg,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet,
+      red
+    );
+    background-size: 200% 200%;
+    animation: animateBorder 6s linear infinite;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+@keyframes animateBorder {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 @media screen and (max-width: 1100px) {
     .discovery-section__upper-text{
         font-size: 23px;

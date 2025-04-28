@@ -34,8 +34,9 @@
 }
 
 .testimonials__carousel {
-    margin: 45px 0 0 0;
+    margin: 45px auto 0 auto;
     position: relative;
+    max-width: 1230px;
     padding: 0 30px 35px 30px;
 }
 
@@ -44,13 +45,15 @@
 }
 
 .testimonials__carousel-track {
-    width: 300%;
     list-style: none;
+    width: 100%;
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
 }
 
 .testimonials__carousel-slide {
@@ -60,21 +63,55 @@
     color: rgb(137, 128, 130);
 }
 
+.testimonials__carousel-slide + .testimonials__carousel-slide {
+    display: none;
+}
+
+.testimonials__carousel--init .testimonials__carousel-slide + .testimonials__carousel-slide {
+    display: block;
+}
+
 .testimonials__carousel-slide p {
     margin: 0 auto;
     max-width: 740px;
 }
 
 .testimonials__carousel-button {
-    display: none;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    position: absolute;
+    top: calc((100% - 45px) / 2 - 15px);
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.testimonials__carousel-button  svg {
+    width: 30px;
+    height: 30px;
 }
 
 .testimonials__carousel-button--prev {
-
+    left: 0;
 }
 
 .testimonials__carousel-button--next {
+    right: 0;
+}
 
+.testimonials__carousel-button--prev svg {
+    transform: rotate(180deg);
+}
+
+.testimonials__carousel-button--disabled {
+    cursor: default;
+}
+
+.testimonials__carousel-button--disabled path {
+    fill: grey;
 }
 
 .testimonials__carousel-nav {
@@ -95,12 +132,14 @@
     padding: 0;
     border: none;
     cursor: pointer;
+    position: relative;
     background: transparent;
 }
 
 .testimonials__carousel-nav button:after {
     width: 10px;
     height: 10px;
+    position: absolute;
     top: 50%;
     left: 50%;
     display: block;
@@ -149,7 +188,7 @@
 
     }
 
-    .testimonials__carousel-slide {
+    .testimonials__carousel-slide p {
         padding: 0 18%;
     }
 
@@ -186,7 +225,7 @@
     }
 
     .testimonials__carousel {
-        margin: 50px 0 0 0;
+        margin-top: 50px;
         padding: 0 40px 45px 40px;
     }
 
@@ -198,7 +237,7 @@
 
     }
 
-    .testimonials__carousel-slide {
+    .testimonials__carousel-slide p {
         padding: 0;
     }
 
@@ -219,4 +258,5 @@
         height: 30px;
     }
 }
+
 /* Vasyl Plaksiy */

@@ -2,7 +2,7 @@
 .header-background {
   background: url("../img/global/background-image.jpeg") no-repeat left center;
   background-size: cover;
-  background-attachment: fixed; /* якщо хочеш паралакс, або видали якщо глючить */
+  background-attachment: fixed;
   height: 100vh;
   width: 100%;
 }
@@ -10,11 +10,11 @@
 .navbar-container {
   display: flex;
   align-items: center;
-  justify-content: center; /* Додай якщо треба центрувати внутрішній блок */
+  justify-content: center; /* центрувати внутрішній блок */
   padding: var(--navbar-padding-y) var(--container-padding-x); /* 30px 40px */
   margin: 0 auto;
   background-color: var(--black-transparent); /* Прозорий чорний фон */
-  height: var(--header-height); /* Встановлюємо висоту контейнера */
+  height: var(--header-height); /* висота контейнера */
 }
 
 .navbar {
@@ -29,14 +29,14 @@
 
 /* Стиль для обгортки логотипа */
 .navbar__logo {
-  position: relative; /* щоб логотип був поверх бургер-меню */
-  z-index: 1100; /* логотип буде завжди видимий над меню */
+  position: relative; /* логотип поверх бургер-меню */
+  z-index: 1100; /* логотип видимий над меню */
 }
 
 .navbar__logo img {
   width: var(--logo-width); /* 176px */
   height: auto;
-  padding-left: var(--logo-padding-left); /* ← дає простір ліворуч */
+  padding-left: var(--logo-padding-left);
 }
 
 .navbar__right {
@@ -57,9 +57,9 @@
 .navbar__item a {
   color: var(--link-color); /* Колір тексту посилань */
   text-decoration: none; /* Забирає підкреслення */
-  font-family: var(--font-regular); /* Шрифт меню через змінну */
-  font-weight: var(--menu-font-weight); /* Товщина шрифту (наприклад, 500) */
-  font-size: var(--navbar-font-size); /* Розмір шрифту, наприклад, 14px */
+  font-family: var(--font-regular); /* Шрифт меню */
+  font-weight: var(--menu-font-weight); /* Товщина шрифту 500 */
+  font-size: var(--navbar-font-size); /* Розмір шрифту 14px */
 }
 
 .navbar__item a:hover {
@@ -82,12 +82,11 @@
 }
 
 .navbar__icon:hover .navbar__icon-svg {
-  color: var(--ui-brand-color-hover); /* або orange, або інший */
+  color: var(--ui-brand-color-hover); /* orang */
 }
 
 /* === SVG ICON STYLES === */
 
-/*=== Base styles (для всіх іконок) ===*/
 .svg-bg {
   fill: var(--svg-bg-color);
   transition: fill 0.3s ease;
@@ -103,7 +102,7 @@
   stroke-width: 2;
 }
 
-/* === Hover (загальні стилі для іконок у ховері) === */
+/* === Hover SVG ICON STYLES === */
 .navbar__icon:hover .svg-bg {
   fill: var(--svg-hover-bg-color); /* Оранжевий фон при наведенні */
 }
@@ -157,6 +156,7 @@
   }
 
   .navbar__right {
+    background-color: var(--burger-menu-bg); /* фон бургер меню*/
     position: fixed;
     top: 0;
     left: 0;
@@ -165,11 +165,10 @@
     max-width: 100vw;
 
     height: 0;
-    background-color: #1a1a1a;
     overflow: hidden;
-    opacity: 0; /* ← додати */
-    pointer-events: none; /* ← додати! */
-    transition: height 0.3s ease, opacity 0.3s ease; /* ← додати перехід */
+    opacity: 0;
+    pointer-events: none;
+    transition: height 0.3s ease, opacity 0.3s ease; /* перехід */
 
     display: flex;
     flex-direction: column;
@@ -193,6 +192,7 @@
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
+    gap: 0;
   }
 
   .navbar__menu.is-open {
@@ -216,6 +216,7 @@
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
+    margin-top: 30px;
   }
 
   .navbar__icons.is-open {

@@ -185,10 +185,12 @@
         text-align: left;
     }
     .timeless__right__side{
-        margin-top: 50px;
+        flex-basis: 100%;
+        max-width: 100%;
     }       
     .timeless__right__column {
         text-align: left;
+        display: 100px;
     }
     .timeless__text__inner{
         width: calc(100% + var(--w-grid-gap));
@@ -198,4 +200,7 @@
     .timeless__subtitle__text{
         letter-spacing: calc(var(-0.02 * 1em));
     }   
+    .timeless__left__side{
+        display: none;
+    }
 }
