@@ -5,6 +5,7 @@ function init() {
   import("./index.best-deals.partial.js");
   import("./index.shopping-cart.js"); //Lilia Pinchuk
   import("./index.slide-on-site.js");
+  import("./index.testimonials.partial.js"); // Vasyl Plaksiy
 }
 
 const totalPartials = document.querySelectorAll(
