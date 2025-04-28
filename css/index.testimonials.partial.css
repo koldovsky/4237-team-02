@@ -76,10 +76,6 @@
     max-width: 740px;
 }
 
-#age-check {
-    display: none;
-}
-
 .testimonials__carousel-button {
     display: flex;
     width: 30px;
