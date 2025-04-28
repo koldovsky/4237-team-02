@@ -110,6 +110,11 @@ function updateIndicators() {
     } else {
       indicator.classList.remove("best-deals-carousel__indicator--active");
     }
+
+    indicator.addEventListener("click", () => {
+      currentSlide = index;
+      renderCarousel();
+    });
   });
 }
 
