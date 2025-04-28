@@ -78,17 +78,21 @@
     align-items: flex-start;
     padding-top: 5vh;
   }
+
   .age-gate__modal {
     padding: 35px 25px;
     max-width: 550px;
   }
+
   .age-gate__title {
     font-size: 26px;
   }
+
   .age-gate__text {
     font-size: 15px;
     margin-bottom: 24px;
   }
+
   .age-gate__btn {
     padding: 12px 18px;
     font-size: 14px;
@@ -100,10 +104,12 @@
   .age-gate__title {
     font-size: 30px;
   }
+
   .age-gate__text {
     font-size: 17px;
     margin-bottom: 28px;
   }
+
   .age-gate__btn {
     padding: 14px 24px;
     font-size: 16px;
@@ -116,14 +122,17 @@
     width: 85%;
     padding: 30px 20px;
   }
+
   .age-gate__title {
     font-size: 24px;
     margin-bottom: 10px;
   }
+
   .age-gate__text {
     font-size: 14px;
     margin-bottom: 24px;
   }
+
   .age-gate__buttons {
     gap: 12px;
     flex-wrap: wrap;
@@ -135,17 +144,21 @@
     width: 95%;
     padding: 25px 15px;
   }
+
   .age-gate__title {
     font-size: 22px;
     margin-bottom: 8px;
   }
+
   .age-gate__text {
     font-size: 13px;
     margin-bottom: 20px;
   }
+
   .age-gate__buttons {
     gap: 8px;
   }
+
   .age-gate__btn {
     padding: 8px 12px;
     font-size: 13px;
