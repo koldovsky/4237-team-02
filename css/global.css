@@ -26,6 +26,7 @@ body.no-scroll {
   --font-regular: "Rubik", sans-serif;
   --font-calligraphy: "Great Vibes", cursive; /* каліграфічний шрифт Vita Maksymchenko */
   --font-header: "Prata", serif;
+  --transition-duration: 0.7s; /* Pavlo Naichuk */
 
   /* Lilia Pinchuk*/
   --cart-header-background: #f7f8fa;

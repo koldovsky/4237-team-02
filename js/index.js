@@ -6,6 +6,7 @@ function init() {
   import("./index.shopping-cart.js"); //Lilia Pinchuk
   import("./index.slide-on-site.js");
   import("./index.testimonials.partial.js"); // Vasyl Plaksiy
+  import("./index.age-gate.js"); // Pavlo Naichuk
 }
 
 const totalPartials = document.querySelectorAll(

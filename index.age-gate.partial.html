@@ -1,7 +1,7 @@
 <!-- Pavlo Naichuk -->
-<script>
-  document.body.style.overflow = 'hidden';
-</script>
+<link rel="stylesheet" href="css/global.css" />
+<link rel="stylesheet" href="css/index.age-gate.partial.css" />
+
 <div class="age-gate">
   <div class="age-gate__modal">
     <h1 class="age-gate__title">Confirm Your Age</h1>
@@ -20,18 +20,4 @@
     </div>
   </div>
 </div>
-<link rel="stylesheet" href="css/global.css" />
-<link rel="stylesheet" href="css/index.age-gate.partial.css" />
-
-<script>
-  function verifyAge() {
-    localStorage.setItem("ageVerified", "true");
-    document.querySelector(".age-gate")?.remove();
-    document.body.style.overflow = '';
-  }
-
-  function underage() {
-    window.location.href = "underage.html";
-  }
-</script>
 <!-- End Pavlo Naichuk -->
