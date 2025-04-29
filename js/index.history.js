@@ -26,5 +26,11 @@ function initHistoryAnimation() {
     });
 }
 
+document.body.addEventListener('htmx:afterSwap', (e) => {
+    if (e.detail.target.id === 'history') {
+        initHistoryAnimation();
+    }
+});
+
 initHistoryAnimation();
 /* Pavlo Naichuk */
