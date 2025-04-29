@@ -1,3 +1,4 @@
+/* Pavlo Naichuk */
 function initHistoryAnimation() {
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -26,3 +27,4 @@ function initHistoryAnimation() {
 }
 
 initHistoryAnimation();
+/* Pavlo Naichuk */
