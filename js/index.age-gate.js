@@ -1,9 +1,28 @@
+/* Pavlo Naichuk */
 let initialized = false;
+let scrollPosition = 0;
+
+function disableScroll() {
+    scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${scrollPosition}px`;
+    document.body.style.width = '100%';
+    document.body.style.overflowY = 'scroll';
+}
+
+function enableScroll() {
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.width = '';
+    document.body.style.overflowY = '';
+    window.scrollTo(0, scrollPosition);
+}
 
 function showModal() {
     const ageGate = document.querySelector('.age-gate');
     if (!ageGate) return;
-    document.body.style.overflow = 'hidden';
+
+    disableScroll();
     void ageGate.offsetWidth;
     requestAnimationFrame(() => {
         requestAnimationFrame(() => {
@@ -16,15 +35,18 @@ function initAgeGate() {
     if (initialized) return;
     const ageGate = document.querySelector('.age-gate');
     if (!ageGate) return;
+
     initialized = true;
     showModal();
+
     window.verifyAge = () => {
         ageGate.classList.replace('show', 'hide');
         ageGate.addEventListener('transitionend', () => {
             ageGate.remove();
-            document.body.style.overflow = '';
+            enableScroll();
         }, { once: true });
     };
+
     window.underage = () => {
         window.location.href = 'underage.html';
     };
@@ -37,3 +59,4 @@ document.body.addEventListener('htmx:afterSwap', evt => {
 });
 
 initAgeGate();
+/* Pavlo Naichuk */
