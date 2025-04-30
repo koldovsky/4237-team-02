@@ -7,6 +7,7 @@ function init() {
   import("./index.slide-on-site.js");
   import("./index.testimonials.partial.js"); // Vasyl Plaksiy
   import("./index.age-gate.js"); // Pavlo Naichuk
+  import("./index.history-video.js"); // Bohdan Pustovar
 }
 
 const totalPartials = document.querySelectorAll(

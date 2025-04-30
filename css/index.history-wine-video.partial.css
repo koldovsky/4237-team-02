@@ -84,7 +84,7 @@
                 font-family: var(--font-regular), sans-serif;
                 color: #f2efe9;
                 margin-top: 20px;
-                width: 260px;
+                width: 100%; /*260px;*/
                 max-width: 370px;
             }
 
@@ -108,7 +108,7 @@
         }
 
         .history-wine-video__video-conteiner {
-            width: 300px;
+            /* width: 300px; */
 
             @media(min-width: 768px)
             {
@@ -141,8 +141,8 @@
 
                 .video__player
                 {
-                    width: 270px;
-                    /*visibility: hidden; /*потрібно розкоментувати коли на конпку прикріплю js  */
+                    width: 100%; /*270px;*/
+                    visibility: hidden; /*потрібно розкоментувати коли на конпку прикріплю js  */
                     position: relative;
                     z-index: 1;                    
 
@@ -161,11 +161,14 @@
                     .video__button-play-icon{
                         width: 50px;
                         color: var(--calligraphy-color-text);
-                        fill: var(--calligraphy-color-text);
 
                         @media (min-width: 768px){
                             width: 70px;
                         }
+                    }
+
+                    .video__button-play-icon:hover{
+                        cursor: pointer; 
                     }
 
                     .video__lable{
