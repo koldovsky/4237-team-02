@@ -8,32 +8,31 @@
     justify-content: center;
     margin: auto;    
     flex-direction: column; 
+    align-items: center;
 
     .history-wine-video__content {
         display: flex;
         padding: 0 24px;
         max-width: 1200px;
-        margin: auto;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-between;        
+        width: 100%;
                 
         @media (min-width: 768px){
             flex-direction: row;
-            width: 700px;
+            padding: 0 32px;
         }
 
         @media (min-width: 1024px)
         {
-            width: 1024px;
+            padding: 0 40px;
         }
 
         @media (min-width: 1440px){
             padding: 0px;
-            width: 1200px;
         }
 
-        .history-wine-video__discription-conteiner {              
-            /* padding: 0 15px; */
+        .history-wine-video__discription-conteiner { 
 
             @media (min-width: 768px){
                 width: 245px;
@@ -108,8 +107,7 @@
         }
 
         .history-wine-video__video-conteiner {
-            /* width: 300px; */
-
+           
             @media(min-width: 768px)
             {
                 width: 340px;
@@ -141,8 +139,8 @@
 
                 .video__player
                 {
-                    width: 100%; /*270px;*/
-                    visibility: hidden; /*потрібно розкоментувати коли на конпку прикріплю js  */
+                    width: 100%; 
+                    visibility: hidden; 
                     position: relative;
                     z-index: 1;                    
 
