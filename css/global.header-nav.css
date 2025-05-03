@@ -3,7 +3,7 @@
   background: url("../img/global/background-image.jpeg") no-repeat left center;
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh;
+  min-height: 944px; 
   width: 100%;
 }
 /* Контейнер як на Weblium */
@@ -144,6 +144,18 @@
 
 /* === Мобільна адаптація === */
 @media (max-width: 991px) {
+
+  .header-background {
+    min-height: 911px; /* адаптивна висота — під контент*/
+    background-position: left center;
+    background-size: cover;
+    background-attachment: fixed; /* змінено з fixed */
+    min-height: auto;
+    height: 911px;
+  }
+    
+
+
   .burger {
     display: flex;
     position: absolute;
