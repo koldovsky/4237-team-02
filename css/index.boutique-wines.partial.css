@@ -1,3 +1,4 @@
+/* Jevlentjev Oksana */
 .header__boutique-wines {
   z-index: 10;
   position: relative;
@@ -5,7 +6,6 @@
   justify-content: flex-end;
   padding: 150px 0;
   color: var(--vr-light-shade-color);
-  
 }
 
 .header__boutique-container {
@@ -20,13 +20,21 @@
   padding-right: var(--ui-content-gutter-1200);
   padding-left: 15px;
 }
+
 .header__boutique-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .header__boutique-empty {
   width: 500px;
+}
+
+.header__boutique-content {
+  width: 700px;
+  padding-right: var(--ui-content-gutter-1200);
+  padding-left: 15px;
 }
 
 .header__boutique-eyebrow {
@@ -96,4 +104,30 @@
   background-color: var(--vr-light-shade-color);
   color: var(--vr-button-text-hover);
   border-color: var(--vr-light-shade-color);
+}
+
+@media (max-width: 911px) {
+  .header__boutique-title {
+    font-size: 71px; /* великий розмір шрифту */
+  }
+
+  @media (max-width: 676px) {
+    .header__boutique-title {
+      font-size: 58px; /* великий розмір шрифту */
+    }
+    .header__boutique-empty {
+      display: none;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .header__boutique-buttons {
+      display: flex;
+      flex-direction: column;
+    }
+    .header__boutique-buttons .btn {
+      width: auto;
+      align-self: flex-start;
+    }
+  }
 }
