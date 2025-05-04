@@ -15,7 +15,6 @@
 .timeless__text__section {
     display: block;
     flex-basis: 100%;
-    min-width: 320px;
     position: relative;
     padding-bottom: 110px;
     padding-top: 110px;
@@ -35,8 +34,8 @@
 .timeless__text__inner {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 0;
-    margin-right: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .timeless__left__side {
@@ -68,7 +67,6 @@
     flex-direction: column;
     display: flex;
     justify-content: flex-start;
-    flex-basis: 100%;
     max-width: 100%;
 }
 
@@ -84,7 +82,6 @@
     position: relative;
     box-sizing: border-box;
     display: block;
-    margin-top: 25px;
     overflow: hidden;
     justify-content: flex-start;
 
@@ -166,45 +163,66 @@
 }
 
 @media (max-width: 767px) {
+    .timeless {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+  
     .timeless__section {
-        background-image:none;
+      background-image: none;
+      box-sizing: border-box;
+      flex-direction: column;
+      width: 100%;
     }
-    .timeless__text__section{
-        padding-bottom: 90px;
-        padding-top: 90px;
+  
+    .timeless__text__section {
+      padding-bottom: 90px;
+      padding-top: 90px;
+      overflow-x: hidden;
+      box-sizing: border-box;
     }
-   
-    .timeless__subtitle * {
-        font-size: 14px;
-    }
-    .timeless__title * {
-        font-size: 34px;
-        text-align: left;
-    }
-    .timeless__right__side{
-        flex-basis: 100%;
-        max-width: 100%;
-    }       
-    .timeless__right__column {
-        text-align: left;
-        display: 100px;
-    }
-    .timeless__text__inner{
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .timeless__subtitle__text{
-        letter-spacing: calc(var(-0.02 * 1em));
-    }   
-    .timeless__left__side{
-        display: none;
-    }
+  
     .timeless__text__block1 {
-        padding-left: 24px;
-        padding-right: 24px;
+      padding-left: 24px;
+      padding-right: 24px;
+      max-width: 100%;
+      box-sizing: border-box;
     }
-}
+  
+    .timeless__text__inner {
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .timeless__left__side {
+      display: none;
+    }
+  
+    .timeless__right__side {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  
+    .timeless__right__column {
+      display: flex;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .timeless__title {
+      font-size: 33px;
+      text-align: left;
+      word-break: normal;
+      overflow-wrap: break-word;
+      hyphens: auto;
+    }
+  
+    .timeless__subtitle * {
+      font-size: 14px;
+    }
+  }
 @media (min-width: 768px) and (max-width: 991px) {
     .timeless__section {
       background-position: 74%;
@@ -252,9 +270,3 @@
         padding-top: 100px;
     }
   }
-  @media (min-width: 992px) {
-    .timeless__text__inner {
-        margin-left: -15px;
-        margin-right: -15px;
-    }
-}
