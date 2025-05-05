@@ -26,6 +26,9 @@ body.no-scroll {
   --vr-brand-color: #c8693a; /* Jevlentjev Oksana */
   --vr-button-text-hover: #261e1c; /* Jevlentjev Oksana */
   --vr-brand-color-hover: #a05630; /* Jevlentjev Oksana */
+  --footer-bg-color: #1b1613; /* Jevlentjev Oksana */
+  --footer-text-color: #ffffff; /* Jevlentjev Oksana */
+  --footer-hr: #ff6a00; /* Jevlentjev Oksana */
   --font-regular: "Rubik", sans-serif;
   --font-calligraphy: "Great Vibes", cursive; /* каліграфічний шрифт Vita Maksymchenko */
   --font-header: "Prata", serif;

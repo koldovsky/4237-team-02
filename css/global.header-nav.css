@@ -5,9 +5,9 @@
   background-attachment: fixed;
   min-height: 944px;
   width: 100%;
-
   overflow-x: hidden;
 }
+
 /* Контейнер як на Weblium */
 .navbar-container {
   display: flex;
@@ -152,7 +152,7 @@
     background-size: cover;
     background-attachment: fixed;
     min-height: auto;
-    height: 911px;
+    height: 777px;
   }
 
   .burger {
