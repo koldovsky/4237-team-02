@@ -1,6 +1,6 @@
 .orange_button {
   padding: 15px 25px;
-  background-color: var(--calligraphy-color-text);
+  background-color: var(--color-button-primary);
   font-size: 15px;
   font-family: var(--regular-font);
   color: var(--title-color);
