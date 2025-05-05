@@ -104,6 +104,19 @@ body.no-scroll {
   --svg-hover-logo-color: #261e1c; /* темний логотип при ховері */
 
   /* бургер-меню і мобільне меню */
+  /* Ширина всередині navbar */
+  --navbar-inner-width: 1200px;
+
+ /* Inna Nosyk */
+ --background-color: #261e1c; /* Темный фон */
+ --primary-color: #c8693a; /* Заголовки */
+ --text-color:#ffffff; /* Основний світлий текст */
+ --accent-color: #f48c28; /* Дата або підкреслювання */
+ 
+
+  
+  /* ===== ДОДАНО: бургер-меню і мобільне меню ===== */
+
   --burger-width: 30px; /* ширина кнопки бургер */
   --burger-height: 25px; /* висота кнопки бургер */
   --burger-line-height: 3px; /* висота лінії бургер-меню */
