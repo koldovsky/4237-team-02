@@ -48,7 +48,7 @@ function initAgeGate() {
     };
 }
 
-document.body.addEventListener('htmx:afterSettle', evt => {
+document.body.addEventListener('htmx:afterSwap', evt => {
     if (evt.detail.target.id === 'age-check') {
         initAgeGate();
     }
