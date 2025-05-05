@@ -188,22 +188,13 @@
     <!-- End Lilia Pinchuk -->
 
     <!-- Pavlo Naichuk -->
-    <div
-      id="age-check"
-      data-hx-trigger="load"
-      data-hx-get="index.age-gate.partial.html"
-      data-hx-swap="beforeend"
-    ></div>
-
     <script>
-      if (localStorage.getItem("ageVerified") !== "true") {
-        const ageDiv = document.createElement("div");
-        ageDiv.id = "age-check";
-        ageDiv.setAttribute("data-hx-trigger", "load");
-        ageDiv.setAttribute("data-hx-get", "index.age-gate.partial.html");
-        ageDiv.setAttribute("data-hx-swap", "beforeend");
-        document.body.appendChild(ageDiv);
-      }
+      const ageDiv = document.createElement("div");
+      ageDiv.id = "age-check";
+      ageDiv.setAttribute("data-hx-trigger", "load");
+      ageDiv.setAttribute("data-hx-get", "index.age-gate.partial.html");
+      ageDiv.setAttribute("data-hx-swap", "beforeend");
+      document.body.appendChild(ageDiv);
     </script>
     <!-- End Pavlo Naichuk -->
 
