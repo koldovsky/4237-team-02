@@ -1,5 +1,4 @@
 /* Pavlo Naichuk */
-let initialized = false;
 let scrollPosition = 0;
 
 function disableScroll() {
@@ -32,11 +31,8 @@ function showModal() {
 }
 
 function initAgeGate() {
-    if (initialized) return;
     const ageGate = document.querySelector('.age-gate');
     if (!ageGate) return;
-
-    initialized = true;
     showModal();
 
     window.verifyAge = () => {
