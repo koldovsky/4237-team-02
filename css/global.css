@@ -96,7 +96,7 @@ body.no-scroll {
 
   /* SVG Іконки (нормальний стан) */
   --svg-bg-color: #261e1c; /* Темний фон */
-  --svg-border-color: #c8693a; /* Оранжевий кант */
+  --svg-border-color: hsl(20, 54%, 52%); /* Оранжевий кант */
   --svg-logo-color: #c8693a; /* Оранжевий логотип */
 
   /* SVG Іконки (hover) */
