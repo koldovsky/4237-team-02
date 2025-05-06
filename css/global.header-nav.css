@@ -1,11 +1,13 @@
-/* Фон з паралаксом */
+/* Jevlentjev Oksana */
 .header-background {
   background: url("../img/global/background-image.jpeg") no-repeat left center;
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh;
+  min-height: 944px;
   width: 100%;
+  overflow-x: hidden;
 }
+
 /* Контейнер як на Weblium */
 .navbar-container {
   display: flex;
@@ -55,11 +57,11 @@
 }
 
 .navbar__item a {
-  color: var(--link-color); /* Колір тексту посилань */
+  color: var(--link-color);
   text-decoration: none; /* Забирає підкреслення */
-  font-family: var(--font-regular); /* Шрифт меню */
-  font-weight: var(--menu-font-weight); /* Товщина шрифту 500 */
-  font-size: var(--navbar-font-size); /* Розмір шрифту 14px */
+  font-family: var(--font-regular);
+  font-weight: var(--menu-font-weight);
+  font-size: var(--navbar-font-size);
 }
 
 .navbar__item a:hover {
@@ -85,7 +87,7 @@
   color: var(--ui-brand-color-hover); /* orang */
 }
 
-/* === SVG ICON STYLES === */
+/* SVG ICON */
 
 .svg-bg {
   fill: var(--svg-bg-color);
@@ -102,7 +104,7 @@
   stroke-width: 2;
 }
 
-/* === Hover SVG ICON STYLES === */
+/* Hover SVG ICON */
 .navbar__icon:hover .svg-bg {
   fill: var(--svg-hover-bg-color); /* Оранжевий фон при наведенні */
 }
@@ -111,7 +113,7 @@
   fill: var(--svg-hover-logo-color); /* Темний логотип при наведенні */
 }
 
-/* === Бургер-кнопка === */
+/* Бургер-кнопка */
 .burger {
   display: none;
   flex-direction: column;
@@ -142,8 +144,17 @@
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* === Мобільна адаптація === */
+/* Мобільна адаптація */
 @media (max-width: 991px) {
+  .header-background {
+    min-height: 911px;
+    background-position: left center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: auto;
+    height: 777px;
+  }
+
   .burger {
     display: flex;
     position: absolute;
@@ -156,7 +167,7 @@
   }
 
   .navbar__right {
-    background-color: var(--burger-menu-bg); /* фон бургер меню*/
+    background-color: var(--burger-menu-bg);
     position: fixed;
     top: 0;
     left: 0;
@@ -168,7 +179,7 @@
     overflow: hidden;
     opacity: 0;
     pointer-events: none;
-    transition: height 0.3s ease, opacity 0.3s ease; /* перехід */
+    transition: height 0.3s ease, opacity 0.3s ease;
 
     display: flex;
     flex-direction: column;

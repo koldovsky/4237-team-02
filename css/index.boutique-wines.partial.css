@@ -1,0 +1,133 @@
+/* Jevlentjev Oksana */
+.header__boutique-wines {
+  z-index: 10;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding: 150px 0;
+  color: var(--vr-light-shade-color);
+}
+
+.header__boutique-container {
+  max-width: 1200px;
+  margin: -388px auto 0 auto; /* 🔼 піднімає контейнер вверх */
+  padding: 0 var(--ui-content-gutter-1200);
+  width: 100%;
+}
+
+.header__boutique-content {
+  width: 700px;
+  padding-right: var(--ui-content-gutter-1200);
+  padding-left: 15px;
+}
+
+.header__boutique-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__boutique-empty {
+  width: 500px;
+}
+
+.header__boutique-content {
+  width: 700px;
+  padding-right: var(--ui-content-gutter-1200);
+  padding-left: 15px;
+}
+
+.header__boutique-eyebrow {
+  font-family: var(--font-calligraphy); /* Great Vibes */
+  font-size: 28px;
+  color: var(--vr-brand-color); /* #c8693a */
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.header__boutique-title {
+  font-family: var(--font-header); /* Prata */
+  font-size: 84px;
+  color: var(--vr-light-shade-color); /* #ffffff */
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
+.header__boutique-text {
+  font-family: var(--font-regular); /* Rubik */
+  font-size: 18px;
+  color: var(--vr-light-shade-color); /* #ffffff */
+  line-height: 1.6;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.header__boutique-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px 28px;
+  font-family: var(--font-regular);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.2;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: var(--vr-brand-color);
+  color: var(--vr-light-shade-color);
+  border-color: var(--vr-brand-color);
+}
+
+.btn--primary:hover {
+  background-color: var(--vr-brand-color-hover); /* #a05630 */
+  color: var(--vr-light-shade-color);
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: var(--vr-light-shade-color);
+  border-color: var(--vr-light-shade-color);
+}
+
+.btn--outline:hover {
+  background-color: var(--vr-light-shade-color);
+  color: var(--vr-button-text-hover);
+  border-color: var(--vr-light-shade-color);
+}
+
+@media (max-width: 911px) {
+  .header__boutique-title {
+    font-size: 71px; /* великий розмір шрифту */
+  }
+
+  @media (max-width: 676px) {
+    .header__boutique-title {
+      font-size: 58px; /* великий розмір шрифту */
+    }
+    .header__boutique-empty {
+      display: none;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .header__boutique-buttons {
+      display: flex;
+      flex-direction: column;
+    }
+    .header__boutique-buttons .btn {
+      width: auto;
+      align-self: flex-start;
+    }
+  }
+}

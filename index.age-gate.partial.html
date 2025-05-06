@@ -1,12 +1,11 @@
 <!-- Pavlo Naichuk -->
+<link rel="stylesheet" href="css/global.css" />
+<link rel="stylesheet" href="css/index.age-gate.partial.css" />
+
 <div class="age-gate">
   <div class="age-gate__modal">
     <h1 class="age-gate__title">Confirm Your Age</h1>
-    <img
-      src="./img/index/title-divider.svg"
-      alt="Decorative divider"
-      class="age-gate__divider"
-    />
+    <img src="./img/index/title-divider.svg" alt="Decorative divider" class="age-gate__divider" />
     <p class="age-gate__text">
       We don't sell alcohol to minors. Please confirm that you are over 21 years
       old to enter this site.
@@ -21,17 +20,4 @@
     </div>
   </div>
 </div>
-<link rel="stylesheet" href="css/global.css" />
-<link rel="stylesheet" href="css/index.age-gate.partial.css" />
-
-<script>
-  function verifyAge() {
-    localStorage.setItem("ageVerified", "true");
-    document.querySelector(".age-gate")?.remove();
-  }
-
-  function underage() {
-    window.location.href = "underage.html";
-  }
-</script>
 <!-- End Pavlo Naichuk -->

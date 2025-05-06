@@ -1,0 +1,118 @@
+/*.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: #111;
+    color: #fff;
+  }*/
+
+.footer-wrapper {
+  background-color: var(--footer-bg-color);
+  padding: 2rem 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem; /* для адаптивності */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem; /* або скільки потрібно для відступів між колонками */
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-column h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: var(--footer-text-color);
+  font-family: (--font-header);
+}
+
+.footer-column hr {
+  border: none;
+  height: 2px;
+  background-color: var(--footer-hr);
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  color: var(--subtext-color); /* щоб був такий самий, як посилання */
+  font-family: var(--font-regular);
+  font-size: var(--footer-font-size, 14px);
+  margin-bottom: 8px;
+}
+
+.footer-column p:hover,
+.footer-column p:active {
+  color: var(--subtext-color); /* залишає той самий колір */
+  text-decoration: none;
+  cursor: default; /* щоб не виглядало як посилання */
+}
+
+.footer-column a[href^="mailto:"],
+.footer-column a[href^="tel:"] {
+  color: var(--subtext-color);
+  text-decoration: none;
+}
+
+.footer-column a[href^="mailto:"]:hover,
+.footer-column a[href^="tel:"]:hover {
+  color: var(--subtext-color); /* залишає колір незмінним */
+}
+
+.footer-column a {
+  font-family: var(--font-regular);
+  font-size: var(--footer-font-size, 14px); /* fallback якщо не задана змінна */
+  color: var(--subtext-color);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 25px;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: var(--vr-brand-color-hover);
+}
+
+/* Для горизонтального розміщення іконок у футері */
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: orange;
+}
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.instagram-grid img {
+  width: 50px;
+  height: auto;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* .carousel img {
+    height: 80px;
+    object-fit: cover;
+  } */

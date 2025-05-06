@@ -4,8 +4,10 @@ function init() {
   import("./global.header-burger.js");
   import("./index.best-deals.partial.js");
   import("./index.shopping-cart.js"); //Lilia Pinchuk
-  import("./index.slide-on-site.js");
+  import("./index.fakeAIButton.js");
   import("./index.testimonials.partial.js"); // Vasyl Plaksiy
+  import("./index.age-gate.js"); // Pavlo Naichuk
+  import("./index.history-video.js"); // Bohdan Pustovar
 }
 
 const totalPartials = document.querySelectorAll(

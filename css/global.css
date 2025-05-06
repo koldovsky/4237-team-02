@@ -22,10 +22,17 @@ body.no-scroll {
   --subtext-color: #898082; /* Remyha Valeriia */
   --calligraphy-color-text: #c8693a; /* Vita Maksymchenko */
   --burger-menu-bg: #1a1512; /* Jevlentjev Oksana */
-
+  --vr-light-shade-color: #ffffff; /* Jevlentjev Oksana */
+  --vr-brand-color: #c8693a; /* Jevlentjev Oksana */
+  --vr-button-text-hover: #261e1c; /* Jevlentjev Oksana */
+  --vr-brand-color-hover: #a05630; /* Jevlentjev Oksana */
+  --footer-bg-color: #1b1613; /* Jevlentjev Oksana */
+  --footer-text-color: #ffffff; /* Jevlentjev Oksana */
+  --footer-hr: #ff6a00; /* Jevlentjev Oksana */
   --font-regular: "Rubik", sans-serif;
   --font-calligraphy: "Great Vibes", cursive; /* каліграфічний шрифт Vita Maksymchenko */
   --font-header: "Prata", serif;
+  --transition-duration: 0.7s; /* Pavlo Naichuk */
 
   /* Lilia Pinchuk*/
   --cart-header-background: #f7f8fa;
@@ -56,7 +63,7 @@ body.no-scroll {
   --color-button-pressed: #b0542c;
 
   /* Jevlentjev Oksana */
-  --header-height: 100px;
+  --header-height: 104px;
   --black-transparent: rgba(0, 0, 0, 0.6);
 
   /* Контейнер */
@@ -65,7 +72,7 @@ body.no-scroll {
   --navbar-padding-x: 40px;
   --navbar-padding-y: 30px;
 
-  --navbar-inner-width: 1200px; /* Ширина всередині navbar */
+  --navbar-inner-width: 1200px;
 
   /* Логотип */
   --logo-width: 176px;
@@ -85,26 +92,32 @@ body.no-scroll {
   --navbar-padding-right: 20px;
 
   /* Іконки соцмереж */
-  --navbar-icons-gap: 15px; /* Відстань між іконками */
-  --icon-size: 26px; /* Розмір SVG-іконок */
+  --navbar-icons-gap: 15px;
+  --icon-size: 26px;
   --icon-default-color: #ffffff; /* Стандартний колір іконки */
   --ui-brand-color-hover: #c8693a; /* Колір іконок при наведенні */
 
   /* SVG Іконки (нормальний стан) */
   --svg-bg-color: #261e1c; /* Темний фон */
-  --svg-border-color: #c8693a; /* Оранжевий кант */
+  --svg-border-color: hsl(20, 54%, 52%); /* Оранжевий кант */
   --svg-logo-color: #c8693a; /* Оранжевий логотип */
 
   /* SVG Іконки (hover) */
   --svg-hover-bg-color: #c8693a; /* оранжеве тло при ховері */
   --svg-hover-logo-color: #261e1c; /* темний логотип при ховері */
 
-  /*Inna Nosyk */
-  --background-color: #261e1c; /* Темный фон */
-  --primary-color: #c8693a; /* Заголовки */
-  --text-color: #e0d7d3; /* Основний світлий текст */
-  --accent-color: #f48c28; /* Дата або підкреслювання */
+  /* бургер-меню і мобільне меню */
+  /* Ширина всередині navbar */
+  --navbar-inner-width: 1200px;
 
+ /* Inna Nosyk */
+ --background-color: #261e1c; /* Темный фон */
+ --primary-color: #c8693a; /* Заголовки */
+ --text-color:#ffffff; /* Основний світлий текст */
+ --accent-color: #f48c28; /* Дата або підкреслювання */
+ 
+
+  
   /* ===== ДОДАНО: бургер-меню і мобільне меню ===== */
 
   --burger-width: 30px; /* ширина кнопки бургер */
@@ -112,8 +125,14 @@ body.no-scroll {
   --burger-line-height: 3px; /* висота лінії бургер-меню */
   --burger-line-color: #ffffff; /* колір ліній бургер-меню */
 
-  --mobile-menu-bg: #1a1a1a; /* фон мобільного меню */
-  --mobile-menu-text-color: #ffffff; /* текст у мобільному меню */
-  --mobile-menu-font-size: 16px; /* розмір тексту */
-  --mobile-menu-gap: 20px; /* відстань між пунктами меню */
+  --mobile-menu-bg: #1a1a1a;
+  --mobile-menu-text-color: #ffffff;
+  --mobile-menu-font-size: 16px;
+  --mobile-menu-gap: 20px;
+
+  /* Inna Nosyk */
+  --background-color: #261e1c; /* Темный фон */
+  --primary-color: #c8693a; /* Заголовки */
+  --text-color: #e0d7d3; /* Основний світлий текст */
+  --accent-color: #f48c28; /* Дата або підкреслювання */
 }

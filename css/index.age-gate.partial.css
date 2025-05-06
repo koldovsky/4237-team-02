@@ -1,4 +1,4 @@
-/*Pavlo Naichuk*/
+/* Pavlo Naichuk */
 .age-gate {
   position: fixed;
   inset: 0;
@@ -7,6 +7,24 @@
   justify-content: center;
   align-items: center;
   z-index: 9999;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--transition-duration) ease, visibility var(--transition-duration) ease;
+}
+
+.age-gate.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.age-gate.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--transition-duration) ease, visibility var(--transition-duration) ease;
 }
 
 .age-gate__modal {
@@ -19,6 +37,20 @@
   box-shadow: var(--box-shadow-dark);
   max-height: 90vh;
   overflow-y: auto;
+
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: transform var(--transition-duration) ease, opacity var(--transition-duration) ease;
+}
+
+.age-gate.show .age-gate__modal {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.age-gate.hide .age-gate__modal {
+  transform: translateY(-20px);
+  opacity: 0;
 }
 
 .age-gate__title {
@@ -42,15 +74,13 @@
   white-space: normal;
   overflow-wrap: break-word;
   word-break: break-word;
-  overflow: visible;
-  text-overflow: clip;
-  display: block;
 }
 
 .age-gate__buttons {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .age-gate__btn {
@@ -60,6 +90,7 @@
   border-radius: 5px;
   font-weight: bold;
   border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .age-gate__btn--yes {
@@ -85,23 +116,6 @@
   }
 
   .age-gate__title {
-    font-size: 26px;
-  }
-
-  .age-gate__text {
-    font-size: 15px;
-    margin-bottom: 24px;
-  }
-
-  .age-gate__btn {
-    padding: 12px 18px;
-    font-size: 14px;
-  }
-}
-
-
-@media screen and (min-width: 601px) and (max-width: 1100px) {
-  .age-gate__title {
     font-size: 30px;
   }
 
@@ -115,7 +129,6 @@
     font-size: 16px;
   }
 }
-
 
 @media screen and (max-width: 800px) {
   .age-gate__modal {
@@ -135,7 +148,6 @@
 
   .age-gate__buttons {
     gap: 12px;
-    flex-wrap: wrap;
   }
 }
 
@@ -165,4 +177,4 @@
   }
 }
 
-/* /Pavlo Naichuk */
+/* Pavlo Naichuk */
