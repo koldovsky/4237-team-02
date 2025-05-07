@@ -7,6 +7,7 @@ function init() {
   import("./index.fakeAIButton.js");
   import("./index.testimonials.partial.js"); // Vasyl Plaksiy
   import("./index.age-gate.js"); // Pavlo Naichuk
+  import("./footer.carousel.js"); //Jevlentjev Oksana
   import("./index.history-video.js"); // Bohdan Pustovar
 }
 

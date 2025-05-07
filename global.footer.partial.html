@@ -6,10 +6,47 @@
       <p><a href="mailto:caliwines@email.com">caliwines@email.com</a></p>
       <p><a href="tel:+12345678900">+1 (234) 567 89 00</a></p>
       <p>
-        <a href="#" data-proofer-ignore>1111 White Ln, St Helena, CA 94574</a>
+        <span class="footer-address">1111 White Ln, St Helena, CA 94574</span>
       </p>
 
       <div class="social-icons">
+        <!-- Twitter -->
+        <a
+          class="navbar__icon"
+          href="https://x.com/"
+          target="_blank"
+          aria-label="Twitter"
+        >
+          <svg
+            class="navbar__icon-svg twitter-icon"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect class="svg-bg" width="32" height="32" />
+            <rect class="svg-border" x="1" y="1" width="30" height="30" />
+
+            <path
+              class="svg-logo"
+              fill-rule="evenodd"
+              d="M23.5445333,10.2885333 C23.0796444,10.5863111 22.0122666,11.0190222 21.4858666,11.0190222 
+      L21.4858666,11.0199111 C20.8848,10.392 20.0385777,10 19.1000888,10 C17.2773333,10 15.7992889,11.4780444 
+      15.7992889,13.3000888 C15.7992889,13.5532445 15.8286222,13.8001778 15.8828444,14.0369778 
+      C13.4097777,13.9720888 10.7056,12.7328 9.07768889,10.6117333 
+      C8.0768,12.3441778 8.94293333,14.2709334 10.0787556,14.9729778 
+      C9.68995555,15.0023111 8.97422222,14.9281778 8.63733333,14.5994666 
+      C8.61475555,15.7493334 9.16764444,17.2728889 11.1836444,17.8256 
+      C10.7953778,18.0344889 10.1080889,17.9745778 9.80924444,17.9301333 
+      C9.91413329,18.9008 11.2734222,20.1697778 12.7598222,20.1697778 
+      C12.2300445,20.7825777 10.2368,21.8940444 8,21.5404445 
+      C9.51911111,22.4647111 11.2896,22.9999999 13.1635555,22.9999999 
+      C18.4888889,22.9999999 22.6245334,18.6840889 22.4019555,13.3598222 
+      C22.8847999,12.9203555 23.5352888,12.3338667 24,11.5619556 
+      C23.7304889,11.7104 22.9219555,12.0076445 22.1696,12.0814222 
+      C22.6524444,11.8208 23.3678222,10.9672889 23.5445333,10.2885333 Z"
+            />
+          </svg>
+        </a>
+
         <!-- Facebook -->
         <a
           class="navbar__icon"
@@ -111,50 +148,148 @@
     <div class="footer-column">
       <h3>Instagram</h3>
       <hr />
-      <!--<div class="instagram-grid">
+      <div class="instagram-grid">
         <a
-          href="img/global/insta1.webp"
+          href="javascript:void(0);"
           data-bs-toggle="modal"
           data-bs-target="#instaModal"
+          data-bs-slide-to="0"
         >
-          <img src="img/insta1.webp" alt="Instagram 1" />
+          <img src="img/global/insta1_optimized.webp" alt="Instagram 1" />
         </a>
         <a
-          href="/img/insta2-large.webp"
+          href="#"
           data-bs-toggle="modal"
           data-bs-target="#instaModal"
+          data-bs-slide-to="0"
         >
-          <img src="img/insta2.webp" alt="Instagram 2" />
+          <img src="img/global/insta2_optimized.webp" alt="Instagram 2" />
         </a>
         <a
-          href="img/insta3-large.webp"
+          href="#"
           data-bs-toggle="modal"
           data-bs-target="#instaModal"
+          data-bs-slide-to="0"
         >
-          <img src="img/insta3.webp" alt="Instagram 3" />
+          <img src="img/global/insta3_optimized.webp" alt="Instagram 3" />
         </a>
         <a
-          href="img/insta4-large.webp"
+          href="#"
           data-bs-toggle="modal"
           data-bs-target="#instaModal"
+          data-bs-slide-to="0"
         >
-          <img src="img/insta4.webp" alt="Instagram 4" />
+          <img src="img/global/insta4_optimized.webp" alt="Instagram 4" />
         </a>
         <a
-          href="img/insta5-large.webp"
+          href="#"
           data-bs-toggle="modal"
           data-bs-target="#instaModal"
+          data-bs-slide-to="0"
         >
-          <img src="img/insta5.webp" alt="Instagram 5" />
+          <img src="img/global/insta5_optimized.webp" alt="Instagram 5" />
         </a>
         <a
-          href="img/insta6-large.webp"
+          href="#"
           data-bs-toggle="modal"
           data-bs-target="#instaModal"
+          data-bs-slide-to="0"
         >
-          <img src="img/insta6.webp" alt="Instagram 6" />
+          <img src="img/global/insta6_optimized.webp" alt="Instagram 6" />
         </a>
-      </div>-->
+      </div>
+
+      <div class="modal fade" id="instaModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content bg-dark position-relative">
+            <div class="modal-header border-0 p-0">
+              <button
+                type="button"
+                class="btn-close btn-close-white me-3 mt-3 position-absolute top-0 end-0 z-3"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body p-0">
+              <div
+                id="instaCarousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="img/global/insta1_optimized_1140.webp"
+                      class="d-block w-100 insta-carousel-img"
+                      alt="Instagram 1"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/global/insta2_optimized_1140.webp"
+                      class="d-block w-100 insta-carousel-img"
+                      alt="Instagram 2"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/global/insta3_optimized_1140.webp"
+                      class="d-block w-100 insta-carousel-img"
+                      alt="Instagram 3"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/global/insta4_optimized_1140.webp"
+                      class="d-block w-100 insta-carousel-img"
+                      alt="Instagram 4"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/global/insta5_optimized_1140.webp"
+                      class="d-block w-100 insta-carousel-img"
+                      alt="Instagram 5"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/global/insta6_optimized_1140.webp"
+                      class="d-block w-100 insta-carousel-img"
+                      alt="Instagram 6"
+                    />
+                  </div>
+                </div>
+
+                <!-- Кнопки керування -->
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#instaCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#instaCarousel"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
+
+<div class="footer-bottom">
+  <div class="footer-bottom__container">
+    <p class="footer-bottom-left">© Created by</p>
+    <p class="footer-bottom-right">All rights reserved</p>
   </div>
 </div>
