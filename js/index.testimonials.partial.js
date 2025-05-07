@@ -1,5 +1,5 @@
 // Vasyl Plaksiy
-let testimonials = {
+const testimonials = {
     activeSlide: 0,
     init: function () {
         if (!document.querySelector('.testimonials__carousel')) return;
@@ -13,7 +13,7 @@ let testimonials = {
         this.controls();
     },
     pagination: function () {
-        let obj = this;
+        const obj = this;
 
         document.querySelectorAll(".testimonials__carousel-nav button").forEach(function (el) {
             el.addEventListener("click", function () {
@@ -24,7 +24,7 @@ let testimonials = {
         });
     },
     controls: function () {
-        let obj = this;
+        const obj = this;
 
         document.querySelector(".testimonials__carousel-button--prev").addEventListener("click", function () {
             obj.goTo(obj.activeSlide == 0 ? 0 : obj.activeSlide - 1);
@@ -57,6 +57,4 @@ let testimonials = {
 }
 
 testimonials.init();
-
-
 // [END] Vasyl Plaksiy
