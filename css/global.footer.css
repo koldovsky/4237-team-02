@@ -1,159 +1,104 @@
+/* Jevlentjev Oksana */
 .footer-wrapper {
   background-color: var(--footer-bg-color);
-  padding: 2rem 0;
+  padding: 1rem 0; /* вертикальний відступ */
+  width: 100%;
+  overflow-x: hidden; /* запобігає горизонтальному скролу */
 }
 
 .footer-container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem; /* для адаптивності */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2rem; /* або скільки потрібно для відступів між колонками */
+  margin: 0 auto; /* центрування */
+  padding: 0 20px; /* горизонтальні відступи */
+  display: flex; /* флексблок для 4 колонок */
+  flex-wrap: nowrap; /* не переносити колонки до 767px */
+  justify-content: space-between; /* рівномірний розподіл */
+  gap: 2rem; /* відстань між колонками */
 }
 
-.footer-column {
-  flex: 1 1 200px;
-  margin: 10px;
+.footer-column,
+.footer-instagram {
+  flex: 1 1 200px; /* гнучка ширина */
+  margin-bottom: 30px; /* відступ знизу */
 }
 
 .footer-column h3 {
-  font-size: 22px;
+  font-size: 22px; /* розмір заголовка */
   margin-bottom: 10px;
   color: var(--footer-text-color);
-  font-family: (--font-header);
+  font-family: var(--font-header);
 }
 
 .footer-column hr {
   border: none;
   height: 2px;
-  background-color: var(--footer-hr);
+  background-color: var(--footer-hr); /* лінія під заголовком */
   width: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   opacity: 1;
 }
 
-.footer-column p {
-  color: var(--subtext-color); /* щоб був такий самий, як посилання */
-  font-family: var(--font-regular);
-  font-size: var(--footer-font-size, 14px);
-  margin-bottom: 8px;
+.footer-column a {
+  display: block; /* Кожне посилання займає окремий рядок */
+  margin-bottom: 8px; /* Відстань між рядками */
 }
 
-.footer-column p:hover,
-.footer-column p:active {
-  color: var(--footer-subtext-color); /* залишає той самий колір */
+.footer-column p,
+.footer-column a,
+.footer-address {
+  display: block; /* Кожне посилання займає окремий рядок */
+  font-family: var(--font-regular);
+  font-size: var(--footer-font-size, 14px);
+  color: var(--footer-subtext-color);
   text-decoration: none;
-  cursor: default; /* щоб не виглядало як посилання */
+}
+.footer-column a {
+  margin-bottom: 8px; /* Відстань між рядками */
+}
+.footer-column p {
+  margin-bottom: 16px; /* Відстань між рядками */
+}
+.footer-address {
+  margin-bottom: 45px; /* Відстань між рядками */
+}
+
+.social-icons {
+  display: flex; /* Іконки в рядок */
+  gap: 10px; /* Відстань між ними */
+  margin-top: 20px;
+}
+
+.footer-column a:hover {
+  color: var(--vr-brand-color-hover); /* колір при наведенні */
 }
 
 .footer-column a[href^="mailto:"],
 .footer-column a[href^="tel:"] {
   color: var(--footer-subtext-color);
   text-decoration: none;
+  pointer-events: none; /* опціонально: відключає клікабельність */
+  cursor: default;
 }
 
 .footer-column a[href^="mailto:"]:hover,
 .footer-column a[href^="tel:"]:hover {
-  color: var(--footer-subtext-color);
+  color: var(--footer-subtext-color); /* не змінюється при наведенні */
 }
 
-.footer-address {
-  font-family: var(--font-regular);
-  font-size: var(--footer-font-size, 14px);
-  color: var(--footer-subtext-color);
-  display: block;
-  margin-bottom: 25px;
-}
-
-.footer-column a {
-  font-family: var(--font-regular);
-  font-size: var(--footer-font-size, 14px);
-  color: var(--footer-subtext-color);
-  text-decoration: none;
-  display: block;
-  margin-bottom: 25px;
-  transition: color 0.3s;
-}
-
-.footer-column a:hover {
-  color: var(--vr-brand-color-hover);
-}
-
-/* Для горизонтального розміщення іконок у футері */
-.social-icons {
-  display: flex;
-  gap: 10px;
-  margin-top: 25px;
-}
-
-.social-icons a {
-  margin-right: 10px;
-  font-size: 20px;
-  color: #fff;
-  transition: color 0.3s;
-}
-
-.social-icons a:hover {
-  color: orange;
-}
+/* 📸 Instagram grid — тільки 4 блок */
 .instagram-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  display: grid; /* грід для фото */
+  grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+  gap: 15px; /* проміжки */
   margin-top: 10px;
+  padding: 0;
 }
 
 .instagram-grid img {
   width: 100%;
   height: auto;
-  object-fit: cover;
-}
-.insta-carousel-img {
-  /*height: 100vh;            /* висота по всій сторінці */
-  max-height: 100vh;
-  object-fit: contain;      /* або cover — залежно від бажаного ефекту */
-}
-
-/* Змінити позицію стрілок */
-.carousel-control-prev,
-.carousel-control-next {
-  width: 5%; /* або 20% — на твій смак */
-  top: 0;
-  bottom: 0;
-  z-index: 10;
-  opacity: 1;
-}
-/* Перемістити стрілки за межі фото */
-.carousel-control-prev {
-  left: -10%; /* вивести за межу фото */
-}
-.carousel-control-next {
-  right: -10%;
-}
-
-/* Самі іконки — розмір */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  width: 2rem;
-  height: 2rem;
-  background-size: 100% 100%;
-}
-
-.modal-backdrop.show {
-  opacity: 0.9 !important;
-  background-color: #000 !important;
-}
-
-.modal-content {
-  border: none;
-  border-radius: 0;
-}
-
-.modal-content.bg-dark {
-  background-color: transparent !important;
-  box-shadow: none; /* прибирає тінь, якщо є */
+  object-fit: cover; /* заповнення блоку */
+  display: block;
 }
 
 .footer-bottom {
@@ -164,15 +109,164 @@
 
 .footer-bottom__container {
   max-width: 1200px;
+  display: flex;
   margin: 0 auto;
   padding: 0 1rem;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 0.9rem;
+  flex-direction: row; /* текст в рядок */
+  text-align: left; /* текст по краях */
 }
 
 .footer-bottom-left,
 .footer-bottom-right {
   margin: 0;
+}
+
+/* Адаптив — 797px: все ще 4 колонки, фото в 2 */
+@media (max-width: 797px) {
+  .footer-container {
+    flex-wrap: nowrap; /* все ще одна лінія */
+  }
+  .instagram-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 фото в ряд */
+  }
+
+  .social-icons {
+    display: flex; /* Іконки в один ряд */
+  }
+}
+/* Від 797px до 767px — Grid як адаптивна сітка */
+@media (max-width: 797px) and (min-width: 768px) {
+  .social-icons {
+    display: grid; /* Перехід на Grid */
+    grid-template-columns: repeat(4, 40px);
+    gap: 0 !important;
+  }
+}
+
+/* 📱 Адаптив — 767px: всі блоки вертикально, інста остання */
+@media (max-width: 767px) {
+  .footer-container {
+    flex-direction: column; /* блоки один під одним */
+    align-items: center; /* центрування */
+    text-align: center;
+    gap: 10px !important;
+  }
+
+  .footer-column,
+  .footer-instagram {
+    margin-bottom: 0 !important; /* залишаємо тільки gap */
+  }
+
+  .footer-instagram {
+    order: 4; /* Instagram останнім */
+  }
+
+  .instagram-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 фото в ряд */
+    gap: 10px;
+    padding: 0;
+  }
+
+  .footer-column hr {
+    width: 90px; /* довший hr */
+    margin: 0 auto 20px auto; /* центровано */
+  }
+
+  .social-icons {
+    display: flex; /* Розташування в ряд */
+    justify-content: center; /* Центрування по горизонталі */
+    align-items: center; /* Центрування по вертикалі */
+    gap: 10px; /* Відстань між іконками */
+    flex-wrap: nowrap; /* Не дозволяти перенос */
+    padding: 0 10px; /* Внутрішній відступ */
+    margin-bottom: 25px;
+  }
+  .footer-bottom__container {
+    flex-direction: column; /* вертикально */
+    text-align: center; /* центрування */
+    font-size: 12px;
+  }
+}
+/* === Instagram Carousel Styles === */
+.insta-carousel-img {
+  max-height: 100vh; /* Обмеження висоти по вікну */
+  object-fit: contain; /* Зображення всередині без обрізки */
+  display: block;
+  width: 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: fixed; /* Прив'язка до вікна, а не до каруселі */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1055;
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  border: none;
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  left: 1rem; /* ✅ Прив'язка до краю екрана */
+}
+
+.carousel-control-next {
+  right: 1rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 2rem;
+  height: 2rem;
+  background-size: 100% 100%;
+}
+
+.modal-backdrop.show {
+  opacity: 0.9 !important; /* Затемнення фону */
+  background-color: #000 !important;
+}
+
+.modal-content {
+  border: none;
+  border-radius: 0;
+}
+
+.modal-content.bg-dark {
+  background-color: transparent !important;
+  box-shadow: none;
+}
+
+/* === хрестик === */
+.modal .btn-close {
+  position: fixed; /* Фіксовано до краю екрана */
+  top: 1rem; /* Відступ згори */
+  right: 1rem; /* Відступ справа */
+  z-index: 2000; /* Вище за всі елементи (включно зі стрілками) */
+  background: transparent;
+  border: none;
+  opacity: 1;
+  width: 2rem;
+  height: 2rem;
+  background-image: none !important;
+  filter: brightness(0) invert(1); /* Білий колір */
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal .btn-close::before {
+  content: "✕";
+  font-size: 2rem;
+  color: white;
+  display: block;
+  line-height: 2rem;
+  text-align: center;
+}
+.modal .btn-close:focus {
+  outline: none;
+  box-shadow: none;
 }
