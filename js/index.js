@@ -9,6 +9,7 @@ function init() {
   import("./index.age-gate.js"); // Pavlo Naichuk
   import("./footer.carousel.js"); //Jevlentjev Oksana
   import("./index.history-video.js"); // Bohdan Pustovar
+  import("./index.wine-peculiarities.js"); // Valeriia Remyha
 }
 
 const totalPartials = document.querySelectorAll(
