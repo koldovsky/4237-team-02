@@ -136,6 +136,10 @@
   color: var(--title-color);
   font-size: 15px;
   font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.wine-cards__button:hover{
+  background-color: #a94d21;
 }
 .wine-cards__image {
   width: 100%;

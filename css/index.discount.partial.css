@@ -34,7 +34,7 @@
 
 .discount__button {
   display: inline-block;
-  padding: 0.75rem 2rem;
+  padding: 0.75rem 2.5rem;
   border: 2px solid #ffffff;
   color: #ffffff;
   text-decoration: none;
@@ -51,16 +51,18 @@
   .discount__title {
     font-size: 34px;
     line-height: 38px;
+    padding-bottom: 20px;
   }
 
   .discount__text {
     font-size: 18px;
     line-height: 24px;
+      padding-bottom: 20px;
   }
 
   .discount__button {
     text-align: center;
-    width: 40%;
+    width: 45%;
     font-size: 16px;
     line-height: 20px;
   }
