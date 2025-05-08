@@ -28,8 +28,11 @@ body.no-scroll {
   --vr-brand-color-hover: #a05630; /* Jevlentjev Oksana */
   --footer-bg-color: #1b1613; /* Jevlentjev Oksana */
   --footer-text-color: #ffffff; /* Jevlentjev Oksana */
-  --footer-hr: #ff6a00; /* Jevlentjev Oksana */
-  --font-regular: "Rubik", sans-serif;
+  --footer-subtext-color: #898082; /* Jevlentjev Oksana */
+  --footer-hr: #c8693a; /* Jevlentjev Oksana */
+  --footer-bottom-bg: #130F0E; /* Jevlentjev Oksana */
+  --footer-bottom-color: #ffffff; /* Jevlentjev Oksana */
+  --font-regular: "Rubik", sans-serif; 
   --font-calligraphy: "Great Vibes", cursive; /* каліграфічний шрифт Vita Maksymchenko */
   --font-header: "Prata", serif;
   --transition-duration: 0.7s; /* Pavlo Naichuk */
@@ -109,6 +112,12 @@ body.no-scroll {
   /* бургер-меню і мобільне меню */
   /* Ширина всередині navbar */
   --navbar-inner-width: 1200px;
+
+  --footer-bottom-bg: #130F0E;
+  --footer-bottom-color: #ffffff;
+  --footer-bottom-height: 62px;
+  --footer-bottom-font-size: 14px;
+  --footer-bottom-padding: 0 30px;
 
  /* Inna Nosyk */
  --background-color: #261e1c; /* Темный фон */
