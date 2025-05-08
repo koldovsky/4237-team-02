@@ -9,7 +9,7 @@ document.querySelectorAll('.benefits__link').forEach(link => {
 
     setTimeout(() => {
       scrollTopBtn.classList.remove('scroll-top--visible');
-    }, 2000);
+    }, 5000);
   });
 });
 
