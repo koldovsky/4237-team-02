@@ -1,6 +1,6 @@
 const slides = [
   `<li class="best-deals-carousel__slide">
-    <a class="best-deals-carousel__link" href="#">
+    <a class="best-deals-carousel__link" href="wine-page.html?wine=cabernet">
         <img
             class="best-deals-carousel__image"
             src="./img/index/wine-bootle-green.jpg"
@@ -18,7 +18,7 @@ const slides = [
     </button>
     </li>`,
   `<li class="best-deals-carousel__slide">
-    <a class="best-deals-carousel__link" href="#">
+    <a class="best-deals-carousel__link" href="wine-page.html?wine=sauvignon-blanc">
         <img
             class="best-deals-carousel__image"
             src="./img/index/wine-bootle-white.jpg"
@@ -36,7 +36,7 @@ const slides = [
     </button>
     </li>`,
   `<li class="best-deals-carousel__slide">
-    <a class="best-deals-carousel__link" href="#">
+    <a class="best-deals-carousel__link" href="wine-page.html?wine=syrah">
         <img
             class="best-deals-carousel__image"
             src="./img/index/wine-bootle-green.jpg"
@@ -54,7 +54,7 @@ const slides = [
     </button>
     </li>`,
   `<li class="best-deals-carousel__slide">
-    <a class="best-deals-carousel__link" href="#">
+    <a class="best-deals-carousel__link" href="wine-page.html?wine=pinot-grigio">
         <img
             class="best-deals-carousel__image"
             src="./img/index/wine-bootle-white.jpg"

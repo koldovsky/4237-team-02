@@ -1,0 +1,316 @@
+.header-background {
+  background: white !important;
+  min-height: 104px;
+}
+.navbar-container {
+  background-color: black;
+}
+.wine-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: white;
+}
+.wine-page__container {
+  display: flex;
+  gap: 35px;
+  align-items: flex-start;
+  max-width: 1000px;
+  width: 100%;
+  align-items: center;
+}
+.wine-page__content {
+}
+.wine-image {
+  max-width: 35vw;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+.wine-info {
+}
+.stock {
+  font-family: rubick light;
+  color: rgb(97, 168, 84);
+  font-size: 16px;
+  margin-bottom: 0.5rem !important;
+}
+.wine-name {
+  font-family: prata;
+  font-size: 21px;
+}
+.product-code {
+  font-family: great vibes;
+  font-size: 24px;
+  font-weight: 200;
+}
+.price {
+  font-weight: 800;
+  font-size: 20px;
+}
+.wine-page_divider {
+  width: 100%;
+  height: 1px;
+  margin: 24px 0;
+  background: #edf0f5;
+}
+.wine-purchase {
+}
+.wine-quantity {
+  width: 60px;
+  padding: 13px 10px;
+  font-size: 16px;
+  border: 1px solid #bcc3ce;
+  border-radius: 6px;
+  text-align: center;
+  appearance: auto; /* дозволяє рідні стрілочки */
+  -webkit-appearance: none; /* Safari */
+  -moz-appearance: textfield;
+}
+
+/* Повертаємо стрілки у Chrome/Safari */
+.wine-quantity::-webkit-inner-spin-button,
+.wine-quantity::-webkit-outer-spin-button {
+  -webkit-appearance: inner-spin-button;
+  appearance: auto;
+  opacity: 1;
+  margin: 0;
+}
+.best-deals-carousel__add-to-cart {
+}
+.orange_button {
+}
+.wine-description {
+}
+.wine-description__title {
+  font-family: rubick light;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  display: block;
+  padding-bottom: 8px;
+  letter-spacing: normal;
+  margin: 16px 0;
+}
+
+/* Сіра довга лінія */
+.wine-description__title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%; /* тягнеться на всю ширину екрана */
+  background-color: #e6e9ef; /* світло-сіра */
+  z-index: 0;
+}
+
+/* Коротка оранжева поверх */
+.wine-description__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 120px;
+  background-color: #bb6b3e;
+  border-radius: 2px;
+  z-index: 1;
+}
+.wine-description__text {
+  font-family: Rubik light, sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+@media (max-width: 1023px) {
+  .wine-page__container {
+    flex-direction: column;
+    gap: 32px;
+    margin: 0;
+    align-items: center;
+  }
+
+  .wine-image {
+    width: 100%;
+    max-width: 80vh;
+    height: auto;
+  }
+
+  .wine-info,
+  .wine-description {
+    width: 100%;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .wine-quantity {
+    font-size: 14px;
+    width: 50px;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+  .wine-description__title {
+    text-align: left;
+  }
+
+  .wine-description__title::before {
+    width: 100%;
+  }
+
+  .wine-description__title::after {
+    width: 80px;
+    left: 0;
+    transform: none;
+  }
+
+  .wine-description__text {
+    font-size: 15px;
+    padding: 0 12px;
+  }
+
+  .wine-page {
+    margin-top: -80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .wine-description__title::after {
+    width: 60px;
+  }
+
+  .wine-page {
+    padding: 16px 10px;
+  }
+
+  .wine-description__text {
+    font-size: 14px;
+  }
+
+  .wine-name {
+    font-size: 18px;
+  }
+
+  .product-code {
+    font-size: 18px;
+  }
+
+  .price {
+    font-size: 16px;
+  }
+
+  .wine-quantity {
+    width: 45px;
+    font-size: 13px;
+  }
+
+  .orange_button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+.wine-gallery-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  gap: 16px;
+}
+
+/*.gallery-arrow {
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #555;
+  cursor: pointer;
+  padding: 0 10px;
+}
+.wine-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 70vh;
+}
+
+.wine-image {
+  width: 100%;
+  max-width: 35vw;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}*/
+.wine-gallery-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.wine-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 70vh;
+}
+
+.wine-thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  gap: 12px;
+}
+
+.wine-thumbnail {
+  width: 60px;
+  height: auto;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.wine-thumbnail--active {
+  border-color: #bb6b3e;
+}
+.wine-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  z-index: 2;
+}
+
+.gallery-arrow--left {
+  left: -20px;
+  background-image: url("img/icons/arrow-left.svg");
+}
+
+.gallery-arrow--right {
+  right: -20px;
+  background-image: url("img/icons/arrow-right.svg");
+}
