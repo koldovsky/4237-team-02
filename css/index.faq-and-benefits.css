@@ -78,6 +78,18 @@
     font-family: var(--font-regular);
     color: var(--subtext-color);
 }
+.faq-benefits__answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.faq-benefits__details[open] .faq-benefits__answer {
+    padding-top: 10px; 
+}
+
 
 .faq-benefits__image-block {
     flex-shrink: 0;

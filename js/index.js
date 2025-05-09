@@ -10,6 +10,7 @@ function init() {
   import("./footer.carousel.js"); //Jevlentjev Oksana
   import("./index.history-video.js"); // Bohdan Pustovar
   import("./index.wine-peculiarities.js"); // Valeriia Remyha
+  import("./index.faq-and-benefits.js"); // Mizerniy Maksym
 }
 
 const totalPartials = document.querySelectorAll(
