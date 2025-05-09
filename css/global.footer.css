@@ -1,7 +1,7 @@
 /* Jevlentjev Oksana */
 .footer-wrapper {
   background-color: var(--footer-bg-color);
-  padding: 1rem 0; /* вертикальний відступ */
+  padding: 3rem 0 1rem 0; /* top right bottom left */
   width: 100%;
   overflow-x: hidden; /* запобігає горизонтальному скролу */
 }
@@ -9,6 +9,7 @@
 .footer-container {
   max-width: 1200px;
   margin: 0 auto; /* центрування */
+  padding-top: 3rem;
   padding: 0 20px; /* горизонтальні відступи */
   display: flex; /* флексблок для 4 колонок */
   flex-wrap: nowrap; /* не переносити колонки до 767px */
@@ -74,15 +75,16 @@
 
 .footer-column a[href^="mailto:"],
 .footer-column a[href^="tel:"] {
-  color: var(--footer-subtext-color);
-  text-decoration: none;
-  pointer-events: none; /* опціонально: відключає клікабельність */
-  cursor: default;
+  color: var(--footer-subtext-color); /* сталий колір */
+  text-decoration: none; /* без підкреслення */
+  pointer-events: auto; /* залишає клікабельність */
+  cursor: pointer; /* вказівник руки */
 }
 
 .footer-column a[href^="mailto:"]:hover,
 .footer-column a[href^="tel:"]:hover {
-  color: var(--footer-subtext-color); /* не змінюється при наведенні */
+  color: var(--footer-subtext-color); /* колір НЕ змінюється */
+  text-decoration: none; /* без змін */
 }
 
 /* 📸 Instagram grid — тільки 4 блок */
@@ -269,4 +271,15 @@
 .modal .btn-close:focus {
   outline: none;
   box-shadow: none;
+}
+
+/* Вимкнення анімації модального вікна */
+.modal.fade {
+  transition: none !important;
+  opacity: 1 !important;
+}
+
+.modal.fade .modal-dialog {
+  transition: none !important;
+  transform: none !important;
 }
